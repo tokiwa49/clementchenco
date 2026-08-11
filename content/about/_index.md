@@ -1,6 +1,6 @@
 ---
 title: "About"
-date: 2026-08-12
+date: 2026-08-12T00:00:00+08:00
 ---
 
 I'm Clement - I spent years building trading strategies in Python, and I'm
