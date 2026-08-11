@@ -4,6 +4,7 @@ title = "Clement Chen"
 theme = "not-much"
 
 [params]
+  noindex = true
   theme = "auto"
   palette = "default"
   showThemeNotice = true

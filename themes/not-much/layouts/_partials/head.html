@@ -2,6 +2,7 @@
 {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{{ if .Site.Params.noindex }}<meta name="robots" content="noindex, nofollow">{{ end }}
 <link rel="shortcut icon" type="image/png" href="{{ absURL "favicon.ico" }}" />
 {{ partial "opengraph.html" . }}
 <title>{{ $title }}</title>
