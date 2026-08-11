@@ -1,0 +1,25 @@
+baseURL = "https://clementchen.co/"
+locale = "en-us"
+title = "Clement Chen"
+theme = "not-much"
+
+[params]
+  theme = "auto"
+  palette = "default"
+  showThemeNotice = true
+  showFooterEverywhere = true
+  showPostsSummary = true
+
+copyright = "© {year} Clement Chen"
+
+[[menu.main]]
+  identifier = "about"
+  name = "about"
+  title = "About"
+  url = "/about/"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "posts"
+  title = "Posts"
+  url = "/posts/"
