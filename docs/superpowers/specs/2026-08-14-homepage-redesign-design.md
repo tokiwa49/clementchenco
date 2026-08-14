@@ -30,9 +30,13 @@ the homepage direction is confirmed live.
 
 1. **Nav** — existing wordmark + `home / about / posts` breadcrumb-style
    nav, restyled to the new type scale. No structural change.
-2. **Hero** — two-line oversized display heading ("Venture Builder" /
-   "& Investor"), small subtitle beside it adapted from the current
-   homepage lead text.
+2. **Hero** — keep the existing site-name heading ("CLEMENT CHEN") as the
+   oversized display element rather than inventing a new role-based
+   two-line heading — this preserves the Baskerville Semibold treatment
+   already requested for it, keeps the name prominent on a personal site,
+   and avoids adding a separate nav wordmark (nav stays structurally
+   unchanged, see below). The existing `lead` front-matter subtitle sits
+   beside it.
 3. **Intro + CTA + socials** — condensed About paragraph, black pill
    "Get in touch" button (`mailto:chngln45@gmail.com`), and a "Let's get
    connected" list (LinkedIn, Substack) sourced from config, not hardcoded.
