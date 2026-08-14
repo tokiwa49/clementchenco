@@ -10,6 +10,48 @@ theme = "not-much"
   showThemeNotice = true
   showFooterEverywhere = true
   showPostsSummary = true
+  email = "chngln45@gmail.com"
+
+[[params.socials]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/clementyccchen/"
+
+[[params.socials]]
+  name = "Substack"
+  url = "https://clementality.substack.com/"
+
+[[params.focusAreas]]
+  number = "01"
+  title = "Venture Building"
+  description = "Co-founding and operating companies from the ground up — currently Satelyx and Gray Label."
+
+[[params.focusAreas]]
+  number = "02"
+  title = "Investing"
+  description = "Backing early-stage companies across Web3, infrastructure, and deep tech."
+
+[[params.focusAreas]]
+  number = "03"
+  title = "Advisory"
+  description = "Working closely with early-stage teams on product positioning and go-to-market strategy."
+
+[[params.ventures]]
+  number = "01"
+  name = "Satelyx"
+  tags = "Space, Deep Tech"
+  url = "https://satelyx.com/"
+
+[[params.ventures]]
+  number = "02"
+  name = "Gray Label"
+  tags = "Venture Building"
+  url = ""
+
+[[params.ventures]]
+  number = "03"
+  name = "SPIN"
+  tags = "Advisor, Smart Products Infrastructure"
+  url = ""
 
 copyright = "© {year} Clement Chen"
 
