@@ -33,7 +33,7 @@ copyright = "© {year} Clement Chen"
 [[params.focusAreas]]
   number = "02"
   title = "Investing"
-  description = "Nearly four years as a venture investor at IVC, a sister fund of Headline Asia — evaluating 300+ opportunities and backing 50+ companies across the digital asset infrastructure ecosystem."
+  description = "Nearly four years as a venture investor at IVC, a sister fund of Headline Asia — evaluating 300+ opportunities and backing 50+ companies across infrastructure and digital assets."
 
 [[params.focusAreas]]
   number = "03"
@@ -59,22 +59,15 @@ copyright = "© {year} Clement Chen"
   url = ""
 
 [[menu.main]]
-  identifier = "home"
-  name = "home"
-  title = "Home"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
   identifier = "about"
   name = "about"
   title = "About"
   url = "/about/"
-  weight = 2
+  weight = 1
 
 [[menu.main]]
   identifier = "posts"
   name = "posts"
   title = "Posts"
   url = "/posts/"
-  weight = 3
+  weight = 2

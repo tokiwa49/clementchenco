@@ -1,5 +1,7 @@
 {{- /*
-Renders a menu for the given menu ID.
+Renders the site navigation for the given menu ID: a brand wordmark
+linking home, plus the menu's links right-aligned (collapsing to a
+hamburger toggle below the lg breakpoint).
 
 @context {page} page The current page.
 @context {string} menuID The menu ID.
@@ -10,26 +12,16 @@ Renders a menu for the given menu ID.
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 
-{{ $theme := "dark" }}
-{{- with .Site.Params.theme }}
-  {{ $theme = . }}
-{{- end }}
-
 {{- with index site.Menus $menuID }}
-  <nav aria-label="breadcrumb" class="
-    small
-    navbar
-    {{- if eq $theme "dark" }}
-    navbar-dark
-    {{- end }}
-    navbar-expand-lg">
+  <nav aria-label="Main" class="navbar navbar-expand-lg small">
+    <a class="navbar-brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse mt-3 mt-md-0" id="collapsibleMenu">
-      <ol class="breadcrumb fw-bold">
+    <div class="collapse navbar-collapse" id="collapsibleMenu">
+      <ul class="navbar-nav ms-auto">
         {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-      </ol>
+      </ul>
     </div>
   </nav>
 {{- end }}
@@ -37,11 +29,12 @@ Renders a menu for the given menu ID.
 {{- define "partials/inline/menu/walk.html" }}
   {{- $page := .page }}
   {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL }}
-    {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+    {{- $isCurrent := or ($page.IsMenuCurrent .Menu .) (eq $page.RelPermalink .URL) (eq $page.Section .Identifier) }}
+    {{- $class := "nav-link" }}
+    {{- if $isCurrent }}
+      {{- $class = "nav-link active" }}
+    {{- else if $page.HasMenuCurrent .Menu . }}
+      {{- $class = "nav-link ancestor" }}
     {{- end }}
     {{- $name := .Name }}
     {{- with .Identifier }}
@@ -49,25 +42,13 @@ Renders a menu for the given menu ID.
         {{- $name = . }}
       {{- end }}
     {{- end }}
-    <li class="breadcrumb-item my-1 my-md-0 ms-3 ms-md-0">
+    <li class="nav-item">
       <a
-        {{- range $k, $v := $attrs }}
-          {{- with $v }}
-            {{- printf " %s=%q" $k $v | safeHTMLAttr }}
-          {{- end }}
-        {{- end -}}
-        {{- if or ($page.IsMenuCurrent .Menu .) (eq $page.RelPermalink .URL) (eq $page.Section .Identifier) }}
-        class="text-decoration-underline link-offset-3"
-        {{- end }}
-        {{ if strings.HasPrefix .URL "http" }}
-          target="_blank" rel="noopener noreferrer"
-        {{ end }}
+        href="{{ .URL }}"
+        class="{{ $class }}"
+        {{- if $isCurrent }} aria-current="page"{{- end }}
+        {{- if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{- end }}
       >{{ $name }}</a>
-      <!-- {{- with .Children }}
-        <ul>
-          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-        </ul>
-      {{- end }} -->
     </li>
   {{- end }}
 {{- end }}

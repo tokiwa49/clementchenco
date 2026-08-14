@@ -1,5 +1,5 @@
 ---
-lead: "Venture builder and investor in deep tech & digital asset infrastructure."
+lead: "Venture builder and investor in Deep Tech, Infrastructure & digital asset."
 ---
 
 Welcome to my corner of the internet. I write about building Satelyx,

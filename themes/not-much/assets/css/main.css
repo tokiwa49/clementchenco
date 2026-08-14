@@ -183,12 +183,33 @@ kbd {
 
 .navbar {
   margin-bottom: 1rem;
+  align-items: center;
 }
 
-.breadcrumb-item a {
+.navbar-brand {
   font-size: 0.85rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  color: var(--font-color) !important;
+  margin-right: 0;
+}
+
+.navbar-nav {
+  gap: 0.5rem 1.5rem;
+}
+
+.nav-link {
+  font-size: 0.9rem;
+  color: var(--font-color) !important;
+  opacity: 0.7;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  opacity: 1;
+  text-decoration: underline !important;
+  text-underline-offset: 0.25em;
 }
 
 .tags a {
@@ -397,8 +418,9 @@ hr {
 }
 
 .navbar-toggler {
-  border-color: var(--font-color) !important;
-  opacity: 0.75;
+  border: none !important;
+  padding: 0.25rem 0.4rem;
+  opacity: 0.85;
 }
 
 .navbar-toggler:hover,
