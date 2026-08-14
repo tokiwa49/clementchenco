@@ -1,0 +1,19 @@
+{{- $page := . }}
+<section class="intro">
+  <div class="intro-copy">
+    {{ $page.Content }}
+    {{- with site.Params.email }}
+    <a class="btn-pill" href="mailto:{{ . }}">Get in touch<span class="btn-pill-dot"></span></a>
+    {{- end }}
+  </div>
+  {{- with site.Params.socials }}
+  <div class="intro-socials">
+    <p class="intro-socials-label">Let's get connected</p>
+    <ul class="intro-socials-list">
+      {{- range . }}
+      <li><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}
+</section>

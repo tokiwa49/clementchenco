@@ -1,4 +1,9 @@
 <div class="container mt-4 pb-1">
+    {{- with .Site.Params.socials }}
+    <p class="small opacity-75 footer-socials">
+        {{- range $i, $s := . }}{{ if $i }} &middot; {{ end }}<a href="{{ $s.url }}" target="_blank" rel="noopener noreferrer">{{ $s.name }}</a>{{- end }}
+    </p>
+    {{- end }}
     <p class="small opacity-75">
         {{ replace .Site.Copyright "{year}" now.Year }}
         {{ if .Site.Params.showThemeNotice }}

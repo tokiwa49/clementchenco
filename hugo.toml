@@ -2,6 +2,7 @@ baseURL = "https://clementchen.co/"
 locale = "en-us"
 title = "Clement Chen"
 theme = "not-much"
+copyright = "© {year} Clement Chen"
 
 [params]
   noindex = true
@@ -52,8 +53,6 @@ theme = "not-much"
   name = "SPIN"
   tags = "Advisor, Smart Products Infrastructure"
   url = ""
-
-copyright = "© {year} Clement Chen"
 
 [[menu.main]]
   identifier = "home"
