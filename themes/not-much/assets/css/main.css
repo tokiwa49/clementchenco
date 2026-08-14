@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 body {
   background-color: var(--bg-color) !important;
@@ -7,12 +8,21 @@ body {
 
 body, main {
   height: 100%;
-  font-family: 'Literata', serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: .95em;
   font-weight: normal;
   color: var(--font-color) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif !important;
+}
+
+.display-3 {
+  font-family: 'Baskerville', 'Baskerville Old Face', Georgia, serif !important;
+  font-weight: 600 !important;
 }
 
 ::selection {
@@ -84,7 +94,7 @@ ul > li:has(input[type=checkbox]) {
 }
 
 code {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'JetBrains Mono', monospace !important;
 }
 
 code:not(.highlight *) {
@@ -109,7 +119,7 @@ mark {
 
 kbd {
   background-color: var(--bg-variant) !important;
-  font-family: 'Red Hat Mono', monospace !important;
+  font-family: 'JetBrains Mono', monospace !important;
   font-weight: bold;
 }
 
@@ -278,7 +288,7 @@ li > input[type=checkbox] {
 }
 
 .toc {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'JetBrains Mono', monospace !important;
 }
 
 /* Viewport ≥ 768px: container = 720px */
@@ -347,7 +357,7 @@ li > input[type=checkbox] {
 }
 
 .badge {
-  font-family: 'Red Hat Mono', serif !important;
+  font-family: 'JetBrains Mono', monospace !important;
   font-weight: 600 !important;
 }
 
@@ -374,4 +384,27 @@ hr {
 
 .giscus {
   padding-top: 1.5rem;
+}
+
+.navbar-toggler {
+  border-color: var(--font-color) !important;
+  opacity: 0.75;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  opacity: 1;
+}
+
+.navbar-toggler-icon {
+  background-image: none !important;
+  background-color: var(--font-color);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
 }
