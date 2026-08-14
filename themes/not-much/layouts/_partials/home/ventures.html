@@ -1,0 +1,19 @@
+{{- with site.Params.ventures }}
+<section class="ventures">
+  <div class="ventures-header">
+    <h2 class="ventures-heading">Ventures &amp; Investments<span class="ventures-count">({{ len . }})</span></h2>
+    <p class="ventures-description">Things I'm building and backing</p>
+  </div>
+  <div class="ventures-list">
+    {{- range . }}
+    <div class="venture-row">
+      <h3 class="venture-name">
+        {{- if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{- else }}{{ .name }}{{- end }}
+      </h3>
+      <span class="venture-tags">{{ .tags }}</span>
+      <span class="venture-number">/{{ .number }}</span>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
