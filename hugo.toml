@@ -11,11 +11,15 @@ copyright = "© {year} Clement Chen"
   showThemeNotice = true
   showFooterEverywhere = true
   showPostsSummary = true
-  email = "chngln45@gmail.com"
+  email = "clement@satelyx.com"
 
 [[params.socials]]
   name = "LinkedIn"
   url = "https://www.linkedin.com/in/clementyccchen/"
+
+[[params.socials]]
+  name = "Twitter"
+  url = "https://x.com/clementality_"
 
 [[params.socials]]
   name = "Substack"
@@ -24,17 +28,17 @@ copyright = "© {year} Clement Chen"
 [[params.focusAreas]]
   number = "01"
   title = "Venture Building"
-  description = "Co-founding and operating companies from the ground up — currently Satelyx and Gray Label."
+  description = "Co-founding and operating companies from the ground up — currently Satelyx, building sovereign space infrastructure, and Gray Label."
 
 [[params.focusAreas]]
   number = "02"
   title = "Investing"
-  description = "Backing early-stage companies across Web3, infrastructure, and deep tech."
+  description = "Nearly four years as a venture investor at IVC, a sister fund of Headline Asia — evaluating 300+ opportunities and backing 50+ companies across the digital asset infrastructure ecosystem."
 
 [[params.focusAreas]]
   number = "03"
   title = "Advisory"
-  description = "Working closely with early-stage teams on product positioning and go-to-market strategy."
+  description = "Advising early-stage teams — including SPIN — on product positioning, go-to-market, and ecosystem strategy."
 
 [[params.ventures]]
   number = "01"

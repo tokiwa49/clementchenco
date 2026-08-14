@@ -1,0 +1,13 @@
+{{ define "main" }}
+  <div class="container pt-5">
+    <div class="row mt-5 pt-5">
+      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    </div>
+    {{ .Content }}
+    <div class="mt-5">
+      {{- with site.Params.email }}
+      <a class="btn-pill" href="mailto:{{ . }}">Get in touch<span class="btn-pill-dot"></span></a>
+      {{- end }}
+    </div>
+  </div>
+{{ end }}

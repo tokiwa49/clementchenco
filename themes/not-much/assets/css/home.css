@@ -16,17 +16,6 @@
   }
 }
 
-/* Nav, scoped to the homepage instance only */
-.container-wide .navbar {
-  margin-bottom: 1rem;
-}
-
-.container-wide .breadcrumb-item a {
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
-
 /* Hero */
 .hero {
   display: flex;

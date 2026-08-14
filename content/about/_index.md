@@ -3,19 +3,20 @@ title: "About"
 date: 2026-08-12T00:00:00+08:00
 ---
 
-I'm Clement — a venture builder and investor working across deep tech,
-digital assets, and financial infrastructure.
+I'm Clement — a venture builder and investor working across deep tech and
+digital asset infrastructure.
 
 I'm currently co-founder of [Satelyx](https://satelyx.com/), building
-shared in-orbit validation missions that turn space innovations into
+shared in-orbit validation missions that turn space innovation into
 flight-proven sovereign capabilities. I'm also building Gray Label, and
-advise SPIN on strategic growth.
+advise SPIN as a strategic growth advisor.
 
-Before building, I spent several years on the investing side — most
-recently at Infinity Ventures Crypto (IVC) and Headline Asia — backing and
-diligencing early-stage companies across Web3 and infrastructure. I also
-have an engineering background, having built quantitative trading
-strategies earlier in my career.
+Before building, I spent close to four years as a venture investor —
+most recently as an Investment Analyst at IVC, a sister fund of Headline
+Asia, where I evaluated 300+ potential investments and led or
+participated in 50+ portfolio investments across the digital asset
+infrastructure ecosystem. I hold a BBA in Finance from National Taiwan
+University, and I'm a Taiwan CFA Research Challenge champion.
 
-This site is where I write about what I'm building and learning along the
-way.
+This site is where I write about what I'm building, investing in, and
+learning along the way.

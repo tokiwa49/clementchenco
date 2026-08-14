@@ -181,6 +181,16 @@ kbd {
   color: #6c757d !important;
 }
 
+.navbar {
+  margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .tags a {
   text-decoration: none !important;
 }
