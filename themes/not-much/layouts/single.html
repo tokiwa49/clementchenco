@@ -10,6 +10,9 @@
         {{ $dateHuman := .Date | time.Format ":date_long" }}
         <div aria-label="breadcrumb">
           <ol class="breadcrumb">
+            {{ with .Params.author }}
+            <li class="breadcrumb-item small">By {{ . }}</li>
+            {{ end }}
             <li class="breadcrumb-item small">
               {{ if .Draft }}
               <span class="draft-label">DRAFT</span> &#183;
@@ -28,6 +31,7 @@
             </li>
           </ol>
         </div>
+        {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
       </header>
       {{ if .Params.toc }}
       <div class="toc small">

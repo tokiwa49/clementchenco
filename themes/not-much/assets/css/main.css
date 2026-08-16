@@ -322,34 +322,6 @@ li > input[type=checkbox] {
   font-family: 'JetBrains Mono', monospace !important;
 }
 
-/* Viewport ≥ 768px: container = 720px */
-@media (min-width: 768px) {
-  .toc {
-    display: block !important;
-    position: fixed !important;
-    right: calc(50% - 360px - 20px); /* 720px / 2 */
-    margin-right: 1.5rem;
-    opacity: 0.2;
-    /* Opacity Transition */
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-    /* Margin Transition */
-    -webkit-transition: margin 1s ease-in-out;
-    -moz-transition: margin 1s ease-in-out;
-    -ms-transition: margin 1s ease-in-out;
-    -o-transition: margin 1s ease-in-out;
-    transition: margin 1s ease-in-out;
-
-    &:hover {
-      margin-right: 2.3rem;
-      opacity: 1;
-    }
-  }
-}
-
 @media (max-width: 767px) {
   .breadcrumb {
     flex-direction: column !important;
@@ -358,28 +330,35 @@ li > input[type=checkbox] {
 
   .breadcrumb-item::before {
     display: none !important;
-    
+
   }
 }
 
-/* Viewport ≥ 992px: container = 960px */
-@media (min-width: 992px) {
-  .toc {
-    right: calc(50% - 480px - 20px); /* 960px / 2 */
-  }
-}
-
-/* Viewport ≥ 1200px: container = 1140px */
+/* Below 1200px, .container isn't reliably narrow enough to leave margin
+   beside it for a floating sidebar without risking overlap (especially
+   with long post headings) — the TOC stays in normal inline flow at the
+   top of the article there. .container is forced to a constant 720px at
+   ≥1200px (see the .container rule above), so this single breakpoint is
+   stable across all wider viewports too. */
 @media (min-width: 1200px) {
   .toc {
-    right: calc(50% - 570px - 20px); /* 1140px / 2 */
-  }
-}
+    display: block !important;
+    position: fixed !important;
+    /* Right edge of .container sits at 50% + 360px (half its 720px width).
+       Subtracting the TOC's own max-width too (not just the gap) is what
+       keeps its left edge clear of the container — omitting it was the
+       original bug. */
+    right: calc(50% - 360px - 220px - 45px);
+    max-width: 220px;
+    overflow-wrap: break-word;
+    margin-right: 1.5rem;
+    opacity: 0.2;
+    transition: opacity 1s ease-in-out, margin 1s ease-in-out;
 
-/* Viewport ≥ 1400px: container = 1320px */
-@media (min-width: 1400px) {
-  .toc {
-    right: calc(50% - 660px - 20px); /* 1320px / 2 */
+    &:hover {
+      margin-right: 2.3rem;
+      opacity: 1;
+    }
   }
 }
 
@@ -439,4 +418,12 @@ hr {
   mask-position: center;
   -webkit-mask-size: 100% 100%;
   mask-size: 100% 100%;
+}
+
+/* Publisher/closing note that follows a trailing <hr> in long-form posts —
+   a purely structural selector so source markdown never needs raw HTML. */
+.post article hr ~ p {
+  border-left: 3px solid var(--primary);
+  padding-left: 1rem;
+  opacity: 0.85;
 }

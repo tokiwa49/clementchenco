@@ -1,4 +1,6 @@
-{{ $title := print .Site.Title " | " .Title}}
+{{ $pageTitle := .Title }}
+{{ with .Params.seoTitle }}{{ $pageTitle = . }}{{ end }}
+{{ $title := print .Site.Title " | " $pageTitle }}
 {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
