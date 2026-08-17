@@ -13,13 +13,14 @@ hamburger toggle below the lg breakpoint).
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav aria-label="Main" class="navbar navbar-expand-lg small">
+  <nav aria-label="Main" class="navbar small">
     <a class="navbar-brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleMenu" aria-controls="collapsibleMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleMenu">
-      <ul class="navbar-nav ms-auto">
+    <div class="navbar-controls">
+      <div class="theme-toggle" role="group" aria-label="Color theme">
+        <button type="button" class="theme-toggle-btn" data-theme-choice="light">Light</button><span class="theme-toggle-sep" aria-hidden="true">/</span><button type="button" class="theme-toggle-btn" data-theme-choice="dark">Dark</button>
+      </div>
+      <span class="navbar-divider" aria-hidden="true"></span>
+      <ul class="navbar-nav">
         {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
       </ul>
     </div>

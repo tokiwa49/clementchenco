@@ -1,7 +1,9 @@
 {{- $page := . }}
-<section class="hero">
-  <h1 class="hero-title display-3 text-uppercase">{{ site.Title }}</h1>
-  {{- with $page.Params.lead }}
-  <p class="hero-subtitle">{{ . }}</p>
-  {{- end }}
+<section class="hero-photo">
+  <h1 class="hero-photo-title display-3 text-uppercase">
+    <span>Clement</span><span>Chen</span>
+  </h1>
 </section>
+{{- with $page.Params.lead }}
+<p class="hero-subtitle">{{ . }}</p>
+{{- end }}

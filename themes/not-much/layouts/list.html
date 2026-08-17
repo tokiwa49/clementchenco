@@ -1,16 +1,16 @@
 {{ define "main" }}
-  <div class="container pt-5">
+  <div class="shell pt-5">
     <!-- <h1>{{ .Title }}</h1> -->
     <div class="mt-5 pt-5">
       {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     </div>
     {{ .Content }}
     {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
-    {{ range $paginator.Pages }}
-    <div class="row mb-3">
+    {{ range $i, $p := $paginator.Pages }}
+    <div class="row mb-3 post-list-row reveal" style="--i: {{ $i }}">
       {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
       {{ $dateHuman := .Date | time.Format ":date_long" }}
-      <time class="small" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      <time class="small post-list-date" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
       <h2 class="h5 list-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
       {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
       {{ if .Site.Params.showPostsSummary }}

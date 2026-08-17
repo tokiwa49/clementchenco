@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2026-08-12T00:00:00+08:00
+description: "Clement Chen is co-founder of Satelyx and Gray Label, and a former venture investor at IVC, a sister fund of Headline Asia, focused on deep tech and infrastructure."
 ---
 
 I'm Clement — a venture builder and investor working across deep tech,

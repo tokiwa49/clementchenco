@@ -1,0 +1,33 @@
+{{- /*
+Renders JSON-LD structured data: a sitewide WebSite entity, plus a Person
+entity (with sameAs links to socials) on the home and About pages, where
+it actually describes the page's subject.
+
+Each object is built as a single dict and passed through jsonify once,
+then marked safeJS — piping individual field values through jsonify
+inline (e.g. `"name": {{ site.Title | jsonify }}`) double-escapes them,
+since Go's html/template re-escapes the already-quoted JSON string when
+it doesn't trust the value's type.
+
+@example: {{ partial "schema.html" . }}
+*/}}
+
+{{- $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" site.Title "url" site.BaseURL }}
+<script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{- if or .IsHome (eq .RelPermalink "/about/") }}
+{{- $sameAs := slice }}
+{{- range site.Params.socials }}
+  {{- $sameAs = $sameAs | append .url }}
+{{- end }}
+{{- $worksFor := dict "@type" "Organization" "name" "Satelyx" "url" "https://satelyx.com/" }}
+{{- $person := dict
+      "@context" "https://schema.org"
+      "@type" "Person"
+      "name" site.Title
+      "url" site.BaseURL
+      "jobTitle" "Venture Builder & Investor"
+      "sameAs" $sameAs
+      "worksFor" $worksFor
+}}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{- end }}

@@ -2,11 +2,20 @@
 {{ with .Params.seoTitle }}{{ $pageTitle = . }}{{ end }}
 {{ $title := print .Site.Title " | " $pageTitle }}
 {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+{{ $description := .Description }}
+{{ if not $description }}{{ $description = .Site.Params.description }}{{ end }}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ if .Site.Params.noindex }}<meta name="robots" content="noindex, nofollow">{{ end }}
 <link rel="shortcut icon" type="image/png" href="{{ absURL "favicon.ico" }}" />
+<link rel="canonical" href="{{ .Permalink }}">
+{{ range .AlternativeOutputFormats -}}
+{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+{{ end -}}
+{{ with $description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ partial "opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ partial "schema.html" . }}
 <title>{{ $title }}</title>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

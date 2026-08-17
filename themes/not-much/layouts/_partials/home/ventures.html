@@ -5,13 +5,13 @@
     <p class="ventures-description">Things I'm building and backing</p>
   </div>
   <div class="ventures-list">
-    {{- range . }}
-    <div class="venture-row">
+    {{- range $i, $e := . }}
+    <div class="venture-row reveal" style="--i: {{ $i }}">
       <h3 class="venture-name">
-        {{- if .url }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>{{- else }}{{ .name }}{{- end }}
+        {{- if $e.url }}<a href="{{ $e.url }}" target="_blank" rel="noopener noreferrer">{{ $e.name }}</a>{{- else }}{{ $e.name }}{{- end }}
       </h3>
-      <span class="venture-tags">{{ .tags }}</span>
-      <span class="venture-number">/{{ .number }}</span>
+      <span class="venture-tags">{{ $e.tags }}</span>
+      <span class="venture-number">/{{ $e.number }}</span>
     </div>
     {{- end }}
   </div>

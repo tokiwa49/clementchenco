@@ -11,13 +11,19 @@ body, main {
   font-family: 'Inter', sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: .95em;
+  font-size: 1rem;
   font-weight: normal;
+  line-height: 1.65;
   color: var(--font-color) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Space Grotesk', sans-serif !important;
+  letter-spacing: -0.015em;
+}
+
+.text-uppercase {
+  letter-spacing: -0.02em;
 }
 
 .display-3 {
@@ -56,9 +62,38 @@ a:hover {
   color: var(--primary) !important;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 720px !important;
+/* The one page shell every template shares — nav, footer, and every
+   section width is measured from this so the site reads as one piece
+   rather than a wide home page bolted to a narrow blog. */
+.shell {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 1400px) {
+  .shell {
+    max-width: 1200px;
+  }
+}
+
+/* Reading column for long-form content (About, post body). Left-aligned
+   inside .shell — not centered — so it shares the same left edge as the
+   hero/index rows on the home page instead of floating independently. */
+.prose {
+  max-width: 42rem;
+}
+
+/* Below this width .shell isn't meaningfully wider than .prose, so there's
+   no real margin to mark. Above it, without this the reading column just
+   stops and the rest of .shell reads as an unexplained gap instead of a
+   deliberate margin — this rule is what makes it read as a margin. */
+@media (min-width: 900px) {
+  .prose {
+    padding-right: 2rem;
+    border-right: 1px solid var(--hairline, var(--bg-variant));
   }
 }
 
@@ -184,6 +219,8 @@ kbd {
 }
 
 .navbar-nav {
+  flex-direction: row !important;
+  flex-wrap: wrap;
   gap: 0.5rem 1.5rem;
 }
 
@@ -291,6 +328,7 @@ blockquote {
 
 .post-summary {
   margin: 0;
+  max-width: 44rem;
 }
 
 ul:has(input[type=checkbox]) {
@@ -322,29 +360,28 @@ li > input[type=checkbox] {
   }
 }
 
-/* Below 1200px, .container isn't reliably narrow enough to leave margin
-   beside it for a floating sidebar without risking overlap (especially
-   with long post headings) — the TOC stays in normal inline flow at the
-   top of the article there. .container is forced to a constant 720px at
-   ≥1200px (see the .container rule above), so this single breakpoint is
-   stable across all wider viewports too. */
+/* Below 1200px there's no reliable margin beside the reading column for a
+   side rail — the TOC stays in normal inline flow at the top of the post
+   there. At ≥1200px it's positioned off the reading column's own width
+   (.post is the positioning context), so it stays correct regardless of
+   how wide .shell itself is. */
 @media (min-width: 1200px) {
+  .post {
+    position: relative;
+  }
+
   .toc {
     display: block !important;
-    position: fixed !important;
-    /* Right edge of .container sits at 50% + 360px (half its 720px width).
-       Subtracting the TOC's own max-width too (not just the gap) is what
-       keeps its left edge clear of the container — omitting it was the
-       original bug. */
-    right: calc(50% - 360px - 220px - 45px);
+    position: absolute !important;
+    top: 0.25rem;
+    left: calc(100% + 3rem);
+    width: 220px;
     max-width: 220px;
     overflow-wrap: break-word;
-    margin-right: 1.5rem;
-    opacity: 0.2;
-    transition: opacity 1s ease-in-out, margin 1s ease-in-out;
+    opacity: 0.35;
+    transition: opacity 0.2s ease-in-out;
 
     &:hover {
-      margin-right: 2.3rem;
       opacity: 1;
     }
   }
@@ -384,28 +421,111 @@ hr {
   padding-top: 1.5rem;
 }
 
-.navbar-toggler {
-  border: none !important;
-  padding: 0.25rem 0.4rem;
-  opacity: 0.85;
+.navbar-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
 }
 
-.navbar-toggler:hover,
-.navbar-toggler:focus {
+.navbar-divider {
+  display: inline-block;
+  width: 1px;
+  height: 0.9rem;
+  background: var(--hairline, var(--bg-variant));
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.theme-toggle-sep {
+  opacity: 0.4;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--font-color);
+  opacity: 0.5;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+}
+
+.theme-toggle-btn:hover {
+  opacity: 0.8;
+}
+
+.theme-toggle-btn[aria-pressed="true"] {
+  color: var(--primary);
   opacity: 1;
+  font-weight: 600;
 }
 
-.navbar-toggler-icon {
-  background-image: none !important;
-  background-color: var(--font-color);
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
+/* Scoped under .js (set by an inline script in <head>, before first paint)
+   so content stays visible by default if JS fails or is blocked, instead
+   of silently hiding above-the-fold rows with no fallback. */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.5s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.nav-link:hover,
+.list-post-title a:hover,
+.venture-name a:hover {
+  text-shadow: 1.5px 0 var(--primary), -1.5px 0 var(--font-color);
+  transition: text-shadow 0.08s steps(2);
+}
+
+.post-list-row {
+  border-bottom: 1px solid var(--hairline, var(--bg-variant));
+  padding-bottom: 1.25rem;
+  margin-bottom: 0.25rem !important;
+}
+
+.post-list-date {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-bottom: 0.35rem;
+}
+
+.list-post-title {
+  font-size: 1.4rem !important;
+  margin: 0 0 0.5rem 0 !important;
+  max-width: 44rem;
+}
+
+footer {
+  border-top: 1px solid var(--hairline, var(--bg-variant));
+  margin-top: 1rem;
 }
 
 /* Publisher/closing note that follows a trailing <hr> in long-form posts —

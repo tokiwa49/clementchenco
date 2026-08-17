@@ -2,11 +2,13 @@
 <section class="focus-areas">
   <h2 class="focus-areas-heading">Where I focus</h2>
   <div class="focus-areas-grid">
-    {{- range . }}
-    <div class="focus-area">
-      <span class="focus-area-number">{{ .number }}</span>
-      <h3 class="focus-area-title">{{ .title }}</h3>
-      <p class="focus-area-description">{{ .description }}</p>
+    {{- range $i, $e := . }}
+    <div class="focus-area reveal" style="--i: {{ $i }}">
+      <span class="focus-area-number">{{ $e.number }}</span>
+      <div class="focus-area-body">
+        <h3 class="focus-area-title">{{ $e.title }}</h3>
+        <p class="focus-area-description">{{ $e.description }}</p>
+      </div>
     </div>
     {{- end }}
   </div>
