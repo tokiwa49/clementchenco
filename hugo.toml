@@ -5,7 +5,7 @@ theme = "not-much"
 copyright = "© {year} Clement Chen"
 
 [params]
-  noindex = true
+  noindex = false
   theme = "auto"
   palette = "broadsheet"
   showThemeNotice = false
