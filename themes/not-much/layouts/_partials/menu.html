@@ -1,7 +1,9 @@
 {{- /*
 Renders the site navigation for the given menu ID: a brand wordmark
-linking home, plus the menu's links right-aligned (collapsing to a
-hamburger toggle below the lg breakpoint).
+linking home, plus the menu's links right-aligned. Below 768px the
+theme toggle and menu links hide in favor of the hamburger, which
+opens the site-drawer.html panel containing the same controls (and,
+on blog posts, the article extras) instead.
 
 @context {page} page The current page.
 @context {string} menuID The menu ID.
@@ -11,27 +13,26 @@ hamburger toggle below the lg breakpoint).
 
 {{- $page := .page }}
 {{- $menuID := .menuID }}
-{{- $showPanelToggle := .showPanelToggle }}
 
 {{- with index site.Menus $menuID }}
   <nav aria-label="Main" class="navbar small">
     <a class="navbar-brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
     <div class="navbar-controls">
-      <div class="theme-toggle" role="group" aria-label="Color theme">
-        <button type="button" class="theme-toggle-btn" data-theme-choice="light">Light</button><span class="theme-toggle-sep" aria-hidden="true">/</span><button type="button" class="theme-toggle-btn" data-theme-choice="dark">Dark</button>
+      <div class="navbar-controls-inline">
+        <div class="theme-toggle" role="group" aria-label="Color theme">
+          <button type="button" class="theme-toggle-btn" data-theme-choice="light">Light</button><span class="theme-toggle-sep" aria-hidden="true">/</span><button type="button" class="theme-toggle-btn" data-theme-choice="dark">Dark</button>
+        </div>
+        <span class="navbar-divider" aria-hidden="true"></span>
+        <ul class="navbar-nav">
+          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
       </div>
-      <span class="navbar-divider" aria-hidden="true"></span>
-      <ul class="navbar-nav">
-        {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-      </ul>
-      {{- if $showPanelToggle }}
-      <span class="navbar-divider" aria-hidden="true"></span>
-      <button type="button" class="panel-toggle" id="panelToggle" aria-label="Open article menu" aria-expanded="false" aria-controls="postPanel">
+      <span class="navbar-divider panel-toggle-divider" aria-hidden="true"></span>
+      <button type="button" class="panel-toggle" id="panelToggle" aria-label="Open menu" aria-expanded="false" aria-controls="postPanel">
         <span class="panel-toggle-bars" aria-hidden="true">
           <span></span><span></span><span></span>
         </span>
       </button>
-      {{- end }}
     </div>
   </nav>
 {{- end }}

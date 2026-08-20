@@ -201,7 +201,7 @@ kbd {
 }
 
 .post article a:not(.footnote-backref)::after, footer a::after {
-  content: " ↗"
+  content: " ↗︎"
 }
 
 .post article a:has(img)::after {
@@ -444,6 +444,22 @@ hr {
   margin-left: auto;
 }
 
+/* Below 992px (tablet portrait and under) the theme toggle and nav
+   links live in the drawer instead (see .panel-nav-section) — hidden
+   here so the mobile/tablet header is just the wordmark and the
+   hamburger on one row. */
+.navbar-controls-inline {
+  display: none;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .navbar-controls-inline {
+    display: flex;
+  }
+}
+
 .navbar-divider {
   display: inline-block;
   width: 1px;
@@ -641,7 +657,7 @@ footer {
   white-space: nowrap;
 }
 
-/* ---------- article-menu toggle: hamburger <-> X ---------- */
+/* ---------- site-menu toggle: hamburger <-> X ---------- */
 
 .panel-toggle {
   background: none;
@@ -653,6 +669,33 @@ footer {
   justify-content: center;
   width: 1.4rem;
   height: 1rem;
+}
+
+/* Nothing to divide from on mobile/tablet — the inline nav it would
+   separate from the toggle is hidden there. Only reappears alongside
+   the toggle once both are visible together (see the 992–1279px rule
+   below). */
+.panel-toggle-divider {
+  display: none;
+}
+
+/* Above 992px the primary nav is inline again, so the toggle is only
+   still needed on blog posts, to reach the article extras that haven't
+   docked into a sidebar yet — see the 1280px rule further down. */
+@media (min-width: 992px) {
+  .panel-toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1279.98px) {
+  body.has-article-panel .panel-toggle {
+    display: inline-flex;
+  }
+
+  body.has-article-panel .panel-toggle-divider {
+    display: inline-block;
+  }
 }
 
 .panel-toggle-bars {
@@ -836,6 +879,87 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .post-panel, .panel-backdrop, .panel-toggle-bars span {
     transition: none !important;
+  }
+}
+
+/* The drawer's nav links/theme-toggle duplicate what's already inline
+   in the navbar from 992px up — only needed while that's hidden. */
+@media (min-width: 992px) {
+  .panel-nav-section {
+    display: none;
+  }
+}
+
+/* Above this width .shell has real margin to its right (the same margin
+   the "article-menu" comment above the .toc rule refers to) — enough for
+   the panel to sit there permanently instead of hiding behind a hamburger.
+   Below it there isn't room, so the off-canvas toggle stays in charge.
+   Scoped to blog posts: other pages have nothing left in the drawer at
+   this width (nav is inline, no article extras), so docking it there
+   would just pin an empty box to the edge of the page. */
+@media (min-width: 1280px) {
+  .panel-toggle-divider,
+  .panel-toggle {
+    display: none;
+  }
+
+  .panel-backdrop {
+    display: none !important;
+  }
+
+  /* .post-layout only exists on blog posts (see single.html), so this
+     is naturally scoped without needing body.has-article-panel too. */
+  .post-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  /* No flex-grow — .post-main sizes to .prose's own content width
+     instead of stretching to fill the row, so the panel sits right
+     after it instead of leaving a dead gap between the two. */
+  .post-main {
+    min-width: 0;
+  }
+
+  body.has-article-panel .post-panel {
+    /* Was `position: fixed; right: 0`, pinned to the *viewport* edge —
+       on a screen wider than .shell's max-width that left a dead gap
+       between the prose column's divider and wherever the viewport
+       edge happened to be. Docking it as a flex sibling of .post-main
+       instead means it sits immediately next to the content, and
+       `sticky` keeps it in view as you scroll rather than scrolling
+       away with the article. */
+    position: sticky;
+    top: 2rem;
+    flex: 0 0 300px;
+    width: 300px;
+    /* .post-main starts with the breadcrumb row, which the panel has
+       no equivalent of — without this the panel's own top (flush with
+       .post-main's top, via align-items: flex-start) reads as flush
+       with the breadcrumb instead of the title beneath it. Matches the
+       breadcrumb nav's own rendered height so it lines up with the
+       title instead. */
+    margin-top: 39px;
+    /* Sized to its content, not the full remaining viewport — a
+       hardcoded 100vh-tall box left a growing dead zone (worse on
+       taller screens) below the Author card, with nothing but a
+       trailing border line to show for it. max-height + overflow is
+       just a safety net for a viewport too short to fit it all. */
+    height: auto;
+    max-height: calc(100vh - 4rem - 39px);
+    overflow-y: auto;
+    transform: none;
+    /* .prose already draws its own border-right divider a few rem to
+       the left — the base rule's border-left (the off-canvas drawer's
+       own edge line) just duplicated it here, with dead air between
+       the two lines. */
+    border-left: none;
+    box-shadow: none;
+  }
+
+  .panel-close {
+    display: none;
   }
 }
 

@@ -1,0 +1,65 @@
+{{- /*
+Off-canvas drawer opened via the .panel-toggle button in menu.html.
+Below 768px it carries the primary site nav (theme toggle, About,
+Blog) since the inline navbar hides those to keep the mobile header
+to a single row next to the wordmark. On blog posts it also carries
+the article extras (latest posts, categories, author); those dock as
+a permanent sidebar at 1400px+ instead of living in this drawer.
+Toggle/close behavior lives in baseof.html.
+
+@context {page} page The current page.
+
+@example: {{ partial "site-drawer.html" . }}
+*/}}
+
+<div class="panel-backdrop" id="panelBackdrop" hidden></div>
+<aside class="post-panel" id="postPanel" aria-hidden="true" aria-label="Site menu">
+  <button type="button" class="panel-close" id="panelClose">Close ✕</button>
+
+  <div class="panel-section panel-nav-section">
+    <p class="panel-section-label">Menu</p>
+    <div class="theme-toggle" role="group" aria-label="Color theme">
+      <button type="button" class="theme-toggle-btn" data-theme-choice="light">Light</button><span class="theme-toggle-sep" aria-hidden="true">/</span><button type="button" class="theme-toggle-btn" data-theme-choice="dark">Dark</button>
+    </div>
+    <ul class="panel-list">
+      {{- with index site.Menus "main" }}
+        {{- range . }}
+      <li><a href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      {{- end }}
+    </ul>
+  </div>
+
+  {{- if and (eq .Kind "page") (eq .Type "blog") }}
+  <div class="panel-section">
+    <p class="panel-section-label">Latest Articles</p>
+    <ul class="panel-list">
+      {{- range first 4 (where site.RegularPages "Type" "blog").ByDate.Reverse }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+
+  <div class="panel-section">
+    <p class="panel-section-label">Categories</p>
+    <div class="panel-tags">
+      {{- range $term, $_ := site.Taxonomies.categories }}
+        {{- with site.GetPage (printf "/categories/%s" $term) }}
+      <a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{- end }}
+      {{- end }}
+    </div>
+  </div>
+
+  <div class="panel-section">
+    <p class="panel-section-label">Author</p>
+    <a class="panel-author-link" href="{{ "/about/" | relURL }}">
+      <img src="{{ "images/clement-headshot.jpg" | absURL }}" alt="Clement Chen" width="56" height="56" loading="lazy">
+      <span>
+        <strong>Clement Chen</strong>
+        <small>Venture Builder &amp; Investor</small>
+      </span>
+    </a>
+  </div>
+  {{- end }}
+</aside>

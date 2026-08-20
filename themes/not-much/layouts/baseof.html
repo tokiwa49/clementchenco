@@ -17,9 +17,17 @@
 {{- with .Site.Params.theme }}
   {{ $theme = . }}
 {{- end }}
+{{ $hasArticlePanel := and (eq .Kind "page") (eq .Type "blog") }}
+{{ $bodyClasses := slice }}
+{{- if eq $theme "dark" }}
+  {{ $bodyClasses = $bodyClasses | append "dark" }}
+{{- end }}
+{{- if $hasArticlePanel }}
+  {{ $bodyClasses = $bodyClasses | append "has-article-panel" }}
+{{- end }}
 <body
-  {{- if eq $theme "dark" }}
-    class="dark"
+  {{- with $bodyClasses }}
+    class="{{ delimit . " " }}"
   {{- end }}
 >
   <!-- <header>
@@ -28,6 +36,12 @@
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+  {{ if not $hasArticlePanel }}
+    {{/* Blog posts render their own copy inline, next to the article,
+         so it can dock as a sticky sidebar at 1400px+ instead of
+         floating fixed to the viewport edge (see single.html). */}}
+    {{ partial "site-drawer.html" . }}
+  {{ end }}
 
   {{ if .Param "math" }}
     {{ partial "math.html" . }}

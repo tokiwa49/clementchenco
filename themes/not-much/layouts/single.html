@@ -1,67 +1,74 @@
 {{ define "main" }}
   <div class="shell pt-5">
     <div class="mt-5 pt-5">
-      {{ partial "menu.html" (dict "menuID" "main" "page" . "showPanelToggle" true) }}
+      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     </div>
-    {{ partial "post-panel.html" . }}
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item small"><a href="{{ "/" | relURL }}">Home</a></li>
-        <li class="breadcrumb-item small"><a href="{{ "/blog/" | relURL }}">Blog</a></li>
-        {{ with .GetTerms "categories" }}
-        {{ with index . 0 }}
-        <li class="breadcrumb-item small"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-        {{ end }}
-        {{ end }}
-      </ol>
-    </nav>
-    <div class="post prose">
-      <header class="mb-4">
-        <h1 class="text-uppercase">{{ .Title }}</h1>
-        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-        {{ $dateHuman := .Date | time.Format ":date_long" }}
-        <div aria-label="breadcrumb">
+    <div class="post-layout">
+      <div class="post-main">
+        <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            {{ with .Params.author }}
-            <li class="breadcrumb-item small">By <a href="/about/">{{ . }}</a></li>
+            <li class="breadcrumb-item small"><a href="{{ "/" | relURL }}">Home</a></li>
+            <li class="breadcrumb-item small"><a href="{{ "/blog/" | relURL }}">Blog</a></li>
+            {{ with .GetTerms "categories" }}
+            {{ with index . 0 }}
+            <li class="breadcrumb-item small"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
             {{ end }}
-            <li class="breadcrumb-item small">
-              {{ if .Draft }}
-              <span class="draft-label">DRAFT</span> &#183;
-              {{ end }}
-              <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-            </li>
-            {{ $lastModMachine := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}
-            {{ if and (isset .Params "lastmod") (ne $lastModMachine $dateMachine) }}
-            {{ $lastModHuman := .Lastmod | time.Format ":date_long" }}
-            <li class="breadcrumb-item small">
-              Updated: <time datetime="{{ $lastModMachine }}">{{ $lastModHuman }}</time>
-            </li>
             {{ end }}
-            <li class="breadcrumb-item small">
-              {{ printf "%d minutes" .ReadingTime }}
-            </li>
           </ol>
+        </nav>
+        <div class="post prose">
+          <header class="mb-4">
+            <h1 class="text-uppercase">{{ .Title }}</h1>
+            {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := .Date | time.Format ":date_long" }}
+            <div aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                {{ with .Params.author }}
+                <li class="breadcrumb-item small">By <a href="/about/">{{ . }}</a></li>
+                {{ end }}
+                <li class="breadcrumb-item small">
+                  {{ if .Draft }}
+                  <span class="draft-label">DRAFT</span> &#183;
+                  {{ end }}
+                  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                </li>
+                {{ $lastModMachine := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}
+                {{ if and (isset .Params "lastmod") (ne $lastModMachine $dateMachine) }}
+                {{ $lastModHuman := .Lastmod | time.Format ":date_long" }}
+                <li class="breadcrumb-item small">
+                  Updated: <time datetime="{{ $lastModMachine }}">{{ $lastModHuman }}</time>
+                </li>
+                {{ end }}
+                <li class="breadcrumb-item small">
+                  {{ printf "%d minutes" .ReadingTime }}
+                </li>
+              </ol>
+            </div>
+            {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+          </header>
+          {{ if .Params.toc }}
+          <div class="toc small">
+            <p class="toc-title fw-semibold">
+              Table of Contents:
+            </p>
+            {{ .TableOfContents }}
+          </div>
+          {{ end }}
+          <article>
+            {{ .Content }}
+          </article>
+          {{ partial "related-posts.html" . }}
+          {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+          {{ partial "post-pagination.html" . }}
+          {{ if .Params.comments }}
+            {{ partial "comments.html" . }}
+          {{ end }}
         </div>
-        {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
-      </header>
-      {{ if .Params.toc }}
-      <div class="toc small">
-        <p class="toc-title fw-semibold">
-          Table of Contents:
-        </p>
-        {{ .TableOfContents }}
       </div>
-      {{ end }}
-      <article>
-        {{ .Content }}
-      </article>
-      {{ partial "related-posts.html" . }}
-      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-      {{ partial "post-pagination.html" . }}
-      {{ if .Params.comments }}
-        {{ partial "comments.html" . }}
-      {{ end }}
+      {{/* Rendered inline (rather than from baseof.html) so it can dock
+           as a sticky sidebar right next to .post-main at 1400px+ —
+           see the .post-layout rules in main.css. */}}
+      {{ partial "site-drawer.html" . }}
     </div>
   </div>
   {{ if not .Site.Params.showFooterEverywhere }}

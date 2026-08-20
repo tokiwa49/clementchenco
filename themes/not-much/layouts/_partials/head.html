@@ -7,7 +7,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {{ if .Site.Params.noindex }}<meta name="robots" content="noindex, nofollow">{{ end }}
-<link rel="shortcut icon" type="image/png" href="{{ absURL "favicon.ico" }}" />
+{{/* Google (developers.google.com/search/docs/appearance/favicon-in-search)
+     wants a square icon sized in multiples of 48px, reachable at a stable
+     URL; the 16/32/48 set plus a larger 192 covers both browser tabs and
+     Google's search-result use. apple-touch-icon + the manifest's 192/512
+     pair follow the standard favicon.io size set for iOS/Android homescreens. */}}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ absURL "favicon-16x16.png" }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ absURL "favicon-32x32.png" }}">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ absURL "favicon-48x48.png" }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ absURL "favicon-192x192.png" }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ absURL "apple-touch-icon.png" }}">
+<link rel="manifest" href="{{ absURL "site.webmanifest" }}">
+<link rel="shortcut icon" href="{{ absURL "favicon.ico" }}" />
 <link rel="canonical" href="{{ .Permalink }}">
 {{ range .AlternativeOutputFormats -}}
 {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
