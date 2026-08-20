@@ -83,6 +83,7 @@ a:hover {
    inside .shell — not centered — so it shares the same left edge as the
    hero/index rows on the home page instead of floating independently. */
 .prose {
+  position: relative;
   max-width: 42rem;
 }
 
@@ -357,6 +358,31 @@ li > input[type=checkbox] {
   .breadcrumb-item::before {
     display: none !important;
 
+  }
+}
+
+.about-photo {
+  border: 1px solid var(--hairline, var(--bg-variant));
+  max-width: 260px;
+  margin: 0 0 2rem 0;
+}
+
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Needs 42rem (.prose) + 3rem gap + 260px photo + .shell's own padding to
+   clear without overlap — 900px (the margin-guide breakpoint above) is too
+   tight for that; this needs real room before it goes absolute. */
+@media (min-width: 1100px) {
+  .about-photo {
+    position: absolute;
+    top: 0.25rem;
+    left: calc(100% + 3rem);
+    width: 260px;
+    margin: 0;
   }
 }
 

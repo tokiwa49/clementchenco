@@ -5,7 +5,7 @@ description: "IRIS2's new VLEO tier shows sovereign space procurement now demand
 date: 2026-08-11T09:00:00+08:00
 draft: false
 author: "Clement Chen"
-categories: ["editorial"]
+categories: ["space"]
 tags: ["VLEO flight heritage", "sovereign space procurement", "IRIS2 VLEO", "flight-proven satellite technology"]
 toc: true
 ---

@@ -4,6 +4,12 @@
     <div class="mt-5 pt-5">
       {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item small"><a href="{{ "/" | relURL }}">Home</a></li>
+        <li class="breadcrumb-item small active" aria-current="page">{{ .Title }}</li>
+      </ol>
+    </nav>
     {{ .Content }}
     {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
     {{ range $i, $p := $paginator.Pages }}

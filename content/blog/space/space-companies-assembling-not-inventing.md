@@ -5,7 +5,7 @@ description: "Elveo's merger, Rocket Lab's German subsidiary, and Space Kinetic'
 date: 2026-08-17T10:00:00+08:00
 draft: false
 author: "Clement Chen"
-categories: ["editorial"]
+categories: ["space"]
 tags: ["direct-to-device satellite merger", "Rocket Lab Europe expansion", "distributed spacecraft architecture", "space industry consolidation", "flight-proven space assets"]
 toc: true
 ---
@@ -42,7 +42,7 @@ That's also the argument behind [CASSINI Matchmaking, coming to the Small Satell
 
 Elveo's next move is the one worth tracking most closely. The company said it intends to pursue strategic partnerships and investments later this year, and given that its founding logic was combining complementary assets rather than building them internally, expect more of the same: additional mergers or partnerships that plug remaining gaps in coverage, spectrum, or ground infrastructure, rather than in-house buildouts. On the Rocket Lab side, watch whether other vertically integrated launch providers follow the same subsidiary playbook into Europe, and whether that accelerates or further squeezes the homegrown startups already struggling with pad delays. And for Space Kinetic, the real test is whether the Whirlwind host-and-swarm split actually delivers the cost and simplicity gains the architecture promises once it's flying, since a standard integration layer only pays off if it turns out to be genuinely standard across multiple payload types.
 
-Assembling proven components instead of reinventing them at every layer, corporate, geographic, and architectural, is the same principle behind [Satelyx's flight-proven technology catalog](https://satelyx.com/catalog): validated, characterized building blocks that a mission can integrate rather than re-derive. It's the natural companion to our [piece on how sovereign buyers are now demanding flight heritage over satellite count](/blog/editorial/sovereign-space-flight-heritage-vleo), which covers the same shift from the procurement side, and to [this week's look at flight-proven spacecraft buses and AST SpaceMobile's launch strategy](/blog/editorial/flight-proven-spacecraft-bus-middle-ground), where the same "prove it once" instinct shows up in a bus vendor and a constellation operator instead of a merger and a subsidiary.
+Assembling proven components instead of reinventing them at every layer, corporate, geographic, and architectural, is the same principle behind [Satelyx's flight-proven technology catalog](https://satelyx.com/catalog): validated, characterized building blocks that a mission can integrate rather than re-derive. It's the natural companion to our [piece on how sovereign buyers are now demanding flight heritage over satellite count](/blog/space/sovereign-space-flight-heritage-vleo), which covers the same shift from the procurement side, and to [this week's look at flight-proven spacecraft buses and AST SpaceMobile's launch strategy](/blog/space/flight-proven-spacecraft-bus-middle-ground), where the same "prove it once" instinct shows up in a bus vendor and a constellation operator instead of a merger and a subsidiary.
 
 ---
 

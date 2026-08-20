@@ -5,7 +5,7 @@ description: "A lunar impact, a Pentagon deorbit-as-a-service study, and a 3 cm 
 date: 2026-08-17T11:00:00+08:00
 draft: false
 author: "Clement Chen"
-categories: ["editorial"]
+categories: ["space"]
 tags: ["space debris disposal", "deorbit-as-a-service", "lunar disposal governance", "space debris tracking", "non-cooperative satellite capture"]
 toc: true
 ---
@@ -42,7 +42,7 @@ That's not a criticism of any of the three efforts individually. A study contrac
 
 The DIU/SDA downselect is the one with the clearest near-term marker: watch whether the full on-orbit demonstration contract actually gets awarded, and to whom, since that will say more about how mature non-cooperative capture technology really is than the initial three-company study did. On the tracking side, watch whether Neuraspace and Arcsec's partnership produces a commercially available product, or stays at the pilot stage, since a 3 cm detection floor only matters at fleet scale if operators can actually buy access to it. And on lunar disposal, the marker to watch isn't a new rule, it's whether one gets written at all before 2030, while there's still time for it to matter rather than respond to an incident.
 
-Mission ownership increasingly includes what happens after a mission ends, and that end-of-life layer is exactly where [Satelyx's shared-mission infrastructure](https://satelyx.com/shared-missions) is built to reduce risk: standardized, validated components and procedures so that disposal isn't the part of the plan nobody wrote down. It connects to our earlier reporting on [how sovereign buyers are now procuring flight heritage over satellite count](/blog/editorial/sovereign-space-flight-heritage-vleo); the same demand for proof and accountability that's reshaping procurement is starting to reach the end of the mission lifecycle too. It's also the flip side of [this week's look at flight-proven spacecraft buses and launch cadence](/blog/editorial/flight-proven-spacecraft-bus-middle-ground): proving something once at the front of a mission only pays off if the back end, disposal included, is held to the same standard.
+Mission ownership increasingly includes what happens after a mission ends, and that end-of-life layer is exactly where [Satelyx's shared-mission infrastructure](https://satelyx.com/shared-missions) is built to reduce risk: standardized, validated components and procedures so that disposal isn't the part of the plan nobody wrote down. It connects to our earlier reporting on [how sovereign buyers are now procuring flight heritage over satellite count](/blog/space/sovereign-space-flight-heritage-vleo); the same demand for proof and accountability that's reshaping procurement is starting to reach the end of the mission lifecycle too. It's also the flip side of [this week's look at flight-proven spacecraft buses and launch cadence](/blog/space/flight-proven-spacecraft-bus-middle-ground): proving something once at the front of a mission only pays off if the back end, disposal included, is held to the same standard.
 
 ---
 
