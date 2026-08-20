@@ -10,9 +10,10 @@ Workers (static assets), live at https://clementchen.co.
 - **Cloudflare:** deployed as a Worker (not classic Pages) named
   `clementchenco`, using `wrangler.toml` with `[assets] directory = "./public"`.
   Custom domain `clementchen.co` is attached; DNS is on Cloudflare.
-- **`noindex` is currently ON** (`params.noindex = true` in `hugo.toml`,
-  wired into `themes/not-much/layouts/_partials/head.html`). Remove that
-  param once the site is ready for search engines to index it.
+- **`noindex` is OFF** (`params.noindex = false` in `hugo.toml`) — the site
+  is open to search engines.
+- **Google Analytics (gtag.js)** is wired in at the top of `<head>` in
+  `themes/not-much/layouts/baseof.html`, measurement ID `G-Q539L36Z59`.
 
 ### Gotcha: front matter dates need an explicit timezone
 
