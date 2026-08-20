@@ -3,6 +3,18 @@
     <div class="mt-5 pt-5">
       {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
     </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item small"><a href="{{ "/" | relURL }}">Home</a></li>
+        <li class="breadcrumb-item small"><a href="{{ "/blog/" | relURL }}">Blog</a></li>
+        {{ with .GetTerms "categories" }}
+        {{ with index . 0 }}
+        <li class="breadcrumb-item small"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+        {{ end }}
+        {{ end }}
+        <li class="breadcrumb-item small active" aria-current="page">{{ .Title }}</li>
+      </ol>
+    </nav>
     <div class="post prose">
       <header class="mb-4">
         <h1 class="text-uppercase">{{ .Title }}</h1>
