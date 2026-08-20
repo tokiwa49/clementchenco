@@ -7,6 +7,7 @@ draft: false
 author: "Clement Chen"
 categories: ["mentioned"]
 tags: ["IVS2026", "LAUNCHPAD", "Kyoto"]
+related_posts: ["/blog/mentioned/ivs2026-launchpad-finalist", "/blog/mentioned/ivs2026-recap"]
 ---
 
 Kepple's recap of IVS2026 in Kyoto, three days, 13,000 attendees, 340 startups, singled out Satelyx among the LAUNCHPAD international finalists. The report covers what we pitched: helping private space companies get through the valley of death between a technology that works on paper and one that's actually flown, by offering satellite-based testing as a service. Our first satellite launch, using Japanese propulsion, is targeted for late 2027.

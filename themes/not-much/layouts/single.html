@@ -1,8 +1,9 @@
 {{ define "main" }}
   <div class="shell pt-5">
     <div class="mt-5 pt-5">
-      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+      {{ partial "menu.html" (dict "menuID" "main" "page" . "showPanelToggle" true) }}
     </div>
+    {{ partial "post-panel.html" . }}
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item small"><a href="{{ "/" | relURL }}">Home</a></li>
@@ -55,6 +56,7 @@
       <article>
         {{ .Content }}
       </article>
+      {{ partial "related-posts.html" . }}
       {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
       {{ partial "post-pagination.html" . }}
       {{ if .Params.comments }}

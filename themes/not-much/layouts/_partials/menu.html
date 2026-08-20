@@ -11,6 +11,7 @@ hamburger toggle below the lg breakpoint).
 
 {{- $page := .page }}
 {{- $menuID := .menuID }}
+{{- $showPanelToggle := .showPanelToggle }}
 
 {{- with index site.Menus $menuID }}
   <nav aria-label="Main" class="navbar small">
@@ -23,6 +24,14 @@ hamburger toggle below the lg breakpoint).
       <ul class="navbar-nav">
         {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
       </ul>
+      {{- if $showPanelToggle }}
+      <span class="navbar-divider" aria-hidden="true"></span>
+      <button type="button" class="panel-toggle" id="panelToggle" aria-label="Open article menu" aria-expanded="false" aria-controls="postPanel">
+        <span class="panel-toggle-bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      {{- end }}
     </div>
   </nav>
 {{- end }}

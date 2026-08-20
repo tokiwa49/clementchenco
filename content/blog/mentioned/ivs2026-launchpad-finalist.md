@@ -7,6 +7,7 @@ draft: false
 author: "Clement Chen"
 categories: ["mentioned"]
 tags: ["IVS2026", "LAUNCHPAD", "Kyoto"]
+related_posts: ["/blog/mentioned/ivs2026-kepple-report", "/blog/mentioned/ivs2026-recap"]
 ---
 
 Satelyx was named one of 15 finalists for IVS2026 LAUNCHPAD, the pitch competition at Japan's largest startup conference, selected from more than 500 applicants for the program's 20th-anniversary edition. We were one of only four international finalists, alongside Tofuchan, HiStranger, and Ryp Labs, in a field otherwise made up of Japanese startups.

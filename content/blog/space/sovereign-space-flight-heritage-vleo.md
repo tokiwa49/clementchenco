@@ -8,6 +8,7 @@ author: "Clement Chen"
 categories: ["space"]
 tags: ["VLEO flight heritage", "sovereign space procurement", "IRIS2 VLEO", "flight-proven satellite technology"]
 toc: true
+related_posts: ["/blog/space/flight-proven-spacecraft-bus-middle-ground", "/blog/space/reflect-orbital-vleo-validation-gap", "/blog/space/space-debris-disposal-governance-gap"]
 ---
 
 Two things happened in the same week that, read separately, look like routine trade news. Read together, they're a fairly precise description of where defense and sovereign space procurement is heading, and of who gets left out of it.

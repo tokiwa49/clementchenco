@@ -8,6 +8,7 @@ author: "Clement Chen"
 categories: ["space"]
 tags: ["launch-access layer", "rideshare intermediaries", "hosted payloads", "direct-to-device satellite", "SEOPS Waymaker"]
 toc: true
+related_posts: ["/blog/space/orbital-capability-orchestration-not-ownership", "/blog/space/flight-proven-spacecraft-bus-middle-ground", "/blog/space/reflect-orbital-vleo-validation-gap"]
 ---
 
 Three unrelated announcements landed this week, and none of them were about a rocket. A rideshare integrator added a mission to its manifest. A hosted sensor rode to orbit on someone else's spacecraft. A mobile carrier flipped a satellite connectivity service into commercial operation. Taken individually, they're routine trade press. Taken together, they describe something more interesting: the space industry is unbundling "getting capability into orbit" into distinct, specialized businesses, and the launch-access layer connecting rockets to customers is becoming one of its own. Owning a launch vehicle is no longer the same thing as owning the ability to deploy capability.

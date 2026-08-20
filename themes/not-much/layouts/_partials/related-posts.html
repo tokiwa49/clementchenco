@@ -1,0 +1,30 @@
+{{- /*
+Renders a "You may also like" section from the page's related_posts front
+matter (a list of page-relative paths, curated per post — not auto-picked
+by tag similarity). Silently skipped if the field is empty or none of the
+listed paths resolve to a real page.
+
+@example: {{ partial "related-posts.html" . }}
+*/}}
+
+{{- with .Params.related_posts }}
+{{- $related := slice }}
+{{- range . }}
+  {{- with site.GetPage . }}
+    {{- $related = $related | append . }}
+  {{- end }}
+{{- end }}
+{{- with $related }}
+<section class="related-posts">
+  <p class="related-posts-label">You may also like</p>
+  <div class="related-posts-list">
+    {{- range $i, $p := . }}
+    <a class="related-post reveal" style="--i: {{ $i }}" href="{{ $p.RelPermalink }}">
+      <span class="related-post-title">{{ $p.LinkTitle }}</span>
+      <span class="related-post-date">{{ $p.Date.Format "Jan 2, 2006" }}</span>
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+{{- end }}

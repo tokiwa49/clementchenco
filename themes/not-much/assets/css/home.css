@@ -283,3 +283,13 @@
   max-width: 40rem;
   margin: 0 0 1.5rem 0 !important;
 }
+
+/* Latest Articles — last section before the footer */
+.latest-articles {
+  margin-bottom: 3rem;
+}
+
+.latest-articles-list {
+  border-top: 1px solid var(--hairline, var(--bg-variant));
+  margin-bottom: 1.5rem;
+}

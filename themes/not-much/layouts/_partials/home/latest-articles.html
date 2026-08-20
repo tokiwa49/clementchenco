@@ -1,0 +1,17 @@
+{{- with where site.RegularPages "Type" "blog" }}
+<section class="latest-articles">
+  <div class="ventures-header">
+    <h2 class="ventures-heading">Latest Articles</h2>
+  </div>
+  <div class="latest-articles-list">
+    {{- range first 4 .ByDate.Reverse }}
+    <div class="row mb-3 post-list-row reveal">
+      <time class="small post-list-date" datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
+      <h3 class="h5 list-post-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
+      {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+    </div>
+    {{- end }}
+  </div>
+  <a class="btn-pill" href="{{ "/blog/" | relURL }}">View all posts<span class="btn-pill-dot"></span></a>
+</section>
+{{- end }}

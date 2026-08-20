@@ -8,6 +8,7 @@ author: "Clement Chen"
 categories: ["space"]
 tags: ["Reflect Orbital FCC approval", "space technology validation", "VLEO technology readiness", "space regulatory approval", "orbital ecosystem acceptance"]
 toc: true
+related_posts: ["/blog/space/orbital-capability-orchestration-not-ownership", "/blog/space/rideshare-hosted-payloads-access-layer", "/blog/space/sovereign-space-flight-heritage-vleo"]
 ---
 
 Reflect Orbital got its first regulatory win this week: the FCC approved the company's debut sunlight-reflecting satellite for launch this year. If you only read the headline, it sounds like the company just cleared its biggest hurdle. Read past it, and you find a fight that's really just getting started, one that has almost nothing to do with whether the hardware works.

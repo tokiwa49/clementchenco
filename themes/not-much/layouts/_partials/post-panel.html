@@ -1,0 +1,43 @@
+{{- /*
+Slide-out panel for post pages: latest articles, categories, author.
+Opened via the .panel-toggle button rendered by menu.html when invoked
+with showPanelToggle=true. Toggle/close behavior lives in baseof.html.
+
+@example: {{ partial "post-panel.html" . }}
+*/}}
+
+<div class="panel-backdrop" id="panelBackdrop" hidden></div>
+<aside class="post-panel" id="postPanel" aria-hidden="true" aria-label="Article menu">
+  <button type="button" class="panel-close" id="panelClose">Close ✕</button>
+
+  <div class="panel-section">
+    <p class="panel-section-label">Latest Articles</p>
+    <ul class="panel-list">
+      {{- range first 4 (where site.RegularPages "Type" "blog").ByDate.Reverse }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+  </div>
+
+  <div class="panel-section">
+    <p class="panel-section-label">Categories</p>
+    <div class="panel-tags">
+      {{- range $term, $_ := site.Taxonomies.categories }}
+        {{- with site.GetPage (printf "/categories/%s" $term) }}
+      <a class="tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        {{- end }}
+      {{- end }}
+    </div>
+  </div>
+
+  <div class="panel-section">
+    <p class="panel-section-label">Author</p>
+    <a class="panel-author-link" href="{{ "/about/" | relURL }}">
+      <img src="{{ "images/clement-headshot.jpg" | absURL }}" alt="Clement Chen" width="56" height="56" loading="lazy">
+      <span>
+        <strong>Clement Chen</strong>
+        <small>Venture Builder &amp; Investor</small>
+      </span>
+    </a>
+  </div>
+</aside>

@@ -165,27 +165,39 @@ kbd {
 .post article h4,
 .post article h5,
 .post article h6 {
-  margin: 24px 0 10px 0;
   font-weight: bold;
 }
 
-/* Sized by level now that there's no "## "-style prefix doing this job. */
+/* Sized by level now that there's no "## "-style prefix doing this job.
+   H2 (the article's actual section breaks) gets the signal-red accent —
+   the one place inside body copy the accent shows up — plus uppercase,
+   tracking, and real air above it, so a section break reads at a glance
+   instead of blending into the body text at the next size down. */
 .post article h1 {
   font-size: 1.6rem;
+  margin: 24px 0 10px 0;
 }
 
 .post article h2 {
-  font-size: 1.35rem;
+  font-size: 1.55rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  margin: 3rem 0 1rem 0;
 }
 
 .post article h3 {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 2rem 0 0.75rem 0;
 }
 
 .post article h4,
 .post article h5,
 .post article h6 {
   font-size: 1.05rem;
+  margin: 24px 0 10px 0;
 }
 
 .post article a:not(.footnote-backref)::after, footer a::after {
@@ -349,18 +361,6 @@ li > input[type=checkbox] {
   font-family: 'JetBrains Mono', monospace !important;
 }
 
-@media (max-width: 767px) {
-  .breadcrumb {
-    flex-direction: column !important;
-    --bs-breadcrumb-item-padding-x: 0rem !important;
-  }
-
-  .breadcrumb-item::before {
-    display: none !important;
-
-  }
-}
-
 .about-photo {
   border: 1px solid var(--hairline, var(--bg-variant));
   max-width: 260px;
@@ -386,31 +386,16 @@ li > input[type=checkbox] {
   }
 }
 
-/* Below 1200px there's no reliable margin beside the reading column for a
-   side rail — the TOC stays in normal inline flow at the top of the post
-   there. At ≥1200px it's positioned off the reading column's own width
-   (.post is the positioning context), so it stays correct regardless of
-   how wide .shell itself is. */
-@media (min-width: 1200px) {
-  .post {
-    position: relative;
-  }
+/* Inline at the top of the post on every viewport — the right margin is
+   the slide-out panel's territory now, not the TOC's. */
+.toc {
+  border: 1px solid var(--hairline, var(--bg-variant));
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
 
-  .toc {
-    display: block !important;
-    position: absolute !important;
-    top: 0.25rem;
-    left: calc(100% + 3rem);
-    width: 220px;
-    max-width: 220px;
-    overflow-wrap: break-word;
-    opacity: 0.35;
-    transition: opacity 0.2s ease-in-out;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
+.toc #TableOfContents > ul {
+  margin-bottom: 0;
 }
 
 #TableOfContents > ul {
@@ -552,6 +537,247 @@ hr {
 footer {
   border-top: 1px solid var(--hairline, var(--bg-variant));
   margin-top: 1rem;
+}
+
+.related-posts {
+  margin: 3rem 0 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--hairline, var(--bg-variant));
+}
+
+.related-posts-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  margin: 0 0 1rem;
+}
+
+.related-posts-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.related-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--hairline, var(--bg-variant));
+  color: var(--font-color) !important;
+  text-decoration: none !important;
+}
+
+.related-post:hover {
+  color: var(--primary) !important;
+  text-decoration: underline !important;
+}
+
+.related-post-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+}
+
+.related-post-date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted, var(--font-color));
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+/* ---------- article-menu toggle: hamburger <-> X ---------- */
+
+.panel-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.4rem;
+  height: 1rem;
+}
+
+.panel-toggle-bars {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.panel-toggle-bars span {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background: var(--font-color);
+  transition: transform 0.3s cubic-bezier(0.65, 0, 0.35, 1),
+              width 0.3s cubic-bezier(0.65, 0, 0.35, 1),
+              top 0.25s cubic-bezier(0.65, 0, 0.35, 1),
+              opacity 0.2s ease;
+}
+
+.panel-toggle-bars span:nth-child(1) { top: 0; width: 100%; }
+.panel-toggle-bars span:nth-child(2) { top: 50%; margin-top: -1px; width: 65%; }
+.panel-toggle-bars span:nth-child(3) { top: calc(100% - 2px); width: 85%; }
+
+.panel-toggle[aria-expanded="true"] .panel-toggle-bars span:nth-child(1) {
+  top: 50%;
+  margin-top: -1px;
+  width: 100%;
+  transform: rotate(45deg);
+  background: var(--primary);
+}
+
+.panel-toggle[aria-expanded="true"] .panel-toggle-bars span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+.panel-toggle[aria-expanded="true"] .panel-toggle-bars span:nth-child(3) {
+  top: 50%;
+  margin-top: -1px;
+  width: 100%;
+  transform: rotate(-45deg);
+  background: var(--primary);
+}
+
+/* ---------- article-menu panel ---------- */
+
+.panel-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 40;
+}
+
+.panel-backdrop.is-visible {
+  opacity: 1;
+}
+
+.post-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: min(360px, 88vw);
+  overflow-y: auto;
+  background: var(--bg-color);
+  border-left: 1px solid var(--hairline, var(--bg-variant));
+  padding: 2rem 1.75rem 3rem;
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: 50;
+}
+
+.post-panel.is-open {
+  transform: translateX(0);
+}
+
+.panel-close {
+  display: block;
+  margin: 0 0 2.5rem auto;
+  background: none;
+  border: 1px solid var(--hairline, var(--bg-variant));
+  color: var(--font-color);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.5rem 0.9rem;
+  cursor: pointer;
+}
+
+.panel-close:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.panel-section {
+  margin-bottom: 2.5rem;
+}
+
+.panel-section-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  margin: 0 0 1rem;
+}
+
+.panel-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.panel-list li {
+  border-bottom: 1px solid var(--hairline, var(--bg-variant));
+  padding: 0.75rem 0;
+}
+
+.panel-list a {
+  color: var(--font-color) !important;
+  text-decoration: none !important;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.panel-list a:hover {
+  color: var(--primary) !important;
+}
+
+.panel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.panel-author-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--font-color) !important;
+  text-decoration: none !important;
+}
+
+.panel-author-link img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border: 1px solid var(--hairline, var(--bg-variant));
+  flex-shrink: 0;
+}
+
+.panel-author-link strong {
+  display: block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+}
+
+.panel-author-link small {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 0.2rem;
+}
+
+.panel-author-link:hover strong {
+  color: var(--primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-panel, .panel-backdrop, .panel-toggle-bars span {
+    transition: none !important;
+  }
 }
 
 /* Publisher/closing note that follows a trailing <hr> in long-form posts —
