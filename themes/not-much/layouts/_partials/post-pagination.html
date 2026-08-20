@@ -1,18 +1,16 @@
-<div class="row">
-    <div class="col-md">
-        {{if .PrevInSection}}
-        <a href="{{.PrevInSection.Permalink}}">
-            <span>previous: </span>
-            <span>{{.PrevInSection.Title}}</span>
-        </a>
-        {{end}}
-    </div>
-    <div class="col-md text-md-end">
-        {{if .NextInSection}}
-        <a href="{{.NextInSection.Permalink}}">
-            <span>next: </span>
-            <span>{{.NextInSection.Title}}</span>
-        </a>
-        {{end}}
-    </div>
-</div>
+{{- if or .PrevInSection .NextInSection }}
+<nav class="post-pagination" aria-label="Post navigation">
+  {{- with .PrevInSection }}
+  <a class="post-pagination-link" href="{{ .Permalink }}">
+    <span class="post-pagination-label">Previous</span>
+    <span class="post-pagination-title">{{ .Title }}</span>
+  </a>
+  {{- end }}
+  {{- with .NextInSection }}
+  <a class="post-pagination-link" href="{{ .Permalink }}">
+    <span class="post-pagination-label">Next</span>
+    <span class="post-pagination-title">{{ .Title }}</span>
+  </a>
+  {{- end }}
+</nav>
+{{- end }}

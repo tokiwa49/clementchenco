@@ -436,6 +436,12 @@ hr {
   display: flex;
   align-items: center;
   gap: 1.25rem;
+  /* Auto margin wins over the parent's justify-content: space-between
+     regardless of whether the brand and controls sit on one line or
+     wrap to two — keeps controls pinned to the right edge either way,
+     instead of falling back to the left when it wraps onto its own
+     row on narrow screens. */
+  margin-left: auto;
 }
 
 .navbar-divider {
@@ -518,6 +524,16 @@ hr {
   margin-bottom: 0.25rem !important;
 }
 
+/* .tags carries Bootstrap's pb-4/pt-2 utility classes, sized for the
+   gap under a post's title on the single-post page. Stacked on top of
+   .post-list-row's own padding-bottom in a compact row, that reads as
+   a much bigger gap after the badge than the one before it — this
+   normalizes it back down to match the row's own rhythm. */
+.post-list-row .tags {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0 !important;
+}
+
 .post-list-date {
   display: block;
   font-family: 'JetBrains Mono', monospace;
@@ -580,6 +596,41 @@ footer {
   font-weight: 700;
 }
 
+.post-pagination {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 2rem;
+  border-top: 1px solid var(--hairline, var(--bg-variant));
+}
+
+.post-pagination-link {
+  display: block;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--hairline, var(--bg-variant));
+  color: var(--font-color) !important;
+  text-decoration: none !important;
+}
+
+.post-pagination-link:hover {
+  color: var(--primary) !important;
+}
+
+.post-pagination-label {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.post-pagination-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
 .related-post-date {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.72rem;
@@ -625,6 +676,14 @@ footer {
 .panel-toggle-bars span:nth-child(1) { top: 0; width: 100%; }
 .panel-toggle-bars span:nth-child(2) { top: 50%; margin-top: -1px; width: 65%; }
 .panel-toggle-bars span:nth-child(3) { top: calc(100% - 2px); width: 85%; }
+
+/* Hover hint while closed: bars square up to full width and pick up
+   the signal color, so the icon visibly reacts before the click
+   triggers the actual hamburger -> X morph. */
+.panel-toggle[aria-expanded="false"]:hover .panel-toggle-bars span {
+  width: 100% !important;
+  background: var(--primary);
+}
 
 .panel-toggle[aria-expanded="true"] .panel-toggle-bars span:nth-child(1) {
   top: 50%;
