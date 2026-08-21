@@ -43,7 +43,7 @@ That's also the argument behind [CASSINI Matchmaking, coming to the Small Satell
 
 Elveo's next move is the one worth tracking most closely. The company said it intends to pursue strategic partnerships and investments later this year, and given that its founding logic was combining complementary assets rather than building them internally, expect more of the same: additional mergers or partnerships that plug remaining gaps in coverage, spectrum, or ground infrastructure, rather than in-house buildouts. On the Rocket Lab side, watch whether other vertically integrated launch providers follow the same subsidiary playbook into Europe, and whether that accelerates or further squeezes the homegrown startups already struggling with pad delays. And for Space Kinetic, the real test is whether the Whirlwind host-and-swarm split actually delivers the cost and simplicity gains the architecture promises once it's flying, since a standard integration layer only pays off if it turns out to be genuinely standard across multiple payload types.
 
-Assembling proven components instead of reinventing them at every layer, corporate, geographic, and architectural, is the same principle behind [Satelyx's flight-proven technology catalog](https://satelyx.com/catalog): validated, characterized building blocks that a mission can integrate rather than re-derive.
+Assembling proven components instead of reinventing them at every layer, corporate, geographic, and architectural, is the same principle behind [Satelyx's flight-proven technology catalog](https://satelyx.com): validated, characterized building blocks that a mission can integrate rather than re-derive.
 
 ---
 
