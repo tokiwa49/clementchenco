@@ -1,0 +1,24 @@
+---
+title: "Satelyx to Present at Plug and Play Japan's New Space Business Event"
+seoTitle: "Satelyx at Plug and Play Japan New Space Event"
+description: "Satelyx joins startups from Japan, Taiwan and Korea as a presenting company at Plug and Play Japan's New Space era business event in Tokyo on September 10, 2026."
+date: 2026-08-22T12:00:00+08:00
+draft: false
+author: "Clement Chen"
+categories: ["mentioned"]
+tags: ["Plug and Play Japan", "New Space", "Tokyo"]
+---
+
+Plug and Play Japan is hosting "New Space時代の次世代宇宙ビジネスと最新グローバルトレンド" (Next-Generation Space Business and Global Trends in the New Space Era) at its Shibuya office on September 10, 2026, and Satelyx is one of the confirmed presenting startups.
+
+<!--more-->
+
+The event runs 15:00-18:30 with around 120 attendees expected, covering the space industry from launch through ground applications. Keynotes come from Sparx Asset Management, SKY Perfect JSAT, Space Compass and Sekisui Chemical, followed by a startup pitch session, networking, and an invitation-only dinner.
+
+Satelyx is listed alongside AstroX, Taiwan Innovation Space, Velocity Aeroworks, Elevation Space, InterGravity Technologies, Space LiinTech, cosmobloom, Space Quarters, Space Data and WHERE, a mix of Japanese, Taiwanese and Korean space startups spanning launch, in-space transportation, biomanufacturing and satellite data.
+
+Event listing: [Plug and Play Japan, New Space Business, September 10, 2026](https://japan.plugandplaytechcenter.com/event/09-10-new-space-business).
+
+---
+
+*Satelyx is a UK company operating across APAC and an Agile Prime for responsive space: we validate space technology in orbit and turn it into a catalog of flight-proven capability. More at [satelyx.com](https://satelyx.com).*
