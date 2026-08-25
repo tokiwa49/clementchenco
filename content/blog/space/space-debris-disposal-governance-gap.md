@@ -1,12 +1,12 @@
 ---
 title: "Space Is Building Disposal Capability Faster Than It's Building Disposal Rules"
 seoTitle: "Space Debris Disposal Is Outpacing the Rulebook"
-description: "A lunar impact, a Pentagon deorbit-as-a-service study, and a 3 cm debris-tracking partnership show cleanup capability is outpacing space governance."
+description: "A lunar impact, a Pentagon deorbit-as-a-service study, and a 3 cm debris-tracking partnership show the space debris removal market is forming faster than the rules to govern it."
 date: 2026-08-17T11:00:00+08:00
 draft: false
 author: "Clement Chen"
 categories: ["space"]
-tags: ["space debris disposal", "deorbit-as-a-service", "lunar disposal governance", "space debris tracking", "non-cooperative satellite capture"]
+tags: ["space debris disposal", "deorbit-as-a-service", "lunar disposal governance", "space debris tracking", "non-cooperative satellite capture", "space debris removal market"]
 toc: true
 related_posts: ["/blog/space/sovereign-space-flight-heritage-vleo", "/blog/space/flight-proven-spacecraft-bus-middle-ground", "/blog/space/reflect-orbital-vleo-validation-gap"]
 ---
@@ -23,9 +23,9 @@ That distinction matters because of what's coming next. The U.S. and China are b
 
 ## Governments are shopping for the capability to fix this, one contract at a time
 
-The second story is more encouraging on its face, though it's also further from being solved than the announcement makes it sound. The Defense Innovation Unit (DIU) and the Space Development Agency (SDA) selected D-Orbit USA, Firefly Aerospace, and Katalyst Space for preliminary design and risk-reduction work on what's being called deorbit-as-a-service, [per SpaceNews](https://spacenews.com/u-s-defense-agencies-tap-three-companies-for-satellite-disposal-study/). The proposed capability: rendezvous with, capture, and deorbit spacecraft that are unprepared for it or actively non-cooperative, meaning satellites that were never designed with a grapple point, a docking interface, or any expectation that someone would eventually need to grab them.
+The second story is more encouraging on its face, though it's also further from being solved than the announcement makes it sound. The Defense Innovation Unit (DIU) and the Space Development Agency (SDA) selected three space debris removal companies — D-Orbit USA, Firefly Aerospace, and Katalyst Space — for preliminary design and risk-reduction work on what's being called deorbit-as-a-service, [per SpaceNews](https://spacenews.com/u-s-defense-agencies-tap-three-companies-for-satellite-disposal-study/). The proposed capability: rendezvous with, capture, and deorbit spacecraft that are unprepared for it or actively non-cooperative, meaning satellites that were never designed with a grapple point, a docking interface, or any expectation that someone would eventually need to grab them.
 
-That's a genuinely hard engineering problem, and it's worth being precise about how far along it is. This is a study contract. A later decision will assess technical maturity, mission approach, schedule, and affordability before DIU and SDA select a company for a full on-orbit demonstration. In other words, three companies, one study phase, no flight hardware committed yet. It's a real signal that the U.S. government wants deorbit-as-a-service to become a repeatable, procurable capability rather than a one-off demonstration project, the same demand for proof over promise that's [reshaping sovereign satellite procurement elsewhere in the industry](/blog/space/sovereign-space-flight-heritage-vleo), but the distance between a risk-reduction study and an operational capability that can reliably capture non-cooperative hardware is still substantial.
+That's a genuinely hard engineering problem, and it's worth being precise about how far along it is. This is a study contract. A later decision will assess technical maturity, mission approach, schedule, and affordability before DIU and SDA select a company for a full on-orbit demonstration. In other words, three companies, one study phase, no flight hardware committed yet. It's still real evidence of a space debris removal service market taking shape — the U.S. government treating deorbit-as-a-service as something to procure repeatably, not just research, the same demand for proof over promise that's [reshaping sovereign satellite procurement elsewhere in the industry](/blog/space/sovereign-space-flight-heritage-vleo). But the distance between a risk-reduction study and an operational capability that can reliably capture non-cooperative hardware is still substantial.
 
 ## The part of the problem you can't see is the bigger one
 
