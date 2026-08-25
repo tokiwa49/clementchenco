@@ -7,7 +7,7 @@ draft: false
 author: "Clement Chen"
 categories: ["mentioned"]
 tags: ["IVS2026", "LAUNCHPAD", "Kyoto"]
-related_posts: ["/blog/mentioned/ivs2026-launchpad-finalist", "/blog/mentioned/ivs2026-kepple-report", "/blog/mentioned/ivs2026-recap"]
+related_posts: ["/blog/mentioned/ivs2026-launchpad-finalist", "/blog/mentioned/ivs2026-kepple-report", "/blog/mentioned/ivs2026-recap", "/blog/mentioned/plugandplay-new-space-business-2026"]
 ---
 
 Meet/bnext's wrap-up of the IVS2026 LAUNCHPAD finals in Kyoto, written by 曾令懷 (convener of Meet's startup desk), pulls out three trends in Japan's startup ecosystem: international participation up to roughly 60% of teams from around 10% in prior years, a shift from blockchain and Web3 toward physical AI and deep tech such as robotics for cleaning, logistics and construction, and continued focus on social issues like elderly care.

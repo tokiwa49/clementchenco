@@ -7,6 +7,7 @@ draft: false
 author: "Clement Chen"
 categories: ["mentioned"]
 tags: ["Plug and Play Japan", "New Space", "Tokyo"]
+related_posts: ["/blog/mentioned/ivs2026-recap", "/blog/mentioned/ivs2026-launchpad-finalist", "/blog/mentioned/ivs2026-kepple-report"]
 ---
 
 Plug and Play Japan is hosting "New Space時代の次世代宇宙ビジネスと最新グローバルトレンド" (Next-Generation Space Business and Global Trends in the New Space Era) at its Shibuya office on September 10, 2026, and Satelyx is one of the confirmed presenting startups.
