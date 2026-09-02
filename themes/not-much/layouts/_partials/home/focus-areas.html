@@ -4,7 +4,7 @@
   <div class="focus-areas-grid">
     {{- range $i, $e := . }}
     <div class="focus-area reveal" style="--i: {{ $i }}">
-      <span class="focus-area-number">{{ $e.number }}</span>
+      <span class="focus-area-number">/{{ $e.number }}</span>
       <div class="focus-area-body">
         <h3 class="focus-area-title">{{ $e.title }}</h3>
         <p class="focus-area-description">{{ $e.description }}</p>

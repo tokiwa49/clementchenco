@@ -397,5 +397,6 @@
 
 .latest-articles-list {
   border-top: 1px solid var(--hairline, var(--bg-variant));
+  padding-top: 1rem;
   margin-bottom: 1.5rem;
 }
