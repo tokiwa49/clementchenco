@@ -4,6 +4,17 @@ title = "Clement Chen"
 theme = "not-much"
 copyright = "© {year} Clement Chen"
 
+# Hugo's default outputs include an RSS feed per taxonomy term (e.g.
+# /tags/kyoto/index.xml) — with ~100+ tags, nobody subscribes to those, and
+# Google was crawling them anyway (28 showed up in GSC's "Crawled - currently
+# not indexed" bucket for pure crawl-budget waste). Home/section RSS (the
+# feeds that actually matter — full site, /blog/) are kept.
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
 [params]
   noindex = false
   theme = "auto"
