@@ -70,5 +70,35 @@ Second and last post optimized from this snapshot — the only other one with a 
 
 Stopped here — every other post in the current GSC export only has 1-3 impressions per query, not enough signal to know if a match is real or noise. Wait for the next snapshot before expanding further.
 
+---
+
+## Snapshot: 2026-09-03 (week 3, pulled live from GSC UI — no CSV export this time)
+
+Totals (since launch 8/19, ~2 weeks live): 5 clicks, 367 impressions, 1.4% CTR, avg position 36.1.
+GA (last 28 days): 100 sessions — 84% Direct, 12% Organic Search, 10% Unassigned, 3% Organic Social. Homepage is 63% of landing-page sessions; `/blog` is 14%.
+
+**Top performing:**
+- `clement chen` (branded) — 2 clicks, 25 impr, position 6.4.
+- `/about/` (page, not query) — 3 clicks, 76 impr, position **8.6**. Highest-click page on the whole site, ahead of every blog post. Worth understanding why (likely picking up brand-adjacent "clement chen" queries) and reinforcing rather than treating as a fixed asset.
+
+**Ranking well but not converting to clicks (CTR gap, not a ranking problem):**
+- `/blog/mentioned/plugandplay-new-space-business-2026/` — position **5.2**, 35 impressions, **0 clicks**. Good position, page 1-adjacent, but the title/description isn't earning the click. Same technique as the 8/26 debris/spacecraft-bus optimizations (rewrite meta description, work the phrase into the lead) should apply here.
+- `/blog/space/power-propulsion-orbital-compute-subsystem-bottleneck/` — position **1.0** (!) but only 1 impression so far — too little volume to read into yet, but worth a note to re-check next snapshot.
+
+**Still topically matched, still not ranking (position 40-90, same read as last snapshot):**
+- `space debris removal service market` — 37 impr, pos 75.7 (was pos 70 last snapshot, and already had its meta description optimized on 8/26 — the on-page work didn't move it; this confirms domain authority/backlinks, not content, is the remaining blocker).
+- `spacecraft bus` — 26 impr, pos 48.1 (was pos 50.2 — marginal improvement post-optimization, within noise).
+- `mobile access structure` — 11 impr, pos 79.9
+- `satellite service orchestration` / `mission orchestration` — pos 65.9 / 62.3
+- New this snapshot: `hosted payloads` (2 impr, pos 50.0), `rideshare payload user guide` (1 impr, pos 52.0), `leva aerospace` (1 impr, pos 78.0) — all match existing posts, same "matched but not ranking" pattern.
+
+**Noise (not actionable):** `clement chen phantom head of security linkedin` — 4 impr, pos 9.8. Decent position for a query that doesn't match anything on the site; likely a name collision with someone else on LinkedIn. Not fixable from this end.
+
+**Technical findings (not query-level, but real):**
+1. **HTTP does not redirect to HTTPS.** Confirmed via `curl -I http://clementchen.co/` → `200 OK` (not a 301). The canonical tag correctly points to `https://` already, but Google still indexed both URLs separately as two Pages entries in GSC (`https://clementchen.co/` pos 6.2, `http://clementchen.co/` pos 5.4) — splitting ranking signal for the homepage. **Needs a Cloudflare dashboard change** (SSL/TLS → "Always Use HTTPS"), not a code fix — owner action required, can't be done from the repo.
+2. **Fixed:** Hugo was auto-generating an RSS feed per taxonomy term (`/tags/<term>/index.xml` for all ~106 tags) — GSC's Indexing report showed 28 of these in "Crawled - currently not indexed" (Google correctly excludes them, but it's pure crawl-budget waste, and the count was climbing). Added `[outputs]` to `hugo.toml` restricting `taxonomy`/`term` page kinds to HTML only, keeping RSS on `home` and `section` (the feeds that actually matter). Verified with a clean local build: per-tag/category `index.xml` count went from 111 to 0, site-wide and `/blog/` feeds still render correctly.
+
+**Content implication:** No new topic clusters validated this snapshot — same three (spacecraft bus/subsystems, debris removal & governance, orbital/satellite orchestration) are still the ones Google is matching. Two concrete near-term levers: (a) the CTR-gap fix on the Plug and Play post, cheap and directly comparable to what already worked twice before; (b) the HTTPS redirect, which is infrastructure not content but is probably the single highest-leverage fix available right now since it's actively splitting the homepage's ranking signal.
+
 ## Next update
-Add the next GSC snapshot here — recommend waiting ~3-4 weeks so there's enough data to see real position movement, not just sample noise.
+Re-check `space debris removal service market` and `spacecraft bus` positions to see if the domain-authority ramp is finally moving them (2+ snapshots of on-page optimization with no movement so far). Confirm the HTTP→HTTPS redirect got applied and that GSC's duplicate homepage entries have collapsed into one. Recommend waiting ~3-4 weeks as before.
