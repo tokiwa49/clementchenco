@@ -308,11 +308,19 @@
    scroll into view first, so it never costs anything above the fold. */
 .closing-cta-row {
   display: grid;
+  grid-template-columns: 1fr;
+  /* Belt-and-suspenders: the grid column should already be exactly the
+     row's own width, matching the venture-row hairlines above it (same
+     .shell, same padding). If some engine ever sizes the square a hair
+     wider anyway (rounding, aspect-ratio-in-grid quirks), clip to the
+     row instead of visibly running past those lines. */
+  overflow: hidden;
 }
 
 .closing-cta-art {
   grid-area: 1 / 1;
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 1 / 1;
   opacity: 0.3;
   pointer-events: none;
@@ -328,7 +336,9 @@
 .closing-cta-content {
   grid-area: 1 / 1;
   align-self: end;
-  padding: 0 0 1.5rem 1.5rem;
+  /* Symmetric inset from both edges of the square, not just the left —
+     matches the left/right padding the title otherwise has none of. */
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 @media (min-width: 640px) {
