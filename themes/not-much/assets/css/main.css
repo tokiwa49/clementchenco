@@ -213,8 +213,23 @@ kbd {
   color: var(--primary);
 }
 
+/* Bootstrap's default "/" separator, recolored to match the site's own
+   slash system (venture numbers, footer mark) instead of generic
+   Bootstrap grey. */
 .breadcrumb-item+.breadcrumb-item::before {
-  color: #6c757d !important;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--primary) !important;
+  opacity: 0.8;
+}
+
+/* Category post-count, same treatment as the venture /01 /02 /03 marks
+   and the footer signature. */
+.category-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--primary);
+  opacity: 0.8;
+  margin-left: 0.4em;
 }
 
 .navbar {
@@ -223,12 +238,47 @@ kbd {
 }
 
 .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--font-color) !important;
   margin-right: 0;
+}
+
+/* Same fixed badge as the favicon (near-black + signal red-orange),
+   not themed to var(--primary)/var(--bg-color) — it's meant to read as
+   "this is literally your browser tab icon" regardless of the site's
+   own light/dark toggle, the way a logo mark usually keeps its own
+   colors rather than re-skinning with the page. */
+.navbar-brand-mark {
+  width: 1.4em;
+  height: 1.4em;
+  flex-shrink: 0;
+}
+
+/* Quiet signature mark in the footer — same JetBrains Mono + signal-red
+   treatment as the /01 /02 /03 venture numbers, not the fixed favicon
+   badge colors, since this one should sit at the muted opacity of the
+   rest of the footer text rather than stand out like a logo. */
+.footer-mark {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: var(--primary);
+  opacity: 0.8;
+  margin-right: 0.5em;
+}
+
+/* 404 — the page had no visual identity at all before this, just bare
+   text, so the fixed favicon-badge mark can run large here without
+   competing with anything. */
+.not-found-mark {
+  display: block;
+  width: clamp(72px, 14vw, 120px);
+  height: clamp(72px, 14vw, 120px);
 }
 
 .navbar-nav {
@@ -405,6 +455,20 @@ li > input[type=checkbox] {
 .badge {
   font-family: 'JetBrains Mono', monospace !important;
   font-weight: 600 !important;
+}
+
+.category-badge {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--primary);
+  text-decoration: none !important;
+  letter-spacing: 0.02em;
+}
+
+.category-badge:hover {
+  text-decoration: underline !important;
+  text-underline-offset: 0.25em;
 }
 
 hr {

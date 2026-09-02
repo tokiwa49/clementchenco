@@ -1,0 +1,40 @@
+{{- /*
+Dedicated categories index — the generic layouts/taxonomy.html is
+hardcoded to .Site.Taxonomies.tags (it's built for the tags A-Z index,
+which is the only other taxonomy on this site), so without this override
+/categories/ would incorrectly render the site's ~100 tags instead of
+its 3 actual categories. With only 3 terms, a curated list with real
+per-category copy (from content/categories/<term>/_index.md) reads
+better here than the tags page's alphabetical jump-index anyway.
+*/}}
+{{ define "main" }}
+<div class="shell pt-5">
+  <div class="mt-5 pt-5">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item small"><a href="{{ "/" | relURL }}">Home</a></li>
+      <li class="breadcrumb-item small active" aria-current="page">{{ .Title }}</li>
+    </ol>
+  </nav>
+  <h1 class="h5 mb-3">{{ .Title }}</h1>
+  {{ with .Content }}
+  <div class="prose mb-4">{{ . }}</div>
+  {{ end }}
+  <div class="d-flex flex-column">
+    {{ range .Site.Taxonomies.categories.ByCount }}
+    {{ $term := .Page }}
+    <div class="row mb-3 post-list-row category-row reveal">
+      <h2 class="h5 list-post-title">
+        <a href="{{ $term.RelPermalink }}">{{ $term.Title }}</a>
+        <span class="category-count">/{{ .Count }}</span>
+      </h2>
+      {{ with $term.Params.description }}
+      <p class="small opacity-75 post-summary">{{ . }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
