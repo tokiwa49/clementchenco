@@ -29,9 +29,17 @@
   function run(data) {
     var cols = data.cols;
     var rows = data.rows;
-    var palette = data.palette;
     var frames = data.frames;
     var frameDuration = 1000 / data.fps;
+
+    // Recoloring the ink for light mode (tried a couple of variants)
+    // kept fighting the source art itself — it was drawn as a dark-mode
+    // image, and no palette remap fully fixed that. Simpler and more
+    // reliable: give the canvas its own permanent dark backing,
+    // regardless of the site's theme, and always render the original
+    // palette unchanged — the same dark-mode card in both themes,
+    // rather than trying to re-theme the artwork in place.
+    var CANVAS_BG = '#131210';
 
     var canvas = document.createElement('canvas');
     el.appendChild(canvas);
@@ -57,8 +65,11 @@
       var cellW = size / cols;
       var cellH = size / rows;
       ctx.clearRect(0, 0, size, size);
+      ctx.fillStyle = CANVAS_BG;
+      ctx.fillRect(0, 0, size, size);
       ctx.font = Math.ceil(cellH * 0.92) + 'px "JetBrains Mono", monospace';
 
+      var palette = data.palette;
       var frame = frames[index];
       for (var r = 0; r < rows; r++) {
         var crow = frame.c[r];
