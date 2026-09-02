@@ -15,13 +15,18 @@
      URL; the 16/32/48 set plus a larger 192 covers both browser tabs and
      Google's search-result use. apple-touch-icon + the manifest's 192/512
      pair follow the standard favicon.io size set for iOS/Android homescreens. */}}
-<link rel="icon" type="image/png" sizes="16x16" href="{{ absURL "favicon-16x16.png" }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ absURL "favicon-32x32.png" }}">
-<link rel="icon" type="image/png" sizes="48x48" href="{{ absURL "favicon-48x48.png" }}">
-<link rel="icon" type="image/png" sizes="192x192" href="{{ absURL "favicon-192x192.png" }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ absURL "apple-touch-icon.png" }}">
+{{/* Cache-busted with a version query string — browsers cache favicons
+     far more aggressively than other assets (often ignoring normal
+     reloads entirely), so swapping the icon's own bytes isn't enough to
+     get a stale one to refresh. Bump this whenever the icon changes. */}}
+{{ $iconVersion := "2" }}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ absURL "favicon-16x16.png" }}?v={{ $iconVersion }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ absURL "favicon-32x32.png" }}?v={{ $iconVersion }}">
+<link rel="icon" type="image/png" sizes="48x48" href="{{ absURL "favicon-48x48.png" }}?v={{ $iconVersion }}">
+<link rel="icon" type="image/png" sizes="192x192" href="{{ absURL "favicon-192x192.png" }}?v={{ $iconVersion }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ absURL "apple-touch-icon.png" }}?v={{ $iconVersion }}">
 <link rel="manifest" href="{{ absURL "site.webmanifest" }}">
-<link rel="shortcut icon" href="{{ absURL "favicon.ico" }}" />
+<link rel="shortcut icon" href="{{ absURL "favicon.ico" }}?v={{ $iconVersion }}" />
 <link rel="canonical" href="{{ .Permalink }}">
 {{ range .AlternativeOutputFormats -}}
 {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}

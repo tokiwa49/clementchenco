@@ -16,7 +16,13 @@ on blog posts, the article extras) instead.
 
 {{- with index site.Menus $menuID }}
   <nav aria-label="Main" class="navbar small">
-    <a class="navbar-brand" href="{{ "/" | relURL }}">{{ site.Title }}</a>
+    <a class="navbar-brand" href="{{ "/" | relURL }}">
+      <svg class="navbar-brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="1.6" fill="#131210"/>
+        <text x="15.3" y="23.3" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="20" letter-spacing="-1.5" fill="#ff5a45">/C</text>
+      </svg>
+      {{ site.Title }}
+    </a>
     <div class="navbar-controls">
       <div class="navbar-controls-inline">
         <div class="theme-toggle" role="group" aria-label="Color theme">
