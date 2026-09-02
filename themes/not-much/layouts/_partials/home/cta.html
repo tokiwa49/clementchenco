@@ -1,6 +1,15 @@
 <section class="closing-cta">
-  <h2 class="closing-cta-title">Let's talk about startups, partnerships, or ideas.</h2>
-  {{- with site.Params.email }}
-  <a class="btn-pill" href="mailto:{{ . }}">Get in touch<span class="btn-pill-dot"></span></a>
-  {{- end }}
+  <div class="closing-cta-row">
+    <div class="closing-cta-art" aria-hidden="true">
+      <div class="closing-cta-anim"></div>
+    </div>
+    <div class="closing-cta-content">
+      <h2 class="closing-cta-title">Let's talk about startups, partnerships, or ideas.</h2>
+      {{- with site.Params.email }}
+      <a class="btn-pill" href="mailto:{{ . }}">Get in touch<span class="btn-pill-dot"></span></a>
+      {{- end }}
+    </div>
+  </div>
 </section>
+<script src="/js/blackcat-anim.js" defer></script>
+<script src="/js/closing-cta-align.js" defer></script>

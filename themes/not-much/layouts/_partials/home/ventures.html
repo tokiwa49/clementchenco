@@ -9,8 +9,10 @@
       <h3 class="venture-name">
         {{- if $e.url }}<a href="{{ $e.url }}" target="_blank" rel="noopener noreferrer">{{ $e.name }}</a>{{- else }}{{ $e.name }}{{- end }}
       </h3>
-      <span class="venture-tags">{{ $e.tags }}</span>
-      <span class="venture-number">/{{ $e.number }}</span>
+      <span class="venture-meta">
+        <span class="venture-tags">{{ $e.tags }}</span>
+        <span class="venture-number">/{{ $e.number }}</span>
+      </span>
     </div>
     {{- end }}
   </div>

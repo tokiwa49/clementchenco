@@ -248,7 +248,7 @@
 .venture-name {
   font-size: clamp(2rem, 6vw, 3.25rem) !important;
   font-weight: 600 !important;
-  margin: 0 auto 0 0 !important;
+  margin: 0 !important;
 }
 
 .venture-name a {
@@ -258,6 +258,19 @@
 
 .venture-name a:hover {
   color: var(--primary) !important;
+}
+
+/* Tags and the /number travel together — margin-left: auto lives here
+   instead of on venture-name, so this pair pushes flush right when
+   there's room but wraps to its own line as one unit when there isn't,
+   rather than letting flex-wrap split the number off onto an orphaned
+   line by itself. */
+.venture-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem 0.75rem;
+  flex-wrap: wrap;
+  margin-left: auto;
 }
 
 .venture-tags {
@@ -280,8 +293,91 @@
 .closing-cta-title {
   font-size: clamp(2rem, 7vw, 4rem) !important;
   line-height: 1.05 !important;
-  max-width: 40rem;
   margin: 0 0 1.5rem 0 !important;
+}
+
+/* Cat doodle — a small looping ASCII animation. There's no width for a
+   readable title column beside even a small cat below 640px, so instead
+   of dropping to its own row it becomes a large dimmed background behind
+   the heading and button: art and content occupy the same grid cell (art
+   first in source order so content paints over it), art scaled to match
+   the content column's own left/right edges via width: 100%. From 640px
+   up there's room to sit it beside the text at full strength instead —
+   see the media query below. blackcat-anim.js only skips the fetch for
+   prefers-reduced-motion; on every width it waits for the element to
+   scroll into view first, so it never costs anything above the fold. */
+.closing-cta-row {
+  display: grid;
+}
+
+.closing-cta-art {
+  grid-area: 1 / 1;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.closing-cta-anim,
+.closing-cta-anim canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.closing-cta-content {
+  grid-area: 1 / 1;
+  align-self: end;
+  padding: 0 0 1.5rem 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .closing-cta-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  /* order flips the two back to content-left/art-right for this layout
+     while leaving source order (art, then content) alone — that source
+     order is what makes the mobile background stack paint content over
+     art without an explicit z-index. */
+  .closing-cta-content {
+    order: 1;
+    flex: 0 1 40rem;
+    min-width: 12rem;
+    align-self: flex-start;
+    padding: 0;
+  }
+
+  /* flex-grow: 0 on content — it claims up to its own basis (40rem) and
+     no more. It must NOT grow to fill leftover row space, because
+     closing-cta-align.js measures "space available for the cat" by
+     temporarily zeroing the cat's width and reading how wide content
+     rendered; if content were also grow-eligible it would expand to
+     fill the whole row with the cat gone, making that measurement
+     meaningless. flex-shrink stays on, floored by min-width, so it
+     still yields width to the cat on narrower rows. */
+  .closing-cta-title {
+    margin: 0 0 1.5rem 0 !important;
+  }
+
+  /* Width and height are set inline by closing-cta-align.js: it matches
+     the title's text-ink height (via Range, not the CSS line box, which
+     line-height leading makes taller than the visible glyphs) while
+     capping that at whatever width is actually left over in the row, so
+     the cat is always as large as it can be without ever overflowing or
+     squeezing content tighter than necessary. max-width here is only a
+     pre-JS/no-JS fallback. */
+  .closing-cta-art {
+    order: 2;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 20rem;
+    opacity: 1;
+    margin: 0;
+  }
 }
 
 /* Latest Articles — last section before the footer */
