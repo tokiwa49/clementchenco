@@ -300,6 +300,47 @@ kbd {
   text-underline-offset: 0.25em;
 }
 
+.nav-item-dropdown {
+  position: relative;
+}
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  /* Flush against the trigger (no margin-top gap) — the dropdown is
+     absolutely positioned, so it doesn't contribute to .nav-item-dropdown's
+     own box height. A gap here isn't part of any element's hoverable
+     area, so moving the mouse straight down from "blog" into the
+     dropdown would cross dead space, drop :hover, and close the menu
+     before the pointer arrives — which is exactly what was happening. */
+  top: 100%;
+  left: 0;
+  z-index: 20;
+  min-width: 130px;
+  margin: 0;
+  padding: 0.35rem 0;
+  list-style: none;
+  background: var(--bg-color);
+  border: 1px solid var(--hairline, var(--bg-variant));
+}
+
+.nav-item-dropdown:hover .nav-dropdown,
+.nav-item-dropdown:focus-within .nav-dropdown {
+  display: block;
+}
+
+/* Color/font come from .category-badge (the site's slash-motif label
+   treatment); this just adds the block/padding a menu item needs. */
+.nav-dropdown-link {
+  display: block;
+  padding: 0.35rem 0.9rem;
+}
+
+.nav-dropdown-link.active {
+  text-decoration: underline !important;
+  text-underline-offset: 0.25em;
+}
+
 .tags a {
   text-decoration: none !important;
 }
@@ -635,6 +676,42 @@ footer {
   margin-top: 1rem;
 }
 
+/* Above 768px: scales full-bleed edge to edge with its native aspect
+   ratio locked (width:100%, height:auto), same as any responsive image.
+   Below 768px, continuing to shrink the whole image would shrink the
+   labels into illegibility, so it switches to a fixed-height crop
+   instead — object-position keeps the readable text/icon block in
+   frame (matching the reference crop) instead of the noisier edges. */
+.footer-banner-wrap {
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.footer-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-banner-wrap {
+    height: 160px;
+  }
+
+  .footer-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* A percentage here recalculates per container width (drifts further
+       right as the viewport narrows, since it's relative to available
+       slack) — cut into "CLEMENT CHEN YCC" below ~400px. A fixed pixel
+       offset anchors to the same 232px point in the scaled image
+       (height:160px always yields the same 0.4 scale, so this stays
+       correct) regardless of viewport width. */
+    object-position: -232px top;
+  }
+}
+
 .related-posts {
   margin: 3rem 0 2rem;
   padding-top: 1.5rem;
@@ -899,6 +976,15 @@ footer {
 
 .panel-list a:hover {
   color: var(--primary) !important;
+}
+
+.panel-sublist {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .panel-tags {

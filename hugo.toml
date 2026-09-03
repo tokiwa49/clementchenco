@@ -83,3 +83,27 @@ copyright = "© {year} Clement Chen"
   title = "Blog"
   url = "/blog/"
   weight = 2
+
+[[menu.main]]
+  identifier = "blog-space"
+  name = "space"
+  title = "Space"
+  url = "/categories/space/"
+  parent = "blog"
+  weight = 1
+
+[[menu.main]]
+  identifier = "blog-mentioned"
+  name = "mentioned"
+  title = "Mentioned"
+  url = "/categories/mentioned/"
+  parent = "blog"
+  weight = 2
+
+[[menu.main]]
+  identifier = "blog-startups"
+  name = "startups"
+  title = "Startups"
+  url = "/categories/startups/"
+  parent = "blog"
+  weight = 3

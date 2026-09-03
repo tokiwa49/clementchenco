@@ -59,6 +59,27 @@ on blog posts, the article extras) instead.
         {{- $name = . }}
       {{- end }}
     {{- end }}
+    {{- if .Children }}
+    <li class="nav-item nav-item-dropdown">
+      <a
+        href="{{ .URL }}"
+        class="{{ $class }}"
+        {{- if $isCurrent }} aria-current="page"{{- end }}
+      >{{ $name }}</a>
+      <ul class="nav-dropdown">
+        {{- range .Children }}
+          {{- $childIsCurrent := or ($page.IsMenuCurrent .Menu .) (eq $page.RelPermalink .URL) }}
+          <li>
+            <a
+              href="{{ .URL }}"
+              class="category-badge nav-dropdown-link{{ if $childIsCurrent }} active{{ end }}"
+              {{- if $childIsCurrent }} aria-current="page"{{- end }}
+            >/{{ .Name }}</a>
+          </li>
+        {{- end }}
+      </ul>
+    </li>
+    {{- else }}
     <li class="nav-item">
       <a
         href="{{ .URL }}"
@@ -67,5 +88,6 @@ on blog posts, the article extras) instead.
         {{- if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{- end }}
       >{{ $name }}</a>
     </li>
+    {{- end }}
   {{- end }}
 {{- end }}

@@ -24,7 +24,16 @@ Toggle/close behavior lives in baseof.html.
     <ul class="panel-list">
       {{- with index site.Menus "main" }}
         {{- range . }}
-      <li><a href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a></li>
+      <li>
+        <a href="{{ .URL }}"{{ if strings.HasPrefix .URL "http" }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
+        {{- with .Children }}
+        <ul class="panel-sublist">
+          {{- range . }}
+          <li><a class="category-badge" href="{{ .URL }}">/{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+        {{- end }}
+      </li>
         {{- end }}
       {{- end }}
     </ul>
