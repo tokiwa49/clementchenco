@@ -1,0 +1,41 @@
+{{- $name := "Clement Chen" }}
+{{- $title := "Co-founder, SATELYX" }}
+{{- $handle := "clementchen" }}
+{{- $status := "Building & Learning" }}
+<div class="pc-card-wrapper about-profile-card">
+  <div class="pc-behind" aria-hidden="true"></div>
+  <div class="pc-card-shell">
+    <section class="pc-card">
+      <div class="pc-inside">
+        <div class="pc-shine" aria-hidden="true"></div>
+        <div class="pc-glare" aria-hidden="true"></div>
+        <div class="pc-content pc-avatar-content">
+          <img class="avatar" src="{{ "images/clement-profile-card.png" | absURL }}" alt="{{ $name }}" loading="lazy" width="560" height="700">
+          <div class="pc-user-info">
+            <div class="pc-user-details">
+              <div class="pc-mini-avatar" aria-hidden="true">
+                <svg viewBox="0 0 32 32">
+                  <rect width="32" height="32" fill="#131210"/>
+                  <text x="15.3" y="23.3" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-weight="700" font-size="20" letter-spacing="-1.5" fill="#ff5a45">/C</text>
+                </svg>
+              </div>
+              <div class="pc-user-text">
+                <div class="pc-handle">@{{ $handle }}</div>
+                <div class="pc-status">{{ $status }}</div>
+              </div>
+            </div>
+            {{- with site.Params.email }}
+            <a class="pc-contact-btn" href="mailto:{{ . }}" aria-label="Contact {{ $name }}">Contact</a>
+            {{- end }}
+          </div>
+        </div>
+        <div class="pc-content">
+          <div class="pc-details">
+            <h3>{{ $name }}</h3>
+            <p>{{ $title }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

@@ -51,4 +51,4 @@ Novaspace's forecast, the mission-operations discussion, and forty years of smal
 
 ---
 
-*Satelyx exists for exactly this shift: a standardized bus and repeatable payload interfaces mean the effort goes into validating new capability, not re-proving the basics on every mission. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX exists for exactly this shift: a standardized bus and repeatable payload interfaces mean the effort goes into validating new capability, not re-proving the basics on every mission. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

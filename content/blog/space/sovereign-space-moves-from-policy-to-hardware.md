@@ -53,4 +53,4 @@ Either way, the shift from policy language to funded, operating hardware is the 
 
 ---
 
-*Satelyx exists because standardized platforms and repeatable mission-integration knowledge, the same logic behind IRIS²'s multi-platform buildout and China's reusable optical-link ambitions, are what actually get sovereign space capability from contract to orbit. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX exists because standardized platforms and repeatable mission-integration knowledge, the same logic behind IRIS²'s multi-platform buildout and China's reusable optical-link ambitions, are what actually get sovereign space capability from contract to orbit. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

@@ -43,8 +43,8 @@ That's not a criticism of any of the three efforts individually. A study contrac
 
 The DIU/SDA downselect is the one with the clearest near-term marker: watch whether the full on-orbit demonstration contract actually gets awarded, and to whom, since that will say more about how mature non-cooperative capture technology really is than the initial three-company study did. On the tracking side, watch whether Neuraspace and Arcsec's partnership produces a commercially available product, or stays at the pilot stage, since a 3 cm detection floor only matters at fleet scale if operators can actually buy access to it. And on lunar disposal, the marker to watch isn't a new rule, it's whether one gets written at all before 2030, while there's still time for it to matter rather than respond to an incident.
 
-Mission ownership increasingly includes what happens after a mission ends, and that end-of-life layer is exactly where [Satelyx's shared-mission infrastructure](https://satelyx.com) is built to reduce risk: standardized, validated components and procedures so that disposal isn't the part of the plan nobody wrote down.
+Mission ownership increasingly includes what happens after a mission ends, and that end-of-life layer is exactly where [SATELYX's shared-mission infrastructure](https://satelyx.com) is built to reduce risk: standardized, validated components and procedures so that disposal isn't the part of the plan nobody wrote down.
 
 ---
 
-*Satelyx tracks the standards and technology closing the gap between how fast space is scaling and how fast it's learning to clean up after itself. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX tracks the standards and technology closing the gap between how fast space is scaling and how fast it's learning to clean up after itself. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

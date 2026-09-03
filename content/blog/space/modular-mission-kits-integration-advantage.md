@@ -58,4 +58,4 @@ It's the same integration layer that shows up when the customer is a government 
 
 ---
 
-*Satelyx exists to be that integration layer: a standardized bus and a repeatable route to orbit, so a validated payload doesn't need a bespoke spacecraft program to prove itself. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX exists to be that integration layer: a standardized bus and a repeatable route to orbit, so a validated payload doesn't need a bespoke spacecraft program to prove itself. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

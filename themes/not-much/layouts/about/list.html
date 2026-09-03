@@ -1,18 +1,12 @@
 {{ define "main" }}
   <div class="shell pt-5">
-    <div class="mt-5 pt-5">
-      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-    </div>
-    <div class="prose">
-      <div class="about-photo">
-        <img src="{{ "images/clement-headshot.jpg" | absURL }}" alt="Clement Chen" width="700" height="697" loading="lazy">
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    <div class="about-layout">
+      <div class="prose">
+        {{ .Content }}
       </div>
-      {{ .Content }}
-      <div class="mt-5">
-        {{- with site.Params.email }}
-        <a class="btn-pill" href="mailto:{{ . }}">Get in touch<span class="btn-pill-dot"></span></a>
-        {{- end }}
-      </div>
+      {{ partial "profile-card.html" . }}
     </div>
   </div>
+  <script src="/js/profile-card.js" defer></script>
 {{ end }}

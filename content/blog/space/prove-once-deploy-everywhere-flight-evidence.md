@@ -60,4 +60,4 @@ A few threads worth tracking as this plays out over the next few quarters:
 
 ---
 
-*Satelyx exists for exactly this gap: the space between a working prototype and a mission owner willing to bet on it, filled with real flight evidence instead of a pitch deck. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX exists for exactly this gap: the space between a working prototype and a mission owner willing to bet on it, filled with real flight evidence instead of a pitch deck. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

@@ -41,4 +41,4 @@ Reusable and domestic launch programs will keep generating headlines that read a
 
 ---
 
-*Satelyx builds on this same principle in orbit, treating every mission as a chance to capture evidence and standardize what works rather than a one-off outcome. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX builds on this same principle in orbit, treating every mission as a chance to capture evidence and standardize what works rather than a one-off outcome. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

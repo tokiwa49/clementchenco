@@ -67,8 +67,8 @@ None of this plays out in isolation, and a few adjacent developments will shape 
 
 ## The takeaway
 
-Three separate storylines (a constellation budget, an investment fund, and a rocket failure) are really one story about what sovereign buyers now require before they'll sign a check: demonstrated, in-orbit performance. [Satelyx's flight-proven technology catalog](https://satelyx.com) exists for exactly this gap.
+Three separate storylines (a constellation budget, an investment fund, and a rocket failure) are really one story about what sovereign buyers now require before they'll sign a check: demonstrated, in-orbit performance. [SATELYX's flight-proven technology catalog](https://satelyx.com) exists for exactly this gap.
 
 ---
 
-*Satelyx tracks flight-proven VLEO technology and the sovereign programs that are starting to demand it. More at [satelyx.com](https://satelyx.com), and follow [Clement Chen](https://clementchen.co) for ongoing analysis on where space capital and procurement are heading next.*
+*SATELYX tracks flight-proven VLEO technology and the sovereign programs that are starting to demand it. More at [satelyx.com](https://satelyx.com), and follow [Clement Chen](https://clementchen.co) for ongoing analysis on where space capital and procurement are heading next.*

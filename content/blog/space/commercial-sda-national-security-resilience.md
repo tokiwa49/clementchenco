@@ -49,4 +49,4 @@ That is precisely the case for treating in-orbit validation as more than a paylo
 
 ---
 
-*Satelyx builds resilience into validation from the start, testing not just whether a payload works but whether it survives, recovers and keeps delivering data under real orbital conditions. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX builds resilience into validation from the start, testing not just whether a payload works but whether it survives, recovers and keeps delivering data under real orbital conditions. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

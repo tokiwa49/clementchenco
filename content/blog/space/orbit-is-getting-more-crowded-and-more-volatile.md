@@ -65,4 +65,4 @@ Neither trend is likely to reverse on its own: the debris field will keep fillin
 
 ---
 
-*Satelyx builds resilience into mission design and operations from the start, so fleets are architected to handle a crowded, volatile orbital environment rather than just scaled into it. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX builds resilience into mission design and operations from the start, so fleets are architected to handle a crowded, volatile orbital environment rather than just scaled into it. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

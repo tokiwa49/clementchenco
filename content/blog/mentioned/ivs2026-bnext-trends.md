@@ -1,7 +1,7 @@
 ---
-title: "Bnext's IVS2026 Trends Report Cites Satelyx Among Global Finalists"
-seoTitle: "Bnext IVS2026 Report Features Satelyx"
-description: "Meet/bnext's recap of the IVS2026 LAUNCHPAD finals highlights rising international participation and the shift from blockchain to physical AI, citing Satelyx as an example."
+title: "Bnext's IVS2026 Trends Report Cites SATELYX Among Global Finalists"
+seoTitle: "Bnext IVS2026 Report Features SATELYX"
+description: "Meet/bnext's recap of the IVS2026 LAUNCHPAD finals highlights rising international participation and the shift from blockchain to physical AI, citing SATELYX as an example."
 date: 2026-07-03T18:00:00+08:00
 draft: false
 author: "Clement Chen"
@@ -14,7 +14,7 @@ Meet/bnext's wrap-up of the IVS2026 LAUNCHPAD finals in Kyoto, written by 曾令
 
 <!--more-->
 
-Space Quarters took the LAUNCHPAD grand prize. Among the international finalists cited as part of the globalization trend, the report names Satelyx, describing it as a shared in-orbit satellite testing service with cost advantages and a partnership with Taiwan's space center.
+Space Quarters took the LAUNCHPAD grand prize. Among the international finalists cited as part of the globalization trend, the report names SATELYX, describing it as a shared in-orbit satellite testing service with cost advantages and a partnership with Taiwan's space center.
 
 Full report (Chinese): [Meet/bnext, July 3, 2026](https://meet.bnext.com.tw/articles/view/53345).
 
@@ -22,4 +22,4 @@ For the pitch itself and the fuller finals recap, see [Kepple's event report](/b
 
 ---
 
-*Satelyx builds flight-proven, shared-mission infrastructure for teams that don't want to re-qualify what's already been proven in orbit. More at [satelyx.com](https://satelyx.com).*
+*SATELYX builds flight-proven, shared-mission infrastructure for teams that don't want to re-qualify what's already been proven in orbit. More at [satelyx.com](https://satelyx.com).*

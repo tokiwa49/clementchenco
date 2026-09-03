@@ -47,4 +47,4 @@ That's the frame worth carrying forward. Validation isn't a one-time hurdle a te
 
 ---
 
-*Satelyx exists to build exactly that evidence chain: validating diverse technologies in orbit, documenting the result, and making that proof reusable for the next customer or contract, whether the buyer wears a uniform or signs a commercial purchase order. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX exists to build exactly that evidence chain: validating diverse technologies in orbit, documenting the result, and making that proof reusable for the next customer or contract, whether the buyer wears a uniform or signs a commercial purchase order. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

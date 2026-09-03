@@ -57,4 +57,4 @@ None of this means standardization flattens every mission into the same shape. I
 
 ---
 
-*Satelyx tracks how orbital capability gets validated and made reusable across missions, from sensor networks to shared spacecraft platforms. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX tracks how orbital capability gets validated and made reusable across missions, from sensor networks to shared spacecraft platforms. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*

@@ -23,7 +23,7 @@ copyright = "© {year} Clement Chen"
   showFooterEverywhere = true
   showPostsSummary = true
   email = "clement@satelyx.com"
-  description = "Clement Chen is a venture builder and investor in deep tech, space infrastructure, and digital assets — currently building Satelyx and Gray Label."
+  description = "Clement Chen is a venture builder and investor in deep tech, space infrastructure, and digital assets — currently building SATELYX and Gray Label."
   images = ["images/clement-hero.jpg"]
 
 [social]
@@ -54,7 +54,7 @@ copyright = "© {year} Clement Chen"
 
 [[params.ventures]]
   number = "01"
-  name = "Satelyx"
+  name = "SATELYX"
   tags = "Space, Deep Tech"
   url = "https://satelyx.com/"
 

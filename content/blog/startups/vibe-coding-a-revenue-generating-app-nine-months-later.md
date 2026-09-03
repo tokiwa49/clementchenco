@@ -79,4 +79,4 @@ The part I'd stand behind without changing a word is the core mechanism: a lower
 
 ---
 
-*This is a follow-up to [a short tweet](https://x.com/clementality_/status/1992837971037352312) and [its reply](https://x.com/clementality_/status/1992848779972911202), both posted November 24, 2025. More of what I'm building at [Satelyx](https://satelyx.com).*
+*This is a follow-up to [a short tweet](https://x.com/clementality_/status/1992837971037352312) and [its reply](https://x.com/clementality_/status/1992848779972911202), both posted November 24, 2025. More of what I'm building at [SATELYX](https://satelyx.com).*

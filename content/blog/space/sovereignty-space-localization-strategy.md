@@ -57,4 +57,4 @@ Sovereignty built this way still depends on validated, repeatable interfaces und
 
 ---
 
-*Satelyx exists to give localized and regional space capability a repeatable, flight-proven route to prove itself, without every program having to build a complete mission from scratch. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*SATELYX exists to give localized and regional space capability a repeatable, flight-proven route to prove itself, without every program having to build a complete mission from scratch. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
