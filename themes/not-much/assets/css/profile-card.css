@@ -66,7 +66,12 @@ body.dark .pc-card-wrapper {
   .about-layout {
     --about-gap: 2.5rem;
     flex-direction: row;
-    align-items: flex-start;
+    /* Default (stretch), not flex-start: the divider is .prose's own
+       border-right, so it only runs as tall as .prose's box. Stretching
+       .prose to the row's full height (the card's height, since the
+       card is usually taller than the bio text) extends that border
+       down to the card's bottom edge instead of stopping short of it —
+       text itself stays top-aligned, only the box grows. */
     gap: var(--about-gap);
   }
 
