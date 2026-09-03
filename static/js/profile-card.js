@@ -168,9 +168,22 @@
     });
   }
 
-  var initialX = (shell.clientWidth || 0) - INITIAL_X_OFFSET;
-  var initialY = INITIAL_Y_OFFSET;
-  setImmediate(initialX, initialY);
-  toCenter();
-  beginInitial(INITIAL_DURATION);
+  function startEntrance() {
+    if (!shell.clientWidth || !shell.clientHeight) {
+      // Layout isn't settled yet (e.g. avatar image still resolving on a
+      // slow connection) — reading 0 here would send the resting mask
+      // position to a wild percentage via the width||1 fallback in
+      // setVarsFromXY, pushing the /C pattern off-frame instead of
+      // centered. Wait a frame and try again rather than proceed on a
+      // bogus size.
+      requestAnimationFrame(startEntrance);
+      return;
+    }
+    var initialX = shell.clientWidth - INITIAL_X_OFFSET;
+    var initialY = INITIAL_Y_OFFSET;
+    setImmediate(initialX, initialY);
+    toCenter();
+    beginInitial(INITIAL_DURATION);
+  }
+  startEntrance();
 })();

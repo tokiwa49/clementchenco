@@ -16,7 +16,6 @@
   --background-y: 50%;
   --grain: none;
   --icon: url('/images/c-motif-pattern.svg');
-  --watermark: url('/images/c-motif-watermark.svg');
   --behind-gradient: none;
   --behind-glow-color: rgba(171, 30, 25, 0.45);
   --behind-glow-size: 55%;
@@ -76,20 +75,14 @@ body.dark .pc-card-wrapper {
     padding-right: var(--about-gap);
   }
 
-  /* max-width is 388px (540 * 0.718, the demo's own native proportions)
-     rather than something larger — width is a definite flex-grow value
-     here, so aspect-ratio only ever fills in height from it; a max-height
-     added afterward clamps height without feeding back into width, which
-     visibly distorts the card's proportions instead of shrinking it
-     evenly. Keeping the width cap itself at the demo's native ratio
-     avoids ever needing that clamp: the card fills whatever space is
-     left below 388px (flush to .shell's edge, same math as before), and
-     literally cannot exceed 540px tall once it does hit the cap, with no
-     separate height rule required. */
+  /* No max-width here — the card fills whatever space is left after the
+     fixed prose column and gap, so its right edge lands on .shell's own
+     edge, matching the nav bar's width above it. .shell itself caps out
+     at 1200px, so this never grows unreasonably; it's bounded by the
+     page layout, not an arbitrary card-specific limit. */
   .about-profile-card {
     order: 0;
     flex: 1 1 auto;
-    max-width: 388px;
   }
 }
 
@@ -169,13 +162,7 @@ body.dark .pc-card-wrapper {
 .pc-inside {
   inset: 0;
   position: absolute;
-  /* The watermark layer is a plain tiled background-image, not tied to
-     mask-image/mix-blend-mode like .pc-shine's icon reveal — it's the
-     reliability fallback so the /C motif always renders even on engines
-     (mobile Safari, notably) where that masked effect doesn't. */
-  background-image: var(--inner-gradient), var(--watermark);
-  background-repeat: no-repeat, repeat;
-  background-size: cover, 130px 130px;
+  background-image: var(--inner-gradient);
   background-color: var(--bg-variant, rgba(0, 0, 0, 0.9));
   transform: none;
 }
