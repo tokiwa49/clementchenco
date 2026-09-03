@@ -1,20 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
   <defs>
-    <g id="mark" stroke="#ffffff" fill="none" stroke-linecap="round">
-      <path d="M 4 26 L 13 2" stroke-width="5"/>
-      <path d="M 30.9 8.2 A 9 9 0 1 0 30.9 19.8" stroke-width="4.5"/>
-    </g>
+    <style>
+      /* Subsetted (glyphs "/" and "C" only, ~680 bytes) from the same
+         JetBrains Mono Bold used for the nav mark and favicon, embedded
+         directly since this SVG is loaded as an isolated mask resource
+         that never inherits the page's own @font-face / loaded fonts. */
+      @font-face {
+        font-family: 'JBM-C';
+        font-weight: 700;
+        src: url(data:font/woff2;base64,d09GMgABAAAAAAKsAA8AAAAABaAAAAJVAAI2BAAAAAAAAAAAAAAAAAAAAAAAAAAAGhQbIBwqBmA/U1RBVEwAPBEICoEAgQkBNgIkAwgLCAAEIAWEJgcgG54EAJ4FdstHiFcNERtbbP0WdZiVohjx8P/7fdvn3DuiiGgTS5MQDeUlJOFNxBJEEiUQ/yLkMQkFb9PsT3/zBbOZicuIqdcsKRIu/1Gxeeo22ODNHYxLKPsX6H6wQuwbxAlm9X+Zv2n/39vz9hffLg5AH/ahCSTYmQWUYEJFf+sEVh5BQInmml7Lh/OksqyMCPQCwo7RbSMHcuJUdwoGFRYBGLebk6qb7eZl3IMduQ1qNtnSRn7MBji//vm4IBwmSLoABACcOwbgm30qZW5hlDIXNBCQu/PFVlohdEqspMJOqntXGBJcu321JUuEai0VRHu2yAbkfxQhYylAgETBSmqBlTT2Au2qkPapLEJutzjihwCEWGQJQgHtSOwEDgNQASG21vbj+DgsLyYmiE9jY6D7xXD3x0H5fKjn00j0PB8dDR+Z7+8z+lejycbOV8QL7a8H99FU7XxF75jIzBSYxYYm5stKXU1RyNwi/++Xfjq4hCCP1mt2zy4uGZjtxOUnzAyvX2Fm+vn+AVsyL7+FdgmCkRfZIOyXtSDClZGNtaYsguKzTt+1CwBQJHp8VETtQos9wkbfSJ0mURz1g2p3UGizPlTfbmdEQdAbD2O7XmUsqam3+5YyxRfHCQevJO4Bg6iwYP4a1BRzh2q7g8qkK9yeguoR9gRqSBIe3bmBqJIjxAiSgnJiEDpQpAUEPOAQc3TN74awE2CqPyfu5q6XPW+ZsHUrzC8sJCSjrSzTNfPdTPkzIdm8khS8Gim+dB62oLm/VAu6ssXdGBN2ruypgcWEgRAA) format('woff2');
+      }
+    </style>
   </defs>
-  <use href="#mark" x="10" y="8"/>
-  <use href="#mark" x="90" y="8"/>
-  <use href="#mark" x="170" y="8"/>
-  <use href="#mark" x="50" y="68"/>
-  <use href="#mark" x="130" y="68"/>
-  <use href="#mark" x="210" y="68"/>
-  <use href="#mark" x="10" y="128"/>
-  <use href="#mark" x="90" y="128"/>
-  <use href="#mark" x="170" y="128"/>
-  <use href="#mark" x="50" y="188"/>
-  <use href="#mark" x="130" y="188"/>
-  <use href="#mark" x="210" y="188"/>
+  <g font-family="'JBM-C'" font-weight="700" font-size="26" letter-spacing="-1" fill="#ffffff">
+    <text x="10" y="34">/C</text>
+    <text x="90" y="34">/C</text>
+    <text x="170" y="34">/C</text>
+    <text x="50" y="94">/C</text>
+    <text x="130" y="94">/C</text>
+    <text x="210" y="94">/C</text>
+    <text x="10" y="154">/C</text>
+    <text x="90" y="154">/C</text>
+    <text x="170" y="154">/C</text>
+    <text x="50" y="214">/C</text>
+    <text x="130" y="214">/C</text>
+    <text x="210" y="214">/C</text>
+  </g>
 </svg>
