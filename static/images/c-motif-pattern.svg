@@ -4,7 +4,9 @@
       /* Subsetted (glyphs "/" and "C" only, ~680 bytes) from the same
          JetBrains Mono Bold used for the nav mark and favicon, embedded
          directly since this SVG is loaded as an isolated mask resource
-         that never inherits the page's own @font-face / loaded fonts. */
+         that never inherits the page's own @font-face / loaded fonts.
+         font-size/letter-spacing match menu.html's .navbar-brand-mark
+         (and 404.html's mark) exactly, not an approximation. */
       @font-face {
         font-family: 'JBM-C';
         font-weight: 700;
@@ -12,18 +14,26 @@
       }
     </style>
   </defs>
-  <g font-family="'JBM-C'" font-weight="700" font-size="26" letter-spacing="-1" fill="#ffffff">
-    <text x="10" y="34">/C</text>
-    <text x="90" y="34">/C</text>
-    <text x="170" y="34">/C</text>
-    <text x="50" y="94">/C</text>
-    <text x="130" y="94">/C</text>
-    <text x="210" y="94">/C</text>
-    <text x="10" y="154">/C</text>
-    <text x="90" y="154">/C</text>
-    <text x="170" y="154">/C</text>
-    <text x="50" y="214">/C</text>
-    <text x="130" y="214">/C</text>
-    <text x="210" y="214">/C</text>
+  <g font-family="'JBM-C'" font-weight="700" font-size="20" letter-spacing="-1.5" fill="#ffffff">
+    <text x="8" y="26">/C</text>
+    <text x="72" y="26">/C</text>
+    <text x="136" y="26">/C</text>
+    <text x="200" y="26">/C</text>
+    <text x="40" y="74">/C</text>
+    <text x="104" y="74">/C</text>
+    <text x="168" y="74">/C</text>
+    <text x="232" y="74">/C</text>
+    <text x="8" y="122">/C</text>
+    <text x="72" y="122">/C</text>
+    <text x="136" y="122">/C</text>
+    <text x="200" y="122">/C</text>
+    <text x="40" y="170">/C</text>
+    <text x="104" y="170">/C</text>
+    <text x="168" y="170">/C</text>
+    <text x="232" y="170">/C</text>
+    <text x="8" y="218">/C</text>
+    <text x="72" y="218">/C</text>
+    <text x="136" y="218">/C</text>
+    <text x="200" y="218">/C</text>
   </g>
 </svg>
