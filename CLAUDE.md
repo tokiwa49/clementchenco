@@ -90,6 +90,46 @@ reach for this treatment first** (`.category-badge`-style: JetBrains Mono,
 `var(--primary)`, no decoration, underline on hover) rather than inventing
 a new visual language or falling back to a generic Bootstrap badge/pill.
 
+### Gotcha: the nav must not be wrapped in an extra `mt-5` div
+
+`home.html` puts the menu partial directly inside `<div class="shell pt-5">`
+with no extra wrapper. Every other top-level template (`list.html`,
+`single.html`, `taxonomy.html`, `term.html`, `categories/taxonomy.html`,
+`about/list.html`) used to wrap it in an additional
+`<div class="mt-5 pt-5">`, which pushed the nav noticeably lower than on
+the home page (fixed 2026-09-03 — that wrapper was removed everywhere so
+all six templates now call the menu partial the same way home.html does).
+If a new template's nav looks vertically offset from home, check for this
+wrapper before assuming it's a CSS problem.
+
+### Profile card component (About page)
+
+`themes/not-much/layouts/_partials/profile-card.html` +
+`themes/not-much/assets/css/profile-card.css` +
+`static/js/profile-card.js` are a hand-ported vanilla JS/CSS version of
+React Bits' ProfileCard (pointer-tilt + holographic shine), recolored to
+the broadsheet palette. There's no React/bundler in this Hugo stack, so
+don't try to drop in a React Bits component's JSX directly — port the
+CSS custom properties and pointer-math to plain JS/CSS the way this one
+was. It sits next to the About page's intro text via `.about-layout`
+(flex row past 1100px, stacked below that) — `--about-gap` is the single
+source of truth for both the text-to-divider and divider-to-card gaps,
+so change that one variable rather than editing padding and gap
+separately if the spacing ever needs to move.
+
+Two non-obvious traps if this card (or something like it) gets extended:
+- `.pc-card *` sets `pointer-events: none` on every descendant so the
+  decorative tilt/shine overlay layers don't eat clicks — any real
+  interactive element added inside the card (the Contact link is the
+  current example) needs its own explicit `pointer-events: auto` or it
+  silently becomes unclickable while still looking normal.
+- The site's global `a { color: var(--primary-variant) !important;
+  text-decoration: underline !important; }` (main.css) beats any
+  non-`!important` author override on an `<a>`, regardless of selector
+  specificity. Any anchor that needs a different color/underline than
+  the site default (like `.pc-contact-btn`) has to mark those
+  declarations `!important` too, in both the base and `:hover` rules.
+
 ### SEO workflow
 
 Search Console query/page performance is tracked as dated snapshots in

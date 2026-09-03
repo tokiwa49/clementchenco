@@ -127,41 +127,46 @@
     return { x: evt.clientX - rect.left, y: evt.clientY - rect.top };
   }
 
-  var enterTimer = null;
-  var leaveRaf = null;
+  var hasFinePointer =
+    window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
-  shell.addEventListener("pointerenter", function (evt) {
-    shell.classList.add("active");
-    shell.classList.add("entering");
-    if (enterTimer) window.clearTimeout(enterTimer);
-    enterTimer = window.setTimeout(function () {
-      shell.classList.remove("entering");
-    }, ENTER_TRANSITION_MS);
+  if (hasFinePointer) {
+    var enterTimer = null;
+    var leaveRaf = null;
 
-    var off = getOffsets(evt);
-    setTarget(off.x, off.y);
-  });
+    shell.addEventListener("pointerenter", function (evt) {
+      shell.classList.add("active");
+      shell.classList.add("entering");
+      if (enterTimer) window.clearTimeout(enterTimer);
+      enterTimer = window.setTimeout(function () {
+        shell.classList.remove("entering");
+      }, ENTER_TRANSITION_MS);
 
-  shell.addEventListener("pointermove", function (evt) {
-    var off = getOffsets(evt);
-    setTarget(off.x, off.y);
-  });
+      var off = getOffsets(evt);
+      setTarget(off.x, off.y);
+    });
 
-  shell.addEventListener("pointerleave", function () {
-    toCenter();
+    shell.addEventListener("pointermove", function (evt) {
+      var off = getOffsets(evt);
+      setTarget(off.x, off.y);
+    });
 
-    function checkSettle() {
-      var settled = Math.hypot(targetX - currentX, targetY - currentY) < 0.6;
-      if (settled) {
-        shell.classList.remove("active");
-        leaveRaf = null;
-      } else {
-        leaveRaf = requestAnimationFrame(checkSettle);
+    shell.addEventListener("pointerleave", function () {
+      toCenter();
+
+      function checkSettle() {
+        var settled = Math.hypot(targetX - currentX, targetY - currentY) < 0.6;
+        if (settled) {
+          shell.classList.remove("active");
+          leaveRaf = null;
+        } else {
+          leaveRaf = requestAnimationFrame(checkSettle);
+        }
       }
-    }
-    if (leaveRaf) cancelAnimationFrame(leaveRaf);
-    leaveRaf = requestAnimationFrame(checkSettle);
-  });
+      if (leaveRaf) cancelAnimationFrame(leaveRaf);
+      leaveRaf = requestAnimationFrame(checkSettle);
+    });
+  }
 
   var initialX = (shell.clientWidth || 0) - INITIAL_X_OFFSET;
   var initialY = INITIAL_Y_OFFSET;

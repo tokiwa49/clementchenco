@@ -80,19 +80,22 @@ body.dark .pc-card-wrapper {
     flex: 1 1 auto;
     max-width: 460px;
   }
-
-  .about-profile-card .pc-card {
-    width: 100%;
-    height: auto;
-    max-height: none;
-  }
 }
 
 .pc-card-wrapper {
   perspective: 500px;
   transform: translate3d(0, 0, 0.1px);
   position: relative;
-  touch-action: none;
+}
+
+/* Pointer-driven tilt is fine-pointer only (see profile-card.js) — touch
+   devices get the static resting card, so touch-action shouldn't be
+   restricted there or a swipe starting on the card would fail to scroll
+   the page. */
+@media (hover: hover) and (pointer: fine) {
+  .pc-card-wrapper {
+    touch-action: none;
+  }
 }
 
 .pc-behind {
@@ -110,15 +113,12 @@ body.dark .pc-card-wrapper {
   transition: opacity 200ms ease;
 }
 
-.pc-card-wrapper:hover,
 .pc-card-wrapper.active {
   --card-opacity: 1;
 }
 
 .pc-card {
-  height: 80svh;
-  max-height: 540px;
-  max-width: 100%;
+  width: 100%;
   aspect-ratio: 0.718;
   display: grid;
   border-radius: var(--card-radius);
@@ -134,7 +134,6 @@ body.dark .pc-card-wrapper {
   border: 1px solid var(--hairline, transparent);
 }
 
-.pc-card:hover,
 .pc-card.active {
   transition: none;
   transform: translateZ(0) rotateX(var(--rotate-y)) rotateY(var(--rotate-x));
@@ -235,17 +234,41 @@ body.dark .pc-card-wrapper {
   transition: opacity 0.8s ease;
 }
 
-.pc-card:hover .pc-shine,
 .pc-card.active .pc-shine {
   filter: brightness(0.85) contrast(1.5) saturate(0.5);
   animation-play-state: paused;
 }
 
-.pc-card:hover .pc-shine::before,
 .pc-card.active .pc-shine::before,
-.pc-card:hover .pc-shine::after,
 .pc-card.active .pc-shine::after {
   opacity: 1;
+}
+
+/* The rules above key off .active, which JS only ever adds on fine-pointer
+   devices — so touch never gets the intense shine reveal, only the
+   resting composition. Mirror the same effect for real mouse hover here,
+   since :hover itself needs the same gate: many mobile browsers simulate
+   a :hover state on tap, which would otherwise reveal this same intense
+   layer on touch regardless of the JS gate above. */
+@media (hover: hover) and (pointer: fine) {
+  .pc-card-wrapper:hover {
+    --card-opacity: 1;
+  }
+
+  .pc-card:hover {
+    transition: none;
+    transform: translateZ(0) rotateX(var(--rotate-y)) rotateY(var(--rotate-x));
+  }
+
+  .pc-card:hover .pc-shine {
+    filter: brightness(0.85) contrast(1.5) saturate(0.5);
+    animation-play-state: paused;
+  }
+
+  .pc-card:hover .pc-shine::before,
+  .pc-card:hover .pc-shine::after {
+    opacity: 1;
+  }
 }
 
 .pc-shine::before {
