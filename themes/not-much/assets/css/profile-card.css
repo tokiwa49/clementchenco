@@ -75,19 +75,32 @@ body.dark .pc-card-wrapper {
     gap: var(--about-gap);
   }
 
+  /* The card stays its own native size (auto width from height, same as
+     the stacked layout's demo dimensions below) and .prose is what
+     flexes to fill whatever's left — not the other way around. Since
+     .prose absorbs exactly the remaining space, the card (fixed width)
+     lands flush against .shell's edge automatically, with --about-gap
+     staying the real, fixed gap on both sides of the divider regardless
+     of viewport width. */
   .about-layout .prose {
-    flex: 0 0 42rem;
+    /* Overrides main.css's site-wide .prose{max-width:42rem} (the
+       reading-column width elsewhere on the site) — without lifting it,
+       flex-grow has nowhere to actually put the space it's given, and
+       the card sits short of .shell's edge again despite flex-grow:1. */
+    max-width: none;
+    flex: 1 1 auto;
     padding-right: var(--about-gap);
   }
 
-  /* No max-width here — the card fills whatever space is left after the
-     fixed prose column and gap, so its right edge lands on .shell's own
-     edge, matching the nav bar's width above it. .shell itself caps out
-     at 1200px, so this never grows unreasonably; it's bounded by the
-     page layout, not an arbitrary card-specific limit. */
   .about-profile-card {
     order: 0;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
+  }
+
+  .about-profile-card .pc-card {
+    width: auto;
+    height: 80svh;
+    max-height: 540px;
   }
 }
 
