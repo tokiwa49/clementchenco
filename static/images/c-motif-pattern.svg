@@ -1,16 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
-  <g font-family="'JetBrains Mono', monospace" font-weight="700" font-size="26" letter-spacing="-1" fill="#ffffff">
-    <text x="10" y="34">/C</text>
-    <text x="90" y="34">/C</text>
-    <text x="170" y="34">/C</text>
-    <text x="50" y="94">/C</text>
-    <text x="130" y="94">/C</text>
-    <text x="210" y="94">/C</text>
-    <text x="10" y="154">/C</text>
-    <text x="90" y="154">/C</text>
-    <text x="170" y="154">/C</text>
-    <text x="50" y="214">/C</text>
-    <text x="130" y="214">/C</text>
-    <text x="210" y="214">/C</text>
-  </g>
+  <defs>
+    <g id="mark" stroke="#ffffff" fill="none" stroke-linecap="round">
+      <path d="M 4 26 L 13 2" stroke-width="5"/>
+      <path d="M 30.9 8.2 A 9 9 0 1 0 30.9 19.8" stroke-width="4.5"/>
+    </g>
+  </defs>
+  <use href="#mark" x="10" y="8"/>
+  <use href="#mark" x="90" y="8"/>
+  <use href="#mark" x="170" y="8"/>
+  <use href="#mark" x="50" y="68"/>
+  <use href="#mark" x="130" y="68"/>
+  <use href="#mark" x="210" y="68"/>
+  <use href="#mark" x="10" y="128"/>
+  <use href="#mark" x="90" y="128"/>
+  <use href="#mark" x="170" y="128"/>
+  <use href="#mark" x="50" y="188"/>
+  <use href="#mark" x="130" y="188"/>
+  <use href="#mark" x="210" y="188"/>
 </svg>
