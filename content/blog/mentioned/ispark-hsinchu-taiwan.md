@@ -22,7 +22,7 @@ Matthew Mappin, SATELYX co-founder and co-CEO, on the fit:
 
 Taiwan's Third Phase space programme already has NT$71 billion committed, with officials targeting a NT$500 billion domestic space sector by 2031 — the backdrop for why TASA built iSPARK to turn research groups and hardware teams into companies that can sell something. Next up for SATELYX: a webinar series for Space Hub Yorkshire starting in September, early conversations with ESA's business incubation centres, and TASTI 2026 in southern Taiwan this November.
 
-Source: [Technology.org, August 28, 2026](https://www.technology.org/2026/08/28/satelyx-joins-taiwans-new-hsinchu-space-accelerator-betting-on-chip-cluster-spillover/).
+Sources: [Technology.org, August 28, 2026](https://www.technology.org/2026/08/28/satelyx-joins-taiwans-new-hsinchu-space-accelerator-betting-on-chip-cluster-spillover/); [Space Connect, August 24, 2026](https://www.spaceconnectonline.com.au/industry/7257-satelyx-becomes-a-co-creation-partner-at-tasas-new-ispark-accelerator).
 
 ---
 
