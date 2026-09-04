@@ -107,3 +107,11 @@ copyright = "© {year} Clement Chen"
   url = "/categories/startups/"
   parent = "blog"
   weight = 3
+
+[[menu.main]]
+  identifier = "blog-deeptech"
+  name = "deeptech"
+  title = "Deeptech"
+  url = "/categories/deeptech/"
+  parent = "blog"
+  weight = 4
