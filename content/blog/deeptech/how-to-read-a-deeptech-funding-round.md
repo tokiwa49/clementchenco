@@ -1,0 +1,48 @@
+---
+title: "This Week's Deeptech Rounds Aren't All Made of the Same Money"
+seoTitle: "Not All Deeptech Funding Rounds Are the Same Money"
+description: "REGENT's debt-backed round, Locus Robotics' insiders-only raise, and a Gates-backed biotech bet show three different signals behind similar headline numbers."
+date: 2026-09-07T05:20:00+08:00
+draft: false
+author: "Clement Chen"
+categories: ["deeptech"]
+tags: ["venture debt", "deeptech funding", "corporate venture capital", "philanthropic capital", "round structure"]
+toc: true
+related_posts: ["/blog/deeptech/capital-intensive-deeptech-is-starting-to-look-like-infrastructure-finance", "/blog/deeptech/how-early-stage-deeptech-earns-real-validation", "/blog/deeptech/physical-ai-bottleneck-is-below-the-model"]
+---
+
+Three deeptech companies announced funding this past week, and if you only read the headline numbers, they'd blur into the same story: hard-tech startup raises tens or hundreds of millions of dollars. Look at how each round is actually built, though, and they're telling three different stories about who's willing to bet on what, and how. One is half debt, collateralized against a backlog you can go check. One has no new investor in it at all, and the company says so itself. One isn't venture capital in any conventional sense. The size of the check is the least interesting number in all three.
+
+<!--more-->
+
+## A seaglider's $240M round is half debt, backed by a backlog you can check
+
+REGENT, the Rhode Island-based maker of electric "seagliders" (vessels that skim just above the water on a cushion of air, faster than a boat and cheaper to operate than a plane) founded by MIT AeroAstro alumni Billy Thalheimer and Mike Klinker, closed a $240 million Series B on August 27, in what the company says is the largest VC raise in Rhode Island history, according to [REGENT's own announcement of the round](https://www.regentcraft.com/news/regent-secures-240-million-series-b-funding-to-scale-seaglider-manufacturing-and-transform-maritime-mobility). The round was co-led by Mare Liberum and AE Ventures, and it splits cleanly down the middle: $120 million in equity, and $120 million in debt from Erebor Bank, co-founded by Palmer Luckey. New investor DCVC joined existing backers Founders Fund, Caffeinated Capital, Lockheed Martin Ventures, Japan Airlines and Giant Step Capital, bringing REGENT's total funding to $340 million.
+
+The company says its commercial order book already exceeds $10 billion across six continents, and separately holds roughly $15 million in U.S. Marine Corps contracts for its Viceroy platform. That order book is what makes the debt half of this round work: REGENT's disclosed backlog is functioning as loan collateral, the way a company with a stack of signed customer contracts can borrow against future revenue rather than sell more of the company to raise the same dollar. The new capital funds REGENT's 255,000-square-foot Quonset manufacturing facility and the first crewed flight of its 12-passenger Viceroy prototype. It's worth being precise about what's actually verified here: the order book figure is REGENT's own disclosure, not an independently audited number, and it's a mix of six continents' worth of reservations rather than deposited, binding contracts. Still, a lender willing to underwrite debt against it is itself a form of third-party scrutiny a pure equity round doesn't get.
+
+## A robotics unicorn's new round has no new lead, and says so itself
+
+Locus Robotics, the Wilmington, Massachusetts-based maker of warehouse autonomous mobile robots, raised $41.6 million in Series G funding, reported in early September, entirely from existing investors: Tiger Global Management, Goldman Sachs Asset Management, G2 Venture Partners and Scale Venture Partners, according to [FinSMEs' report on the round](https://www.finsmes.com/2026/09/locus-robotics-raises-41-6m-in-series-g-funding.html). CEO Rick Faulk confirmed to Axios that the round remains open to additional capital. The company's last disclosed valuation was close to $2 billion, a figure that traces back to its November 2022 Series F. The new funds go toward expanding global supply chain and manufacturing capacity, engineering its multi-robot orchestration software, and go-to-market work across European and Asian logistics corridors.
+
+Notice what's absent from that list: a new lead investor willing to set a fresh price. An insiders-only, still-open round from a company with real enterprise revenue and a multi-year track record is a materially different signal than a new-lead-priced round, even when the two show up in the same funding-news feed with similar dollar amounts attached. Existing investors adding capital without forcing a valuation event protects their own ownership and buys the company more runway, but it also means Locus hasn't yet cleared the market test of convincing a brand-new investor the company is worth pricing today. That's not necessarily bad news. It might just mean the company would rather wait for a better market than mark itself down in this one. But it's a different kind of proof than REGENT's checkable order book, and worth reading as such rather than folding both into the same "robotics company raises tens of millions" headline.
+
+## A biotech round anchored by a foundation, not a pharma company
+
+ProFound Therapeutics, a Flagship Pioneering company that launched in 2022 with $75 million, announced on August 27 that it received a commitment of up to $35 million from the Gates Foundation, $20 million upfront with up to $15 million more tied to milestones, according to [the company's announcement](https://www.prnewswire.com/news-releases/profound-therapeutics-receives-investment-to-tackle-preeclampsia-and-eclampsia-302861112.html). The money funds ProFound's application of its ProFoundry platform and agentic AI capabilities to find new biomarkers and first-in-class drug targets for preeclampsia and eclampsia, pregnancy-related hypertensive disorders that drugmakers have historically underinvested in because the commercial upside is thin relative to other indications. The platform uses protein-detection technologies, computational methods and high-throughput experimental assays to systematically map previously uncharacterized human proteins and their roles in disease.
+
+This isn't a pharma company writing a strategic check because it wants a seat at the table on a future drug. It's a philanthropic foundation acting as a primary funder for an AI-driven biotech platform, with a milestone-based structure that pays out more capital only as ProFound hits defined technical goals. That's a genuinely different kind of discipline than a standard equity round: no dilution pressure to justify with a commercial narrative, but real accountability attached to actually reaching the milestones the money is tied to. For a founder whose most compelling application sits in a market too small or too regulatorily fraught for a typical Series B investor, a foundation with a mission mandate and milestone-based tranches is a legitimate parallel capital track, not a consolation prize, and it's one worth building a relationship toward well before the check is actually needed.
+
+## The common thread: read the structure, not just the size
+
+Put these three side by side and none of them is a conventional, freshly priced venture round. REGENT converted a disclosed sales pipeline into loan collateral. Locus's existing backers kept the company funded without inviting a new price-setter into the room. ProFound found a mission-driven funder willing to underwrite a disease category pharma has passed on, on a schedule tied to hitting technical milestones rather than commercial ones. None of that is a coincidence, and it's the same discipline this week's [most fundable physical-AI and materials bets](/blog/deeptech/physical-ai-bottleneck-is-below-the-model) are rewarding one layer down in the stack: knowing exactly what you're actually being underwritten for.
+
+The practical takeaway for any founder raising into a market where a fresh, priced, new-lead round is getting harder to close: look at what non-standard instruments might fit your own situation before assuming a plain equity round is the only option. A disclosed backlog can become loan collateral. Existing investors who believe in the business can keep it funded without forcing a valuation fight. A mission-aligned funder can carry you through a category generalist VCs won't touch. None of those are worse than a priced round, they're just different tools for different situations, and the founders who understand which one actually fits their business, rather than defaulting to whichever one is easiest to announce, are the ones building [funding stories that hold up under real scrutiny](/blog/deeptech/capital-intensive-deeptech-is-starting-to-look-like-infrastructure-finance).
+
+## What to watch next
+
+Three concrete things to track. Whether REGENT's first crewed Viceroy flight actually happens, and whether any meaningful share of that disclosed $10 billion-plus order book converts from reservations into firm, deposited contracts. Whether Locus's still-open Series G ever closes with a genuine new lead investor, and what that does to its roughly $2 billion valuation mark from 2022. And whether ProFound discloses its first biomarker or drug target to emerge from the Gates-funded preeclampsia and eclampsia program, the real evidence that a philanthropic, milestone-based structure actually produces science on schedule.
+
+---
+
+*Clement Chen is a startup founder, advisor, and investor who writes about deeptech and building companies at [clementchen.co](https://clementchen.co).*
