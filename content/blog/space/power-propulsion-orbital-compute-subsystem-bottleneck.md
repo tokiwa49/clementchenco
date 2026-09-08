@@ -11,7 +11,7 @@ toc: true
 related_posts: ["/blog/space/prove-once-deploy-everywhere-flight-evidence", "/blog/space/standardization-eo-satellite-market-shift"]
 ---
 
-Three funding stories landed this week that, on the surface, have nothing to do with each other: a deployable solar-array startup, a Japanese propulsion company, and an orbital-compute infrastructure firm. Read them separately and they're just three checks written to three different problems. Read them together and they're the same story, told three times: the hard part of an ambitious space mission has stopped being "can we get this to orbit" and started being "can we power it, move it, and keep it alive once it's up there."
+A deployable solar-array startup, a Japanese propulsion company, and an orbital-compute infrastructure firm all closed funding rounds this week, and none of the three would call themselves competitors. Line up what each check is actually paying for, though, and the hard part of an ambitious space mission has clearly stopped being "can we get this to orbit" and started being "can we power it, move it, and keep it alive once it's up there."
 
 <!--more-->
 

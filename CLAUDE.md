@@ -130,6 +130,72 @@ Two non-obvious traps if this card (or something like it) gets extended:
   the site default (like `.pc-contact-btn`) has to mark those
   declarations `!important` too, in both the base and `:hover` rules.
 
+### Gotcha: don't default to the "N things happened this week, here's the one lesson" opener
+
+Audited 2026-09-08: 14 of 26 real analysis posts (54%, scoped to `space/` +
+`deeptech/`, excluding the short `mentioned/` announcement blurbs) open by
+enumerating multiple news items inside a time window ("this week," "this
+August") and forcing them into a single reconciled lesson — e.g. "Two
+stories landed this week that, on the surface, have nothing to do with
+each other... Read together, they make the same point." Nothing here
+previously told a session not to do this, so it became the reflexive
+default across separate content-generation sessions rather than an earned
+editorial call each time. The other 12 posts open on a single concrete
+fact or number, which reads stronger and is the pattern to default to.
+
+When drafting a new post:
+1. Default to opening on a single concrete fact or number from the most
+   interesting story, not a roundup framing.
+2. Only reach for a multi-item structure when the connection between
+   items is genuinely non-obvious, not because there happen to be several
+   news items to cover that week.
+3. Avoid these exact phrase-slots even when the multi-item structure is
+   earned: "on the surface," "read together / read separately," "same
+   underlying [X]," "identical argument," "same lesson," "same process."
+4. Don't force the resolution toward sameness. If comparing multiple
+   items, it's fine for the honest conclusion to be that they're
+   different bets, not the same one in disguise — see
+   `deeptech/how-to-read-a-deeptech-funding-round.md` ("three different
+   stories") for the healthy version of this device, versus
+   `space/orbit-is-getting-more-crowded-and-more-volatile.md` for the
+   forced-sameness pattern to not repeat verbatim.
+
+Remediated 2026-09-08: 16 existing posts were rewritten to fix this
+pattern (both in openers and instances buried in body text that only
+turned up on a full re-read), verified against a clean `hugo --gc` build
+afterward. Treat this as a standing check for every new post, not just
+historical cleanup — the pattern will keep recurring on its own otherwise.
+
+### Style checklist verified 2026-09-08 (apply to every new post)
+
+A full pass against Clement's writing-style guide, beyond just the opener
+pattern above, checked and fixed:
+
+- **Banned AI vocabulary**: delve, crucial, pivotal, landscape (as an
+  abstract noun), tapestry, testament, underscore/highlight (as verbs
+  meaning "show"), showcase, foster, cultivate, robust, seamless,
+  innovative, vibrant, intricate, interplay, garner, align with, enhance.
+  Grep-verified clean across every post as of this date — keep it that way
+  rather than letting it drift back in.
+- **No hype language**: "unlock," "the next X," "game-changer,"
+  "revolutionary," "disrupt" as a bare verb. Found and fixed two real
+  instances, one in body prose and one in a search-facing `seoTitle` —
+  frontmatter fields are exactly as subject to this rule as body prose,
+  since `seoTitle`/`description` are what a reader sees in Google results.
+- **Em dashes / curly quotes**: zero tolerance in Clement's own prose. The
+  one exception found was inside a direct quote from a named source
+  (a CEO's own words) — never edit a quote's wording or punctuation to
+  match house style, even for something as small as an em dash.
+- **Risk stated plainly, proof over adjective, hedged predictions**:
+  already strong, consistent defaults across this corpus (heavy use of
+  "What to watch" sections, explicit "hasn't been independently verified"
+  framing). Don't lose these chasing the checks above.
+
+Full guide: Clement's writing-style reference is maintained as a memory
+file (`writing-style`), read automatically at the start of any session.
+This file's entries are the project-specific instances of it — if the two
+ever diverge, the memory file is the source of truth.
+
 ### SEO workflow
 
 Search Console query/page performance is tracked as dated snapshots in

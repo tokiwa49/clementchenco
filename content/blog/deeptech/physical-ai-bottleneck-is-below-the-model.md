@@ -11,7 +11,7 @@ toc: true
 related_posts: ["/blog/deeptech/how-early-stage-deeptech-earns-real-validation", "/blog/deeptech/capital-intensive-deeptech-is-starting-to-look-like-infrastructure-finance", "/blog/deeptech/how-to-read-a-deeptech-funding-round"]
 ---
 
-Two deeptech rounds closed a few weeks apart this August, at wildly different sizes, and they're making the identical argument. One says a robot's problem isn't that it can't decide what to do, it's that it can't reliably tell what's in front of it. The other says an AI chip's problem isn't the architecture on the die, it's the material sitting between the transistors that decides how much heat the chip can shed before it throttles. Neither company is trying to build a smarter model. Both are betting the model layer is already ahead of what the physical layer underneath it can support.
+Two deeptech rounds closed a few weeks apart this August, at wildly different sizes, and neither company would describe itself as making the other's pitch. One says a robot's problem isn't that it can't decide what to do, it's that it can't reliably tell what's in front of it. The other says an AI chip's problem isn't the architecture on the die, it's the material sitting between the transistors that decides how much heat the chip can shed before it throttles. Neither company is trying to build a smarter model. Both are betting the model layer is already ahead of what the physical layer underneath it can support.
 
 <!--more-->
 

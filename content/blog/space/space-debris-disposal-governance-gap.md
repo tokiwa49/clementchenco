@@ -11,7 +11,7 @@ toc: true
 related_posts: ["/blog/space/sovereign-space-flight-heritage-vleo", "/blog/space/flight-proven-spacecraft-bus-middle-ground", "/blog/space/reflect-orbital-vleo-validation-gap"]
 ---
 
-A rocket stage hit the Moon this week. Two U.S. defense agencies picked three companies to study how to grab dead satellites out of orbit and bring them down. And a Portuguese space-safety company partnered with a Belgian sensor maker to see debris that's currently invisible to almost everyone tracking it. None of these stories mention each other, but read together they describe the same uncomfortable gap: the industry is getting serious about cleaning up after itself faster than anyone is writing the rules for how that cleanup is supposed to work.
+A discarded rocket stage hit the Moon this week. It's a harmless impact today only because there's nothing up there yet worth protecting, and that's about to stop being true. In the same stretch of news, two U.S. defense agencies started paying three companies to study how to grab dead satellites out of orbit, and a Portuguese space-safety company partnered with a Belgian sensor maker to see debris that's currently invisible to almost everyone tracking it. None of the three stories mention each other. Put next to each other, they're describing one industry getting serious about cleanup work faster than it's writing any rules for how that cleanup is actually supposed to happen.
 
 <!--more-->
 

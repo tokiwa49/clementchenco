@@ -11,7 +11,7 @@ toc: true
 related_posts: ["/blog/space/flight-proven-spacecraft-bus-middle-ground", "/blog/space/reflect-orbital-vleo-validation-gap", "/blog/space/space-debris-disposal-governance-gap"]
 ---
 
-Two things happened in the same week that, read separately, look like routine trade news. Read together, they're a fairly precise description of where defense and sovereign space procurement is heading, and of who gets left out of it.
+IRIS2, Europe's sovereign satellite connectivity constellation, just moved into implementation with a budget that grew well past its original €10.55B target, and buried inside the new structure is a detail nobody was talking about a year ago: a dedicated VLEO segment. The same week, a SpaceNews op-ed built around interviews with the National Geospatial-Intelligence Agency's leadership argued that national security doesn't need more maps or imagery, it needs measurement. Neither piece mentions the other, but put next to each other they're a fairly precise description of where defense and sovereign space procurement is heading, and of who gets left out of it.
 
 <!--more-->
 

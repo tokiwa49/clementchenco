@@ -11,7 +11,7 @@ toc: true
 related_posts: ["/blog/space/in-orbit-demonstration-is-still-the-bottleneck", "/blog/space/sovereign-space-moves-from-policy-to-hardware"]
 ---
 
-Two stories landed this week that, on the surface, have nothing to do with each other. One is about a partnership between a Portuguese space-traffic company and a Belgian sensor maker. The other is an economic-loss projection from a space-weather analytics firm. Read together, they make the same point from two different directions: orbit is getting more crowded and more volatile, and the standard answer, put up more satellites, doesn't automatically buy more resilience.
+A Portuguese space-traffic company just partnered with a Belgian sensor maker to catch debris that's currently invisible to almost everyone tracking it. In the same stretch of news, a space-weather analytics firm put a dollar figure on what solar storms are about to cost orbital infrastructure, and the number is getting worse fast. Neither story mentions the other, but string them together and you get one honest picture: orbit is getting more crowded and more volatile, and the standard answer, put up more satellites, doesn't automatically buy more resilience.
 
 <!--more-->
 
@@ -27,7 +27,7 @@ There's a reason that distinction matters operationally. A ground-based catalog,
 
 ## Orbit Isn't Just Crowded, It's Getting More Hostile
 
-The debris problem is a spatial one: too many objects, not enough visibility. The second story this week is environmental, and it points at the same underlying issue from a completely different angle.
+The debris problem is a spatial one: too many objects, not enough visibility. The second story this week is environmental, and it gets at the same issue from a completely different angle.
 
 [Mission Space, a space-weather analytics firm, estimates that solar storms could generate $20.65 billion in economic losses in 2026, rising to $44.27 billion annually by 2035](https://payloadspace.com/space-weather-losses-to-double-by-2035-report-finds/). Within that, the report projects orbital-compute losses specifically, the kind tied to satellites and space-based processing, growing from $130 million to $3.26 billion over the same period. Those are report projections built on Mission Space's own modeling, not confirmed outcomes, and the brief doesn't detail the methodology behind them. Worth holding that caveat while still taking the direction of travel seriously: as more compute and more infrastructure move into orbit, the report's authors argue, exposure to space-weather events scales with it.
 

@@ -1,6 +1,6 @@
 ---
 title: "Space Validation Is Becoming the Price of Entry"
-seoTitle: "Why Space Validation Now Unlocks Funding"
+seoTitle: "Space Validation Now Decides Who Gets Funded"
 description: "SpaceWERX's STRATFI picks and Neuraspace's growth-backed funding round show government and commercial space capital both now pricing in proof, not promise."
 date: 2026-08-21T11:00:00+00:00
 draft: false
@@ -25,7 +25,7 @@ It is also worth noticing which kind of companies made this list. Muon Space, fo
 
 ## The proof that closed a funding round
 
-A second data point from the same week points at the same underlying shift, just from the commercial side rather than the defense-procurement side. Portugal-based Neuraspace, which builds AI-driven space domain awareness (SDA) and space-traffic-management software, closed a [€15.6 million ($18 million) funding round](https://payloadspace.com/neuraspace-raises-e15-6m-to-scale-its-sda-service/) on August 5, blending venture capital from Lince Capital, Explorer Investments, and Armilar Venture Partners with public funding awarded under Portugal's Recovery and Resilience Plan. What justified that round wasn't a roadmap. It was a number: Neuraspace's revenue has grown more than 350 percent over the past year, on a customer list that already spans ESA, the Portuguese Air Force, NATO, and commercial operators including Spire Global, NanoAvionics, and Sidus Space.
+A second data point from the same week points at the same shift, just from the commercial side rather than the defense-procurement side. Portugal-based Neuraspace, which builds AI-driven space domain awareness (SDA) and space-traffic-management software, closed a [€15.6 million ($18 million) funding round](https://payloadspace.com/neuraspace-raises-e15-6m-to-scale-its-sda-service/) on August 5, blending venture capital from Lince Capital, Explorer Investments, and Armilar Venture Partners with public funding awarded under Portugal's Recovery and Resilience Plan. What justified that round wasn't a roadmap. It was a number: Neuraspace's revenue has grown more than 350 percent over the past year, on a customer list that already spans ESA, the Portuguese Air Force, NATO, and commercial operators including Spire Global, NanoAvionics, and Sidus Space.
 
 The money is earmarked for the less demo-able parts of the business rather than a flashy new capability. Neuraspace plans to invest in autonomous decision-making, explainable AI, sensor fusion, orbit determination, and anomaly detection, the operational plumbing that turns raw tracking data into a defense-grade product instead of a research dashboard. The company is also adding radar to complement its existing network of optical telescopes, a second sensing modality meant to close the gaps any single detection method leaves open. None of that reads as flashy news on its own. It reads as a company spending fresh capital to make its existing claims more defensible, not to make new ones.
 

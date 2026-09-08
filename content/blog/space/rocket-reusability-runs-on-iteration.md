@@ -11,7 +11,7 @@ toc: true
 related_posts: ["/blog/space/orbit-access-is-not-mission-capability", "/blog/space/space-validation-is-becoming-the-price-of-entry"]
 ---
 
-Two launch vehicle stories landed this week with opposite headlines and the same underlying lesson. One company recovered a booster and is already planning to fly it again. Another flew a rocket for the first time and had to blow it up mid-flight. Read separately, they look like a win and a loss. Read together, they're the same process at two different points in its cycle.
+One company recovered a booster this week and is already planning to fly it again. Another flew a rocket for the first time and had to blow it up mid-flight. On the scoreboard, that's a win and a loss. But both companies are doing exactly what a young launch program is supposed to do: build something, fly it, find out what breaks, fix that specific thing, fly again.
 
 <!--more-->
 
