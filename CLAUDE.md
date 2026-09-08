@@ -196,6 +196,28 @@ file (`writing-style`), read automatically at the start of any session.
 This file's entries are the project-specific instances of it — if the two
 ever diverge, the memory file is the source of truth.
 
+### Gotcha: fixing the opener phrase-slots does not fix whole-article comparison structure
+
+Found later the same day (2026-09-08), running two mock drafts through the
+fixed pipeline: even with a clean opener and zero banned phrase-slots, a
+draft can still default to organizing the *entire piece* around comparing
+2-3 items from the brief, because that's a compositional habit decided at
+story-selection time, not a phrase-level tic. Confirmed against the live
+repo, not hypothetically: all 5 of the most recently published posts at
+that point used comparison as their primary skeleton. Comparison itself
+isn't banned — plenty of it is genuinely earned — but an unnoticed run of
+it is the actual problem, and a forced comparison is worse than a post
+that runs short of the word-count target.
+
+The full mechanics (three-mode `DECIDE POST COUNT`, the pre-draft
+falsifiable-claim check, the evidence-not-company rule, the last-5-posts
+structural-variety audit, and the closing peer-analyst gate with its
+`status: failed-review` outcome) live in
+`.claude/skills/staging-blog-drafts/SKILL.md` and in the two cloud routine
+prompts (deeptech blog + SATELYX daily brief) — not duplicated here.
+Read that skill file before staging any post; it's the actual
+implementation, this note is just the pointer and the reason it exists.
+
 ### SEO workflow
 
 Search Console query/page performance is tracked as dated snapshots in
