@@ -29,7 +29,7 @@ The clearer illustration of the pattern is HEO's expanded partnership with Plane
 
 Strip away the caveats and the underlying move is still notable. HEO isn't buying satellites. It's building the software layer that decides which existing satellite, in which orbit, with which sensor, gets tasked for a given request. Planet already had the hardware in orbit. HEO is adding the intelligence that makes a heterogeneous set of spacecraft behave like one coordinated system. That's a genuinely different business than owning and operating a dedicated imaging constellation, and it scales differently too: every new partner HEO signs adds sensors to the network without HEO having to build or launch anything, the same standardize-the-foundation logic showing up in [flight-proven bus architecture elsewhere this week](/blog/space/flight-proven-spacecraft-bus-middle-ground).
 
-We've made a version of this argument before about companies buying their way into capability rather than inventing it from scratch, in [our look at the wave of space-industry mergers and subsidiary structures](/blog/space/space-companies-assembling-not-inventing). HEO's approach is the partnership-flavored cousin of that trend: rather than acquiring a company that owns SkySats, HEO is integrating with one. The instinct behind it is identical. Assembling access to proven hardware is now a faster, cheaper path to capability than building your own version of it.
+I've made a version of this argument before about companies buying their way into capability rather than inventing it from scratch, in [my look at the wave of space-industry mergers and subsidiary structures](/blog/space/space-companies-assembling-not-inventing). HEO's approach is the partnership-flavored cousin of that trend: rather than acquiring a company that owns SkySats, HEO is integrating with one. The instinct behind it is identical. Assembling access to proven hardware is now a faster, cheaper path to capability than building your own version of it.
 
 ## Debris tracking is the same story, with sharper stakes
 
@@ -37,7 +37,7 @@ The Neuraspace-Arcsec partnership is a smaller headline but it makes the pattern
 
 The problem it's aimed at is real regardless of how the deployment timeline plays out. Commercial tracking systems generally top out at detecting objects above 10 centimeters, while estimates put the population of untracked fragments smaller than that at roughly 1 million, against roughly 36,500 tracked objects larger than 10 centimeters. Those are estimates, not a census, but the gap between them is the whole reason this partnership exists. No single sensor architecture closes it. What closes it, if anything does, is combining a specialist sensor with specialist software and making the pairing repeatable across missions rather than treating it as a one-off integration project.
 
-That's a governance problem as much as a technical one, and it's one we've written about at length in the context of who's actually accountable for orbital debris removal and tracking as the volume of objects climbs faster than the frameworks meant to manage them do; see [our piece on the disposal and governance gap](/blog/space/space-debris-disposal-governance-gap). Neuraspace and Arcsec aren't solving the governance question. They're demonstrating one piece of the technical answer: complementary components, standardized well enough to combine.
+That's a governance problem as much as a technical one, and it's one I've written about at length in the context of who's actually accountable for orbital debris removal and tracking as the volume of objects climbs faster than the frameworks meant to manage them do; see [my piece on the disposal and governance gap](/blog/space/space-debris-disposal-governance-gap). Neuraspace and Arcsec aren't solving the governance question. They're demonstrating one piece of the technical answer: complementary components, standardized well enough to combine.
 
 ## The catalogue model: what orchestration actually requires
 
@@ -57,4 +57,4 @@ None of this means standardization flattens every mission into the same shape. I
 
 ---
 
-*SATELYX tracks how orbital capability gets validated and made reusable across missions, from sensor networks to shared spacecraft platforms. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*I track how orbital capability gets validated and made reusable across missions, from sensor networks to shared spacecraft platforms. It's the same work I do at SATELYX. More at [satelyx.com](https://satelyx.com).*

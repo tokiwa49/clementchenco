@@ -59,4 +59,4 @@ That's the gap a shared IOD model is built to close. Instead of every promising 
 
 ---
 
-*SATELYX builds that repeatable path, running in-orbit demonstration as a service so promising payloads can reach flight heritage without their makers having to become satellite operators. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*Building that repeatable path is what I do at SATELYX, running in-orbit demonstration as a service so promising payloads can reach flight heritage without their makers having to become satellite operators. More at [satelyx.com](https://satelyx.com).*

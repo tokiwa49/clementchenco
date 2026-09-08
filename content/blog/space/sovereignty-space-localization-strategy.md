@@ -47,7 +47,7 @@ For the launch providers competing for that €543.6 million, it also changes wh
 
 None of this is really a story about offices, laboratories or launch contracts individually. It is a story about what "sovereign" now has to prove, across every layer of the space value chain: manufacturing, data, partnerships and now launch access. A government or a regional agency chasing that standard cannot build every layer of it alone, and that is precisely the gap a repeatable [flight-validation pathway](https://satelyx.com/missions/) is built to close. Standardized interfaces and a shared mission model let a regional technology earn real flight evidence and catalogue-ready status without every customer government having to stand up a complete satellite program from scratch, which is the same integration problem we cover from the modular-hardware side in [this week's look at reusable mission-enabler kits](/blog/space/modular-mission-kits-integration-advantage).
 
-Sovereignty built this way still depends on validated, repeatable interfaces underneath it, the same interfaces that make it possible for commercial infrastructure to plug into national-security missions in the first place, which is exactly the shift we're tracking in [this week's look at commercial space-domain awareness](/blog/space/commercial-sda-national-security-resilience). Localization does not replace the need for integration discipline. It raises the stakes on it, because now a program has to be provably domestic and provably reliable at the same time.
+Sovereignty built this way still depends on validated, repeatable interfaces underneath it, the same interfaces that make it possible for commercial infrastructure to plug into national-security missions in the first place, which is exactly the shift I'm tracking in [this week's look at commercial space-domain awareness](/blog/space/commercial-sda-national-security-resilience). Localization does not replace the need for integration discipline. It raises the stakes on it, because now a program has to be provably domestic and provably reliable at the same time.
 
 ## What to watch
 
@@ -57,4 +57,4 @@ Sovereignty built this way still depends on validated, repeatable interfaces und
 
 ---
 
-*SATELYX exists to give localized and regional space capability a repeatable, flight-proven route to prove itself, without every program having to build a complete mission from scratch. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*Giving localized and regional space capability a repeatable, flight-proven route to prove itself, without every program having to build a complete mission from scratch, is why I started SATELYX. More at [satelyx.com](https://satelyx.com).*

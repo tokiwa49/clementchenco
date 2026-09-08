@@ -37,7 +37,7 @@ The Mission Space numbers are also a useful check on how these programs get eval
 
 ## What this means for mission integration
 
-Put the LeoLabs contract, the NorthStar-Kepler partnership and the Mission Space forecast together and the shape of the problem gets clearer. Government buyers want commercial space-domain awareness capability now, and they are willing to move at commercial speed and structure to get it, which is exactly the kind of demand-led shift we're tracking in [this week's look at modular mission-enabler kits](/blog/space/modular-mission-kits-integration-advantage) and the broader push toward [localized, provably operational sovereign capability](/blog/space/sovereignty-space-localization-strategy). But speed and proliferation are not the same thing as resilience, and the Mission Space numbers say that gap is getting more expensive every year it goes unaddressed.
+Put the LeoLabs contract, the NorthStar-Kepler partnership and the Mission Space forecast together and the shape of the problem gets clearer. Government buyers want commercial space-domain awareness capability now, and they are willing to move at commercial speed and structure to get it, which is exactly the kind of demand-led shift I'm tracking in [this week's look at modular mission-enabler kits](/blog/space/modular-mission-kits-integration-advantage) and the broader push toward [localized, provably operational sovereign capability](/blog/space/sovereignty-space-localization-strategy). But speed and proliferation are not the same thing as resilience, and the Mission Space numbers say that gap is getting more expensive every year it goes unaddressed.
 
 That is precisely the case for treating in-orbit validation as more than a payload-performance test. A mission architecture that proves fault tolerance, thermal and power behavior, and data-recovery procedures in orbit, not just whether the sensor works, is building the reusable module the next SDA program actually needs: one where mission ownership keeps integration, operations and data delivery under one accountable party, [rather than leaving a customer to assemble a catalogue of capability packages](https://satelyx.com/missions/) with no single party responsible when a solar event hits more than one node in the network at once.
 
@@ -49,4 +49,4 @@ That is precisely the case for treating in-orbit validation as more than a paylo
 
 ---
 
-*SATELYX builds resilience into validation from the start, testing not just whether a payload works but whether it survives, recovers and keeps delivering data under real orbital conditions. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*I build resilience into validation from the start at SATELYX, testing not just whether a payload works but whether it survives, recovers, and keeps delivering data under real orbital conditions. More at [satelyx.com](https://satelyx.com).*

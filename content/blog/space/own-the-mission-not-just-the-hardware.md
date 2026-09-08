@@ -47,4 +47,4 @@ It's the same story playing out at the bus and payload level too, [where platfor
 
 ---
 
-*Satelyx exists because owning the whole mission, not just a satellite bus or a single payload, is what actually gets space technology to orbit and back into a customer's hands. More at [satelyx.com](https://satelyx.com), and more analysis from [Clement Chen](https://clementchen.co).*
+*This is why I built SATELYX around owning the whole mission, not just a satellite bus or a single payload: it's what actually gets space technology to orbit and back into a customer's hands. More at [satelyx.com](https://satelyx.com).*
