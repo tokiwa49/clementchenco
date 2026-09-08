@@ -7,6 +7,23 @@ shared — don't overwrite old snapshots, since the trend across snapshots is
 the useful signal (is a query's position improving? are new queries showing
 up?).
 
+## Content targeting cheat-sheet (running summary, updated 2026-09-08)
+
+Quick-reference distillation of the snapshots below — check here first before
+picking a new post topic; only dig into the dated snapshots for the detail
+behind a number.
+
+**Validated clusters — Google already associates this domain with these topics (real impression volume across 2+ snapshots, position still capped by domain authority, not by relevance). Write more here first:**
+1. Spacecraft bus / satellite bus standardization / subsystems
+2. Space debris removal & governance (`space debris removal service market` is the single highest-impression query on the site, 37 impr as of 09-03)
+3. Orbital / satellite / mission orchestration
+
+**Not yet a validated cluster, too little volume to read into (1-2 impressions each as of 09-03), but worth a note if they recur next snapshot:** hosted payloads, rideshare payload user guide, mobile access structure, leva aerospace.
+
+**What's actually converting today (clicks, not just impressions):** branded search (`clement chen`, pos 6.4) and the `/about/` page (pos 8.6, the single highest-click page on the site). Neither is a content-topic lever, but `/about/` outperforming every blog post is worth understanding, likely picking up brand-adjacent intent, and reinforcing (more bio/credibility content, press mentions linked from it) rather than treated as fixed.
+
+**Honest caveat:** no non-branded topic query has both good position *and* clicks yet. The three validated clusters above are "impressions confirm Google understands the topic," not "already ranking well." The 2026-09-08 audit (see `ACTION-PLAN.md`) found and fixed a real CTR-suppressing issue (titles truncating at ~71 chars sitewide, brand prefix eating the budget) that predates any of this snapshot data, so the next GSC pull is the first one that will reflect that fix, not just the domain-authority ramp.
+
 ## How to update this file
 When given a new GSC export (Queries.csv, Pages.csv, Chart.csv, etc.):
 1. Add a new `## Snapshot: YYYY-MM-DD` section below, newest last.

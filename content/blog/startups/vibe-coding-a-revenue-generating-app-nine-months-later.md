@@ -1,7 +1,7 @@
 ---
 title: "Vibe Coding a Revenue-Generating App Got Easier. Keeping It Yours Didn't."
-seoTitle: "Vibe Coding and Structural Moats: A Tweet Revisited Nine Months Later"
-description: "A November 2025 tweet argued vibe coding a revenue-generating app doesn't collapse what happens outside the code: data ownership, compliance, distribution. Nine months on, that's the part that held up."
+seoTitle: "Vibe Coding and Structural Moats, Revisited"
+description: "A November 2025 tweet argued vibe coding doesn't collapse what's outside the code: data, compliance, distribution. Nine months on, that's the part that held up."
 date: 2026-08-26T00:30:00+08:00
 draft: false
 author: "Clement Chen"

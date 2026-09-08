@@ -1,6 +1,10 @@
 {{ $pageTitle := .Title }}
 {{ with .Params.seoTitle }}{{ $pageTitle = . }}{{ end }}
-{{ $title := print .Site.Title " | " $pageTitle }}
+{{/* Headline leads, brand trails, so Google's ~60-char SERP truncation
+     clips the low-value brand suffix instead of the headline itself.
+     "clement chen" already ranks on its own (branded search), so the
+     title doesn't need the name doing work in every single post. */}}
+{{ $title := print $pageTitle " | " .Site.Title }}
 {{ if .IsHome }}
   {{ $title = .Site.Title }}
   {{ with .Params.seoTitle }}{{ $title = . }}{{ end }}

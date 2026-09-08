@@ -1,7 +1,7 @@
 ---
 title: "Space Doesn't Need You to Choose Between Buying a Satellite and Building One"
 seoTitle: "Flight-Proven Spacecraft Buses Are the New Middle Ground"
-description: "Blue Canyon's FleXbus, a flight-proven spacecraft bus, and AST SpaceMobile's booked launch cadence show space buyers now favor proven foundations over bespoke, single-vendor builds."
+description: "Blue Canyon's FleXbus, a flight-proven spacecraft bus, and AST SpaceMobile's launch cadence show buyers now favor proven foundations over bespoke builds."
 date: 2026-08-17T09:00:00+08:00
 draft: false
 author: "Clement Chen"

@@ -1,7 +1,7 @@
 ---
 title: "SATELYX to Present at Plug and Play Japan's New Space Business Event"
 seoTitle: "SATELYX at Plug and Play Japan New Space Business Event"
-description: "SATELYX is a confirmed presenting startup at Plug and Play Japan's New Space Business event in Tokyo on September 10, 2026, alongside space startups from Japan, Taiwan, and Korea."
+description: "SATELYX is presenting at Plug and Play Japan's New Space Business event in Tokyo, September 10, alongside startups from Japan, Taiwan and Korea."
 date: 2026-08-22T12:00:00+08:00
 draft: false
 author: "Clement Chen"

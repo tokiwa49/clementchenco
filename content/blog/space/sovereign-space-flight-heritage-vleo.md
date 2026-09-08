@@ -1,7 +1,7 @@
 ---
 title: "The €15.6B Signal: Why Sovereign Space Programs Are Now Buying Flight Heritage, Not Just Satellites"
 seoTitle: "VLEO Flight Heritage: Sovereign Space's New Currency"
-description: "IRIS2's new VLEO tier shows sovereign space procurement now demands VLEO flight heritage, not satellite count — here's the data behind the shift."
+description: "IRIS2's new VLEO tier shows sovereign space procurement now demands VLEO flight heritage, not satellite count. Here's the data behind the shift."
 date: 2026-08-11T09:00:00+08:00
 draft: false
 author: "Clement Chen"

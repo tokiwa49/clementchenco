@@ -1,7 +1,8 @@
 {{- /*
-Renders JSON-LD structured data: a sitewide WebSite entity, plus a Person
-entity (with sameAs links to socials) on the home and About pages, where
-it actually describes the page's subject.
+Renders JSON-LD structured data: a sitewide WebSite entity, a Person
+entity (with sameAs links to socials) on the home and About pages, and a
+BlogPosting entity on every individual blog post, where each actually
+describes the page's subject.
 
 Each object is built as a single dict and passed through jsonify once,
 then marked safeJS — piping individual field values through jsonify
@@ -14,6 +15,27 @@ it doesn't trust the value's type.
 
 {{- $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" site.Title "url" site.BaseURL }}
 <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{- if and .IsPage (eq .Section "blog") }}
+{{- $headline := .Title }}
+{{- with .Params.seoTitle }}{{ $headline = . }}{{ end }}
+{{- $image := .Params.image | default "og-image-blog.png" | absURL }}
+{{- $author := dict "@type" "Person" "name" (.Params.author | default site.Title) "url" site.BaseURL }}
+{{- $publisher := dict "@type" "Organization" "name" site.Title "url" site.BaseURL }}
+{{- $blogPosting := dict
+      "@context" "https://schema.org"
+      "@type" "BlogPosting"
+      "headline" $headline
+      "description" .Description
+      "datePublished" (.Date.Format "2006-01-02T15:04:05-07:00")
+      "dateModified" (.Lastmod.Format "2006-01-02T15:04:05-07:00")
+      "url" .Permalink
+      "mainEntityOfPage" .Permalink
+      "image" $image
+      "author" $author
+      "publisher" $publisher
+}}
+<script type="application/ld+json">{{ $blogPosting | jsonify | safeJS }}</script>
+{{- end }}
 {{- if or .IsHome (eq .RelPermalink "/about/") }}
 {{- $sameAs := slice }}
 {{- range site.Params.socials }}

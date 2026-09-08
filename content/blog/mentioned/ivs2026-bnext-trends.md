@@ -1,7 +1,7 @@
 ---
 title: "Bnext's IVS2026 Trends Report Cites SATELYX Among Global Finalists"
 seoTitle: "Bnext IVS2026 Report Features SATELYX"
-description: "Meet/bnext's recap of the IVS2026 LAUNCHPAD finals highlights rising international participation and the shift from blockchain to physical AI, citing SATELYX as an example."
+description: "Meet/bnext's recap of the IVS2026 LAUNCHPAD finals highlights rising international participation and the shift from blockchain to physical AI, citing SATELYX."
 date: 2026-07-03T18:00:00+08:00
 draft: false
 author: "Clement Chen"

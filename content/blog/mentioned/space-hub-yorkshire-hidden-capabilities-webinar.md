@@ -1,7 +1,7 @@
 ---
 title: "Space Hub Yorkshire's \"Hidden Capabilities\" Webinar Featuring SATELYX"
 seoTitle: "Hidden Capabilities Webinar Featuring SATELYX"
-description: "Space Hub Yorkshire's Hidden Capabilities webinar on September 15, 2026, featuring SATELYX, on turning adjacent-sector technology into evidence buyers in space will trust."
+description: "Space Hub Yorkshire's Hidden Capabilities webinar, September 15, featuring SATELYX, on turning adjacent-sector technology into evidence space buyers will trust."
 date: 2026-09-03T01:00:00+08:00
 draft: false
 author: "Clement Chen"
@@ -16,7 +16,7 @@ Space Hub Yorkshire is running "HIDDEN CAPABILITIES: The Pathway to Commercial S
 
 The session runs 10 AM-12 PM GMT+1 (9-11 AM UTC) and is aimed at technology companies from adjacent sectors, plus space companies looking for a route to validation. The core problem it addresses is one SATELYX works on daily: a technology can solve a real problem in space and still be hard to buy, because customers need evidence it works in the target environment, integrates safely, and delivers the promised outcome before they'll commit.
 
-Attendees leave with a practical framework for one technology of their own: identify the market gap, define the buyer's barrier, specify what evidence is required, and decide what belongs in ground testing versus in-orbit demonstration. The agenda covers four areas where existing industry can step in — onboard processing and autonomy, resilient communications, space domain awareness and sensing, and in-orbit servicing and manufacturing.
+Attendees leave with a practical framework for one technology of their own: identify the market gap, define the buyer's barrier, specify what evidence is required, and decide what belongs in ground testing versus in-orbit demonstration. The agenda covers four areas where existing industry can step in: onboard processing and autonomy, resilient communications, space domain awareness and sensing, and in-orbit servicing and manufacturing.
 
 Event listing: [Space Hub Yorkshire, Hidden Capabilities webinar, September 15, 2026](https://www.eventbrite.co.uk/e/hidden-capabilities-the-pathway-to-commercial-success-in-space-webinar-tickets-1999473761846).
 

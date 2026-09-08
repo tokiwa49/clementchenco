@@ -1,7 +1,7 @@
 ---
 title: "IVS2026 Wraps in Kyoto: 13,000 Attendees, Space Quarters Takes LAUNCHPAD"
 seoTitle: "IVS2026 Kyoto Wrap-Up: LAUNCHPAD Results"
-description: "IVS2026 concluded with 13,000 attendees and 360+ side events in Kyoto. SATELYX competed in the LAUNCHPAD pitch competition as one of four international finalists."
+description: "IVS2026 concluded with 13,000 attendees and 360+ side events in Kyoto. SATELYX competed in LAUNCHPAD as one of four international finalists."
 date: 2026-07-22T12:00:00+08:00
 draft: false
 author: "Clement Chen"
