@@ -3,7 +3,7 @@ title: "Open Cosmos Raises €300 Million to Scale European Satellite Manufactur
 seoTitle: "Open Cosmos Raises €300M for Satellite Manufacturing"
 description: "Open Cosmos closed a €300 million round to expand four European factories and a 30-minute data-delivery promise. Here's what the money is actually betting on."
 date: 2026-09-15T09:00:00+08:00
-draft: true
+draft: false
 author: "Clement Chen"
 categories: ["space"]
 tags: ["Open Cosmos", "satellite manufacturing", "European space funding", "Earth observation", "space infrastructure"]

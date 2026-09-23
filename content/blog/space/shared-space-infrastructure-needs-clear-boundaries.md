@@ -3,7 +3,7 @@ title: "Shared Space Infrastructure Only Works With Clear Operating Boundaries"
 seoTitle: "Shared Space Infrastructure Needs Clear Boundaries"
 description: "Equatys shows shared satellite infrastructure scales only when common operations are separated from each operator's spectrum, customers and commercial control."
 date: 2026-09-21T09:00:00+08:00
-draft: true
+draft: false
 author: "Clement Chen"
 categories: ["space"]
 tags: ["shared satellite infrastructure", "mission integration", "direct-to-device", "space operations", "constellations"]

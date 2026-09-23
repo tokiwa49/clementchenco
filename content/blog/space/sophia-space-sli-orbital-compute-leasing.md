@@ -3,7 +3,7 @@ title: "Sophia Space's $300M Leasing Framework: Financing Structure, Not Proof o
 seoTitle: "Sophia Space, SLI Set Terms for $300M Orbital Compute Deal"
 description: "Sophia Space and SLI outlined a $300M non-binding leasing framework for 10 orbital-compute satellites, with the structure real but customer demand unproven."
 date: 2026-09-15T09:05:00+08:00
-draft: true
+draft: false
 author: "Clement Chen"
 categories: ["space"]
 tags: ["orbital compute", "satellite leasing", "asset financing", "Sophia Space", "space infrastructure"]

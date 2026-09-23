@@ -3,7 +3,7 @@ title: "Atomarine Is Selling Speed to Site, Not a New Way to Make Power"
 seoTitle: "Atomarine's $4B Bet: Siting, Not Nuclear Power"
 description: "Atomarine has $4 billion in letters of intent for floating, offshore data centers pitched as nuclear-powered. Its own first pilot in 2028 runs on natural gas."
 date: 2026-09-14T09:00:00+08:00
-draft: true
+draft: false
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["Atomarine", "data centers", "Y Combinator", "energy", "venture capital"]

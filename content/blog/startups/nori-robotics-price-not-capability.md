@@ -3,7 +3,7 @@ title: "Nori Priced a Humanoid Robot Like an Appliance. Buyers Finally Showed Up
 seoTitle: "Nori's $1,688 Humanoid Robot Tests Price Over Specs"
 description: "Nori Robotics launched a $1,688 humanoid, undercutting the category's usual $20,000+ price by 10x, and has logged $440K in sales in six weeks."
 date: 2026-09-14T09:00:00+08:00
-draft: true
+draft: false
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["Nori Robotics", "humanoid robots", "consumer hardware", "robotics"]
