@@ -3,7 +3,7 @@ title: "Hubble Network's $1.6 Billion Bet on an Unfinished Constellation"
 seoTitle: "Hubble Network's $1.6B Valuation vs. Its Six Satellites"
 description: "Hubble Network raised $200M at a $1.6B valuation and took its satellite asset-tracking service live. Here's what that price is actually betting on."
 date: 2026-09-25T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["Hubble Network", "satellite IoT", "space funding", "asset tracking", "Bluetooth connectivity"]

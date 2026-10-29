@@ -3,7 +3,7 @@ title: "Cambridge Aerospace Is Worth $3.4 Billion on Math Nobody Outside the Com
 seoTitle: "Cambridge Aerospace's $3.4B Valuation Has an Unpublished Gap"
 description: "Cambridge Aerospace raised $300M at a $3.4B valuation for its Skyhammer interceptor drone, but the numbers needed to verify that price were never published."
 date: 2026-09-09T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["defense tech", "drone interceptors", "venture valuation", "unit economics", "NATO"]

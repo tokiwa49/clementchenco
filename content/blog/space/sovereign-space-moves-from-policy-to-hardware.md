@@ -3,7 +3,7 @@ title: "Sovereign Space Capability Is Starting to Look Like Signed Contracts and
 seoTitle: "IRIS² and Lunar Laser Links: Sovereign Space Gets Real"
 description: "OHB's nearly €1 billion IRIS² contract and China's Earth-Moon laser link show strategic autonomy in space shifting from policy to funded, operating hardware."
 date: 2026-09-01T09:05:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["IRIS2", "sovereign space infrastructure", "optical communications", "MEO satellites", "space policy"]

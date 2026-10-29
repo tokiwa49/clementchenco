@@ -7,7 +7,7 @@ draft: false
 author: "Clement Chen"
 categories: ["mentioned"]
 tags: ["Space Hub Yorkshire", "Webinar", "Commercial Space"]
-related_posts: ["/blog/space/space-validation-is-becoming-the-price-of-entry", "/blog/space/in-orbit-demonstration-is-still-the-bottleneck", "/blog/space/prove-once-deploy-everywhere-flight-evidence"]
+related_posts: ["/blog/space/space-validation-is-becoming-the-price-of-entry", "/blog/space/in-orbit-demonstration-is-still-the-bottleneck"]
 ---
 
 Space Hub Yorkshire is running "HIDDEN CAPABILITIES: The Pathway to Commercial Success in Space," an online webinar on September 15, 2026, featuring SATELYX.

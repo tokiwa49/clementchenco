@@ -3,7 +3,7 @@ title: "Physical AI's Real Bottleneck Isn't the Model, It's Everything Underneat
 seoTitle: "Physical AI's Bottleneck Sits Below the Model"
 description: "Lyte's $165M raise and Discovered Materials' $9M seed both bet the real constraint on physical AI is sensing hardware and chip materials, not the model."
 date: 2026-09-07T05:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["robotics funding", "physical AI", "materials science", "sensor hardware", "deeptech venture capital"]

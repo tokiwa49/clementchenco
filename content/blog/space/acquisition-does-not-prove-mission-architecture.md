@@ -3,7 +3,7 @@ title: "An Acquisition Does Not Yet Prove a Mission Architecture"
 seoTitle: "Rocket Lab and Iridium: The Integration Test Still Ahead"
 description: "Iridium shareholders approved Rocket Lab's acquisition, but the vote cannot prove whether launch, manufacturing and network operations will work as one system."
 date: 2026-10-02T18:45:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["space acquisitions", "mission architecture", "space operations", "vertical integration", "satellite communications"]

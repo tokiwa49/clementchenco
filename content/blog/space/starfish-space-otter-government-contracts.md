@@ -3,7 +3,7 @@ title: "Starfish Space's Contract Ladder Shows What Comes After the Demo Phase"
 seoTitle: "Starfish Space Contracts Show a Post-Demo Space Market"
 description: "Starfish Space's contract ladder and Ethereal Space's NOAA award show government space buyers shifting from demos to paid, recurring service contracts."
 date: 2026-09-25T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["Starfish Space", "in-orbit servicing", "government space contracts", "Ethereal Space", "space debris removal"]

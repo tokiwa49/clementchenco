@@ -4,6 +4,10 @@ seoTitle: "Open Cosmos Raises €300M for Satellite Manufacturing"
 description: "Open Cosmos closed a €300 million round to expand four European factories and a 30-minute data-delivery promise. Here's what the money is actually betting on."
 date: 2026-09-15T09:00:00+08:00
 draft: false
+aliases:
+  - /blog/deeptech/capital-intensive-deeptech-is-starting-to-look-like-infrastructure-finance/
+  - /blog/deeptech/hardware-founders-wrong-fundraising-benchmark/
+  - /blog/deeptech/how-to-read-a-deeptech-funding-round/
 author: "Clement Chen"
 categories: ["space"]
 tags: ["Open Cosmos", "satellite manufacturing", "European space funding", "Earth observation", "space infrastructure"]

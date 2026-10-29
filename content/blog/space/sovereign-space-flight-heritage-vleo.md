@@ -4,11 +4,15 @@ seoTitle: "VLEO Flight Heritage: Sovereign Space's New Currency"
 description: "IRIS2's new VLEO tier shows sovereign space procurement now demands VLEO flight heritage, not satellite count. Here's the data behind the shift."
 date: 2026-08-11T09:00:00+08:00
 draft: false
+aliases:
+  - /blog/space/neworbit-neo1-uk-space-strategy/
+  - /blog/space/reflect-orbital-vleo-validation-gap/
+  - /blog/space/sovereign-space-moves-from-policy-to-hardware/
 author: "Clement Chen"
 categories: ["space"]
 tags: ["VLEO flight heritage", "sovereign space procurement", "IRIS2 VLEO", "flight-proven satellite technology"]
 toc: true
-related_posts: ["/blog/space/flight-proven-spacecraft-bus-middle-ground", "/blog/space/reflect-orbital-vleo-validation-gap", "/blog/space/space-debris-disposal-governance-gap"]
+related_posts: ["/blog/space/flight-proven-spacecraft-bus-middle-ground"]
 ---
 
 IRIS2, Europe's sovereign satellite connectivity constellation, just moved into implementation with a budget that grew well past its original €10.55B target, and buried inside the new structure is a detail nobody was talking about a year ago: a dedicated VLEO segment. The same week, a SpaceNews op-ed built around interviews with the National Geospatial-Intelligence Agency's leadership argued that national security doesn't need more maps or imagery, it needs measurement. Neither piece mentions the other, but put next to each other they're a fairly precise description of where defense and sovereign space procurement is heading, and of who gets left out of it.

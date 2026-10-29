@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Startups"
 description: "Notes on building and running startups outside of space specifically: tooling, product decisions, and the practical tradeoffs of building fast."
 ---

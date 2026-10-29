@@ -3,7 +3,7 @@ title: "Prove Once, Deploy Everywhere: Flight Evidence Is Becoming Space's New C
 seoTitle: "Flight Evidence Is Becoming Space's New Currency"
 description: "New technology isn't space's bottleneck anymore, proving it in orbit is. STRATFI, OrbitAID, DiskSat and Shield AI show why flight evidence decides who scales."
 date: 2026-08-25T09:00:00+00:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["flight evidence", "in-orbit validation", "SpaceWERX STRATFI", "VLEO satellite technology", "autonomous spacecraft operations"]

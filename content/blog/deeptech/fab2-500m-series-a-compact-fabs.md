@@ -3,7 +3,7 @@ title: "Fab2's $3.7B Valuation Is Ahead of Its Evidence, and That's the Interest
 seoTitle: "Fab2 $500M Series A: A $3.7B Bet Before Qualification"
 description: "Fab2, formerly Atomic Semi, raised $500M at a $3.7B valuation for compact chip fabs. What the round proves, and what it still leaves open."
 date: 2026-10-14T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["Fab2", "Atomic Semi", "semiconductor equipment", "chip fabs", "deeptech funding"]

@@ -3,7 +3,7 @@ title: "Pixxel's $100M Round Is a Bet on the Layer Above the Satellite"
 seoTitle: "Pixxel's $100M Round and Earth-Observation Infrastructure"
 description: "Pixxel's $100M Series C is a bet that Earth-observation value sits in the intelligence and manufacturing stack, not only in satellite launches."
 date: 2026-09-08T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["Pixxel", "Earth observation", "space infrastructure", "deeptech funding"]

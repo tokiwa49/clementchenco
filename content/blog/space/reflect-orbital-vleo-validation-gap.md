@@ -3,7 +3,7 @@ title: "FCC Approval Isn't the Finish Line: What Reflect Orbital's Backlash Reve
 seoTitle: "Reflect Orbital's FCC Approval: The Space Validation Gap"
 description: "The FCC approved Reflect Orbital's first satellite, not its 50,000-satellite plan. Real space validation spans technical, regulatory, and ecosystem tests."
 date: 2026-08-18T10:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["Reflect Orbital FCC approval", "space technology validation", "VLEO technology readiness", "space regulatory approval", "orbital ecosystem acceptance"]

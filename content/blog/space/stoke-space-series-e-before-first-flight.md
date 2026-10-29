@@ -3,7 +3,7 @@ title: "Stoke Space Has $2.3 Billion. The Next Milestone Is a Flight."
 seoTitle: "Stoke Space Series E: $1B Raised, First Flight Ahead"
 description: "Stoke Space closed an initial $1 billion Series E, its total raised now $2.3 billion, with Nova Pathfinder's first flight still ahead in early 2027."
 date: 2026-09-08T09:05:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["stoke space", "series e funding", "reusable rockets", "launch industry investment"]

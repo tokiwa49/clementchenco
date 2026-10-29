@@ -3,7 +3,7 @@ title: "Orbital's Data Center Satellite Is Chasing a Power Number the Hardware H
 seoTitle: "Orbital Data Center: A Power Target Ahead of the Evidence"
 description: "Orbital's data-center satellite targets 250 kW to match a full Nvidia Vera Rubin rack by 2028. The Reflex deal is sound; the power number isn't proven."
 date: 2026-09-11T10:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["orbital data centers", "Reflex Aerospace", "in-space compute", "satellite power systems", "Orbital-1"]

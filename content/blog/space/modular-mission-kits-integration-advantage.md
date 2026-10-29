@@ -3,7 +3,7 @@ title: "Modular by Design: Why Integration, Not Invention, Is Space's Next Advan
 seoTitle: "Modular Spacecraft Kits Shift Space's Value to Integration"
 description: "RTX's Blue Canyon FleXbus, Exolaunch's 68-payload rideshare batch, and a new UK IOD request all point the same way: value is moving to integration."
 date: 2026-08-28T09:05:00+00:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["modular spacecraft", "in-orbit demonstration", "rideshare launch", "mission integration", "spacecraft standardization"]

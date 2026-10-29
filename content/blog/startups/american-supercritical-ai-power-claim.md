@@ -3,7 +3,7 @@ title: "American Supercritical Is Betting Everything on One Number"
 seoTitle: "AI Power Retrofit: American Supercritical's $8M Bet"  
 description: "American Supercritical raised $8M to retrofit gas turbines for AI data centers, claiming 50% more power with no turbine modification."  
 date: 2026-09-25T09:00:00+08:00  
-draft: false  
+draft: true
 author: "Clement Chen"  
 categories: ["startups"]  
 tags: ["AI data centers", "energy infrastructure", "deeptech funding", "supercritical CO2", "power grid"]  

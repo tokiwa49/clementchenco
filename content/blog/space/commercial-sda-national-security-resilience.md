@@ -3,7 +3,7 @@ title: "Commercial Space Sensors Are Becoming National-Security Infrastructure"
 seoTitle: "Commercial SDA Is Becoming National-Security Infrastructure"
 description: "LeoLabs' Scout radar and a NorthStar-Kepler sensor partnership show commercial SDA going operational fast, while a new report says resilience is lagging."
 date: 2026-08-28T09:15:00+00:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["space-domain awareness", "LeoLabs", "space weather resilience", "national security space", "orbital compute"]

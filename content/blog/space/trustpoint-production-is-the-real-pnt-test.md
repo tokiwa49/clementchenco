@@ -3,7 +3,7 @@ title: "TrustPoint's Production Run Is the Real Test of Its PNT System"
 seoTitle: "TrustPoint's PNT Production Test"
 description: "TrustPoint's 40-satellite order moves its GPS-independent PNT system beyond demos. The real evidence will come from repeatable production and coverage."
 date: 2026-09-13T01:14:40+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["TrustPoint", "PNT", "GNSS", "satellite manufacturing", "LEO constellation"]

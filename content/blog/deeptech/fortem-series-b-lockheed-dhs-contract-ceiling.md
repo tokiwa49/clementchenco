@@ -3,7 +3,7 @@ title: "Fortem's Series B Is Lockheed's Cheque Plus a $1.011B Contract Ceiling"
 seoTitle: "Fortem Series B: Lockheed Cheque and $1.011B Ceiling"
 description: "Fortem closed a $50M Series B led by Lockheed Martin, backed by a $1.011B DHS contract ceiling. The ceiling is not spend, and Blackstone chose another route."
 date: 2026-10-05T09:05:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["Fortem Technologies", "counter-drone", "Lockheed Martin", "defense tech funding", "Blackstone Falcata"]

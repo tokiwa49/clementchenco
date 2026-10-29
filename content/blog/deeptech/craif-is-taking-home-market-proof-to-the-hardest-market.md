@@ -3,7 +3,7 @@ title: "Craif Is Taking Home-Market Proof to the Hardest Market"
 seoTitle: "Craif's $33M US Expansion Starts With Japan"
 description: "Craif's $33M Series D pairs Japanese diagnostic adoption with a founder-led US buildout, but clinical and reimbursement proof still lie ahead."
 date: 2026-09-08T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["Craif", "diagnostics", "US expansion", "healthtech"]

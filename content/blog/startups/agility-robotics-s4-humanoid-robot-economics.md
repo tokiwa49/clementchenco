@@ -3,7 +3,7 @@ title: "Agility Robotics Just Showed Everyone What a Humanoid Robot Startup's Re
 seoTitle: "Agility Robotics' $2.5B SPAC Valuation, By the Numbers"
 description: "Agility Robotics' SPAC filing shows $1.8M in 2025 revenue against a $140M operating loss, pricing the humanoid robot maker at a 1,400x revenue multiple."
 date: 2026-09-11T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["humanoid robotics", "SPAC", "Agility Robotics", "venture capital", "unit economics"]

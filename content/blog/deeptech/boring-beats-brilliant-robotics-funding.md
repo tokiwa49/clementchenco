@@ -3,7 +3,7 @@ title: "In Robotics Funding Right Now, Boring Beats Brilliant"
 seoTitle: "Robotics Funding: Boring Beats Brilliant Right Now"
 description: "Gatik and Gravis Robotics raised nine-figure rounds on contracted revenue and deployed fleets, while Generalist's $3B valuation still outruns the evidence."
 date: 2026-09-05T05:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["robotics funding", "autonomous trucking", "embodied AI", "venture capital", "Series A"]

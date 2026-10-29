@@ -3,7 +3,7 @@ title: "Space Is Building Disposal Capability Faster Than It's Building Disposal
 seoTitle: "Space Debris Disposal Is Outpacing the Rulebook"
 description: "A lunar impact, a Pentagon deorbit-as-a-service study, and a debris-tracking partnership show the debris removal market forming faster than rules to govern it."
 date: 2026-08-17T11:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["space debris disposal", "deorbit-as-a-service", "lunar disposal governance", "space debris tracking", "non-cooperative satellite capture", "space debris removal market"]

@@ -3,7 +3,7 @@ title: "Europe Wants to Defend Orbit Without Breaking Anything, and That Is a Ha
 seoTitle: "Europe's Non-Destructive Space Defense Strategy"
 description: "All 27 EU states approved a framework for responding to orbital threats, but the capabilities behind it are inspection, SSA and autonomy that still need proving."
 date: 2026-10-09T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["space defense", "non-destructive counterspace", "space situational awareness", "in-orbit demonstration", "EU space security"]

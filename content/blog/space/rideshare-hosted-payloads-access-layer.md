@@ -3,7 +3,7 @@ title: "The Launch-Access Layer Is Becoming Its Own Business"
 seoTitle: "Launch-Access Layer: Rideshare and Hosted Payloads"
 description: "SEOPS, a U.S.-Japan hosted payload and Airtel's Starlink launch show the launch-access layer splitting from rocket and bus ownership into its own business."
 date: 2026-08-18T11:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["launch-access layer", "rideshare intermediaries", "hosted payloads", "direct-to-device satellite", "SEOPS Waymaker"]

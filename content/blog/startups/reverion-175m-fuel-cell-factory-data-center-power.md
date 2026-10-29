@@ -3,7 +3,7 @@ title: "Reverion's $175M Is a Bet on a Factory, Not a Fuel Cell"
 seoTitle: "Reverion's $175M Series B: A Fuel Cell Factory Bet"
 description: "Reverion raised $175M to grow fuel-cell output tenfold for data centers. The 74.2% efficiency and $2B pipeline are still company claims."
 date: 2026-09-30T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["fuel cells", "AI data centers", "manufacturing scale-up", "climate hardware", "deeptech funding"]

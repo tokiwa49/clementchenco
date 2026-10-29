@@ -3,7 +3,7 @@ title: "Mesa Quantum Wants to Be the Pentagon's Clock and the Grid's Too"
 seoTitle: "Mesa Quantum's Bet on Timing Beyond Defense"  
 description: "Mesa Quantum raised $11.8M for quantum timing sensors built for defense, and is now pitching data centers and power grids with no named civilian customer yet."  
 date: 2026-09-25T09:15:00+08:00  
-draft: false  
+draft: true
 author: "Clement Chen"  
 categories: ["startups"]  
 tags: ["quantum sensing", "dual-use hardware", "defense tech", "AI data centers", "deeptech funding"]  

@@ -3,7 +3,7 @@ title: "General Intuition's Valuation Just Outran the Only Demo That Tests Its T
 seoTitle: "General Intuition's $6B Talks Outrun Its Own Demo"
 description: "General Intuition is reportedly in talks at a $6B valuation, 2.6x its June mark, on a thesis its demo has only tested at its easiest task: walking."
 date: 2026-09-09T09:10:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["physical AI", "robotics funding", "venture valuation", "embodied AI", "video game data"]

@@ -3,7 +3,7 @@ title: "When Deeptech's Biggest Rounds Start Looking Like Infrastructure Deals"
 seoTitle: "Deeptech Rounds Now Look Like Infrastructure Deals"
 description: "OLIX, Castelion, and Muon Space raised nine-figure rounds backed by sovereign funds, corporate strategics, and debt, not just conviction-driven venture capital."
 date: 2026-09-05T05:20:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["deeptech funding", "sovereign capital", "defense tech", "semiconductor startups", "satellite manufacturing"]

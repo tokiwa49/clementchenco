@@ -3,7 +3,7 @@ title: "Starship Reached Orbit With 26 Satellites. The 60-Satellite Claim Still 
 seoTitle: "Starship Flight 14: What Orbit Proved and What's Left"
 description: "Starship reached orbit on Flight 14 and deployed 26 V3 Starlink satellites. The 60-satellite capacity claim is still a projection. Here is the gap."
 date: 2026-09-29T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["Starship Flight 14", "Starlink V3", "launch capacity", "rideshare missions", "mission integration"]

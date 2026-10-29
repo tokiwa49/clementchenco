@@ -4,11 +4,18 @@ seoTitle: "In-Orbit Demonstration Is Still the Bottleneck"
 description: "UK Space Agency demand, Diffraqtion's funding, and a launch-access squeeze at SmallSat 2026 point to the same gap: getting from prototype to flight heritage."
 date: 2026-09-01T09:00:00+08:00
 draft: false
+aliases:
+  - /blog/space/isar-aerospace-spectrum-second-attempt-orbit/
+  - /blog/space/rideshare-hosted-payloads-access-layer/
+  - /blog/space/rocket-reusability-runs-on-iteration/
+  - /blog/space/software-only-orbit-determination-navigate/
+  - /blog/space/speed-to-repeatability-vleo-debris-removal/
+  - /blog/space/trustpoint-production-is-the-real-pnt-test/
 author: "Clement Chen"
 categories: ["space"]
 tags: ["in-orbit demonstration", "space technology commercialization", "smallsat launch access", "flight heritage", "UK Space Agency"]
 toc: true
-related_posts: ["/blog/space/sovereign-space-moves-from-policy-to-hardware", "/blog/space/orbit-is-getting-more-crowded-and-more-volatile"]
+related_posts: ["/blog/space/sovereign-space-flight-heritage-vleo"]
 ---
 
 The UK Space Agency wants to hear from companies that have built something promising and still have no real way to get it into orbit. Its new Request for Information (RFI) asks specifically about emerging payloads and technologies that need in-orbit demonstration (IOD), and about the barriers standing between those technologies and a flight opportunity ([UK Space Agency, LinkedIn](https://www.linkedin.com/posts/uk-space-agency_the-uk-space-agency-has-launched-a-request-activity-7498675224121360385-HCcO)). That request landed in the same stretch of news as quantum-imaging startup Diffraqtion closing more than $5 million in additional pre-seed funding, pushing its total raised past $10 million, with the money earmarked for exactly this problem: buying its way onto a hosted payload after years of ground testing and work with the National Aeronautics and Space Administration (NASA) and the Defense Advanced Research Projects Agency (DARPA) ([Payload, on Diffraqtion's funding round](https://payloadspace.com/diffraqtion-adds-to-pre-seed-round-for-quantum-camera-tech/)). Neither mentions the other, but line them up and the shape is obvious: a government agency asking what still needs to fly, and a well-funded company that, after all that groundwork, still doesn't have a flight of its own.
@@ -43,7 +50,7 @@ If you want a sense of how much integration work sits underneath even a fully fu
 
 Roman is about as far from a scrappy IOD payload as a mission gets, and it still needs months of commissioning after a successful launch before it does any science. That's not a knock on the programme. It's the point. Even when the hardware is proven and the funding is secure, a mission remains an integration-heavy system spanning launch, deployment, communications, calibration and long-duration operations, and none of those steps compress just because the underlying technology is excellent. If a telescope this capable still needs a multi-month runway between "launched" and "operational," it's worth taking seriously how much runway a first-time hosted payload from a much smaller company is going to need.
 
-For smaller missions, the lesson is what you keep afterward. Owning the mission means owning the operational learning loop: the interfaces, the commissioning procedures, the failure modes encountered and resolved, that turns one successful integration into a template for the next one. A sovereign programme building standardized platforms across multiple satellites is applying that same logic at a different scale: reusable interfaces and mission-integration knowledge are worth more the more times you use them. [IRIS²'s move from connectivity policy to funded hardware](/blog/space/sovereign-space-moves-from-policy-to-hardware) is a good example of what that standardization looks like once a programme has the scale to justify it. Smaller missions need the same discipline; they just need someone else to have already built the repeatable path.
+For smaller missions, the lesson is what you keep afterward. Owning the mission means owning the operational learning loop: the interfaces, the commissioning procedures, the failure modes encountered and resolved, that turns one successful integration into a template for the next one. A sovereign programme building standardized platforms across multiple satellites is applying that same logic at a different scale: reusable interfaces and mission-integration knowledge are worth more the more times you use them. IRIS²'s move from connectivity policy to funded hardware is a good example of what that standardization looks like once a programme has the scale to justify it. Smaller missions need the same discipline; they just need someone else to have already built the repeatable path.
 
 ## Build, fly, learn
 

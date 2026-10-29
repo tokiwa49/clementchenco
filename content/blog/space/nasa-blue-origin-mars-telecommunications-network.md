@@ -3,7 +3,7 @@ title: "NASA Just Handed Blue Origin the Financial Risk of Mars"
 seoTitle: "NASA-Blue Origin Mars Telecom Contract: Who Bears the Risk"
 description: "NASA's $700 million fixed-price Mars Telecommunications Network contract puts execution risk on Blue Origin. That structure has a history worth examining."
 date: 2026-09-08T09:10:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["blue origin", "nasa contracts", "mars telecommunications network", "fixed price contracting"]

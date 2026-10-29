@@ -3,7 +3,7 @@ title: "Positron AI Just Raised $875 Million on a Bet Nobody Can Independently C
 seoTitle: "Positron AI's $5B Bet on Memory Over Compute"
 description: "Positron AI raised $875M at a $5B valuation for an inference chip on commodity memory instead of Nvidia-style HBM, a claim no benchmark backs yet."
 date: 2026-09-11T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["Positron AI", "AI chips", "Nvidia", "inference", "venture capital"]

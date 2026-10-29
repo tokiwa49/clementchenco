@@ -3,7 +3,7 @@ title: "O-ID's $1.2M Bet: Repairable Beats Capable"
 seoTitle: "O-ID's $1.2M Modular Humanoid Robot Bet"
 description: "O-ID raised a $1.2M pre-seed for a fully modular, hot-swappable humanoid robot, betting repairability beats capability against megaround rivals."
 date: 2026-09-28T09:30:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["humanoid robotics", "Japan manufacturing", "modular hardware", "deeptech funding"]

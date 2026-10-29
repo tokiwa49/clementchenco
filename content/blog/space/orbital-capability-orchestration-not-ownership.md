@@ -3,7 +3,7 @@ title: "The Space Industry Is Swapping Satellite Ownership for Orchestration"
 seoTitle: "Capability Orchestration Is Beating Satellite Ownership"
 description: "Commercial space is shifting from owning satellites to orchestrating shared capability, from RF sensing and imaging networks to debris-tracking partnerships."
 date: 2026-08-18T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["capability orchestration", "satellite ownership vs orchestration", "commercial space infrastructure", "orbital sensing networks"]
