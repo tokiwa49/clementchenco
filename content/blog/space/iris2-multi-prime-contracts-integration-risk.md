@@ -3,7 +3,7 @@ title: "IRIS² Just Became Real Money. Now Europe Has to Build It as One System"
 seoTitle: "IRIS² Contracts: Europe's Multi-Prime Satellite Bet"
 description: "Eutelsat's IRIS² contracts put billions behind Europe's sovereign constellation. The harder test: can three manufacturers build one coherent system?"
 date: 2026-09-11T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["IRIS2 constellation", "European sovereign space", "satellite manufacturing", "Eutelsat", "multi-prime contracting"]

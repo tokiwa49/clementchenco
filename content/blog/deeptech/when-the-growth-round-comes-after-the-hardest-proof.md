@@ -3,7 +3,7 @@ title: "When the Growth Round Comes After the Hardest Proof"
 seoTitle: "Bridge to Life's $110M Bet on Regulatory Proof"
 description: "Bridge to Life raised $110M after FDA clearance for VitaSmart, showing how regulatory proof can change the kind of capital a deeptech company raises."
 date: 2026-09-08T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["medtech", "FDA clearance", "deeptech funding", "commercialization"]

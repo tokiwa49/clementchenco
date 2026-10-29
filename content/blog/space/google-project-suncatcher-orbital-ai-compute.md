@@ -3,7 +3,7 @@ title: "Google's Orbital AI Chip Test Won't Answer the Question Everyone's Askin
 seoTitle: "What Google's Project Suncatcher Actually Tests"
 description: "Google's Project Suncatcher will test whether a TPU survives orbit. It won't test the power, cooling, or bandwidth limits that decide if space compute works."
 date: 2026-09-25T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["Project Suncatcher", "orbital compute", "Google", "Tensor Processing Units", "space data centers"]

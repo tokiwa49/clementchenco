@@ -3,7 +3,7 @@ title: "Reusable Rockets Don't Prove Themselves in One Flight, They Prove It in 
 seoTitle: "Reusable Rockets Prove Themselves Through Reflight"
 description: "Landspace's plan to refly a recovered Zhuque-3 booster and Taiwan's terminated NCSIST test both show launch progress is built flight by flight, not proven once."
 date: 2026-08-21T10:00:00+00:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["reusable launch vehicles", "Landspace Zhuque-3", "Taiwan launch vehicle test", "flight test validation"]

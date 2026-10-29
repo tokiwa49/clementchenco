@@ -3,7 +3,7 @@ title: "Venture Funding Set a Record in Q3, and It's the Wrong Number for Hardwa
 seoTitle: "Hardware Fundraising in 2026: Which Funding Data Matters"
 description: "Q3 2026 set a record for $1B+ rounds, but hardware founders raising $5M-$50M should benchmark against round counts, not mega-deal totals."
 date: 2026-10-07T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["hardware fundraising", "robotics funding", "venture capital Q3 2026", "billion-dollar rounds"]

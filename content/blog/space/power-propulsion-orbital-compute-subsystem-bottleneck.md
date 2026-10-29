@@ -3,7 +3,7 @@ title: "The Subsystem Bottleneck: Power, Propulsion, and the End of Bespoke Spac
 seoTitle: "Power, Propulsion, Compute: Space's Subsystem Shift"
 description: "Three funding rounds this week reveal one trend: capital flows to power, propulsion, and compute subsystems built as reusable modules, not bespoke spacecraft."
 date: 2026-08-25T09:05:00+00:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["deployable solar arrays", "hybrid propulsion", "orbital compute", "in-orbit validation", "spacecraft subsystems"]

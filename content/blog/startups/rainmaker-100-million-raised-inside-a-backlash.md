@@ -3,7 +3,7 @@ title: "Rainmaker Raised $100M Inside a Backlash It Didn't Cause"
 seoTitle: "Rainmaker's $100M Raise Amid Cloud Seeding Backlash"  
 description: "Rainmaker closed a $100M Series B as cloud seeding faces state bans and a federal bill, betting radar-verified data outruns a backlash it didn't cause."  
 date: 2026-09-28T09:00:00+08:00  
-draft: false  
+draft: true
 author: "Clement Chen"  
 categories: ["startups"]  
 tags: ["cloud seeding", "climate hardware", "deeptech funding", "regulatory risk", "crisis communications"]  

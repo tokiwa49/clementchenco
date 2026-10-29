@@ -3,7 +3,7 @@ title: "A Space Prototype Matters Only If Its Operating Model Can Transfer"
 seoTitle: "Why Space Prototypes Need an Operating Model"
 description: "GHOST-R shows why a space prototype creates procurement value only when its integration, operations and acceptance model can transfer into a real programme."
 date: 2026-09-24T18:45:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["space procurement", "prototype missions", "mission integration", "space domain awareness", "operations"]

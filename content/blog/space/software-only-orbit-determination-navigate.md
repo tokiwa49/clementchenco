@@ -3,7 +3,7 @@ title: "NaviGate Flew Orbit Determination as Pure Software, and That Changes Wha
 seoTitle: "Software-Only Orbit Determination: NaviGate's In-Orbit Demo"
 description: "NaviGate ran precise orbit determination on a spacecraft's existing computer aboard D-Orbit's ION carrier. What the demo proves, and what it still doesn't."
 date: 2026-10-02T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["orbit determination", "software-defined satellites", "in-orbit demonstration", "D-Orbit ION", "GNSS"]

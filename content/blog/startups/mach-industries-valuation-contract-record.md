@@ -3,7 +3,7 @@ title: "Mach Industries Doubled Its Valuation in Three Months. Its Government Co
 seoTitle: "Mach Industries' $3.7B Valuation vs. Its Contract Record"  
 description: "Mach Industries doubled to a $3.7B valuation with $1.76M in lifetime government contracts, and analysts keep measuring it against Anduril's early trajectory."  
 date: 2026-09-11T09:00:00+08:00  
-draft: false  
+draft: true
 author: "Clement Chen"  
 categories: ["startups"]  
 tags: ["defense tech", "Mach Industries", "venture capital", "Anduril", "valuation"]  

@@ -3,7 +3,7 @@ title: "The Difference Between a Checkable Claim and a Checked One"
 seoTitle: "How Early-Stage Deeptech Startups Earn Real Validation"
 description: "A quantum-sensing pre-seed backed by two rival defense primes and a microfactory's hard opening date show two kinds of proof, but only one has been tested yet."
 date: 2026-09-05T05:40:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["pre-seed funding", "quantum sensing", "deeptech validation", "corporate venture capital", "construction technology"]

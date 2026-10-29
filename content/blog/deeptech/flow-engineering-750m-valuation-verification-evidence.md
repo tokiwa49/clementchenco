@@ -3,7 +3,7 @@ title: "Flow Engineering's $750M Valuation Is Ahead of the Public Evidence"
 seoTitle: "Flow Engineering $750M Valuation: Verification Bet"
 description: "Flow Engineering raised $50M at a $750M valuation to speed up hardware verification. The customer list is strong, but independent cycle-time data is missing."
 date: 2026-10-05T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["Flow Engineering", "hardware engineering software", "Series B", "hardware verification", "deeptech funding"]

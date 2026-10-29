@@ -3,7 +3,7 @@ title: "Isar Aerospace Reached Orbit on Try Two. That's the Better Data Point."
 seoTitle: "Isar Aerospace Spectrum: Why the Second Try Matters More"
 description: "Isar Aerospace put six payloads into orbit on Spectrum's second attempt. The retry, not the reach, is what should worry competitors and reassure customers."
 date: 2026-09-08T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["isar aerospace", "spectrum rocket", "european launch industry", "orbital launch cadence"]

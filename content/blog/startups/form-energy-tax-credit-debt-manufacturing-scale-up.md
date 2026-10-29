@@ -3,7 +3,7 @@ title: "Form Energy's $270M Says the Real Deeptech Skill Is Financing the Factor
 seoTitle: "Form Energy's $270M Tax-Credit Debt Facility"
 description: "Form Energy borrowed $270M against its own manufacturing tax credits instead of raising more equity, a lever most hard-tech founders don't know exists."
 date: 2026-09-28T09:15:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["startups"]
 tags: ["Section 45X tax credits", "battery manufacturing", "deeptech funding", "manufacturing automation", "digital twin simulation"]

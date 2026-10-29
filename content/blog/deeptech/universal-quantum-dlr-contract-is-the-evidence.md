@@ -3,7 +3,7 @@ title: "Universal Quantum's $100M Series A Rests on a Government Contract, and I
 seoTitle: "Universal Quantum Series A: The DLR Contract Is the Proof"
 description: "Universal Quantum raised $100M+ for trapped-ion quantum hardware. The German Aerospace Center contract is the real evidence, and its reported size differs by source."
 date: 2026-10-09T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["quantum computing", "Universal Quantum", "deeptech fundraising", "trapped-ion", "government contracts"]

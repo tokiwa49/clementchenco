@@ -3,7 +3,7 @@ title: "NewOrbit's NEO-1 and Britain's £7.8 Billion Space Bet"
 seoTitle: "NewOrbit NEO-1: A Test for UK's £7.8bn Space Strategy"
 description: "NewOrbit's NEO-1 drew public praise from the UK Space Agency, making it an early, named test of whether Britain's £7.8bn space strategy funds real hardware."
 date: 2026-09-15T09:10:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["VLEO", "UK space strategy", "NewOrbit", "satellite launch", "space policy"]

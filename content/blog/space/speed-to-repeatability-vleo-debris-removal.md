@@ -3,7 +3,7 @@ title: "Space's Next Edge Isn't the Boldest Mission. It's the One You Can Repeat
 seoTitle: "Why Repeatability Is Winning Over Bold Space Missions"
 description: "York's new VLEO platform and Astroscale's next debris-removal mission are both betting on the same thing: prove something once in orbit, then sell it again and again."
 date: 2026-09-04T09:00:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["VLEO satellites", "in-orbit demonstration", "active debris removal", "satellite manufacturing", "space industry standardization"]

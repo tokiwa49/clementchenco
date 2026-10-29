@@ -3,7 +3,7 @@ title: "Orbit Access Isn't the Same as Mission Capability"
 seoTitle: "Launch Access vs. Mission Readiness in Space"
 description: "More launch capacity alone won't fix spacecraft readiness. Here's why integrated spacecraft providers and qualified components matter as launch access scales."
 date: 2026-08-21T09:00:00+00:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["launch infrastructure", "spacecraft integration", "space capital", "flight heritage"]

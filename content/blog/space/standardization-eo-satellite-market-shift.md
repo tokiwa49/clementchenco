@@ -3,7 +3,7 @@ title: "Standardization Is Winning: What the Earth-Observation Boom Says About W
 seoTitle: "Standardization Is Winning in the EO Satellite Market"
 description: "Novaspace forecasts 6,500+ Earth-observation satellites by 2035, as space shifts value from single satellites to standardized, integrated capability stacks."
 date: 2026-08-25T09:10:00+00:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["space"]
 tags: ["Earth observation satellites", "satellite standardization", "Novaspace forecast", "space mission integration", "multi-sensor constellations"]

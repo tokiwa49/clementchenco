@@ -3,7 +3,7 @@ title: "This Week's Deeptech Rounds Aren't All Made of the Same Money"
 seoTitle: "Not All Deeptech Funding Rounds Are the Same Money"
 description: "REGENT's debt-backed round, Locus Robotics' insiders-only raise, and a Gates-backed biotech bet show three different signals behind similar headline numbers."
 date: 2026-09-07T05:20:00+08:00
-draft: false
+draft: true
 author: "Clement Chen"
 categories: ["deeptech"]
 tags: ["venture debt", "deeptech funding", "corporate venture capital", "philanthropic capital", "round structure"]
