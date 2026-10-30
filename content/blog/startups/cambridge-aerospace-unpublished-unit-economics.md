@@ -8,7 +8,7 @@ author: "Clement Chen"
 categories: ["startups"]
 tags: ["defense tech", "drone interceptors", "venture valuation", "unit economics", "NATO"]
 toc: true
-related_posts: ["/blog/deeptech/capital-intensive-deeptech-is-starting-to-look-like-infrastructure-finance/", "/blog/deeptech/how-to-read-a-deeptech-funding-round/", "/blog/startups/general-intuition-valuation-outruns-evidence/", "/blog/space/exploration-company-series-c-nyx-return-proof/"]
+related_posts: ["/blog/deeptech/capital-intensive-deeptech-is-starting-to-look-like-infrastructure-finance/", "/blog/deeptech/how-to-read-a-deeptech-funding-round/", "/blog/startups/general-intuition-valuation-outruns-evidence/"]
 
 status: draft
 brief_date: "2026-09-09"
@@ -45,7 +45,7 @@ The fix here isn't complicated, and it's the same fix that would resolve most of
 
 For founders raising into a category where the entire pitch is a cost-per-unit claim, the lesson here isn't to avoid ambition. It's that [how a funding round gets diligenced](/blog/deeptech/how-to-read-a-deeptech-funding-round/) increasingly depends on which of your numbers are checkable and which ones you're asking investors to take on faith, and the founders who publish the checkable number before anyone has to ask for it are the ones whose next round won't carry this same asterisk.
 
-It's a question worth asking of more than one company at a time. [General Intuition's reported $6 billion valuation](/blog/startups/general-intuition-valuation-outruns-evidence/) is pricing a robotics thesis that's so far only been tested at its easiest difficulty setting, and [The Exploration Company's $450 million round](/blog/space/exploration-company-series-c-nyx-return-proof/) is pricing a narrow, targeted fix rather than a fully proven capsule. None of these are bad bets. All three are asking the market to trust a specific number the company itself hasn't fully opened up for outside inspection. Cambridge Aerospace's version of that number is just the one nobody outside the company has seen at all.
+It's a question worth asking of more than one company at a time. [General Intuition's reported $6 billion valuation](/blog/startups/general-intuition-valuation-outruns-evidence/) is pricing a robotics thesis that's so far only been tested at its easiest difficulty setting, and The Exploration Company's $450 million round is pricing a narrow, targeted fix rather than a fully proven capsule. None of these are bad bets. All three are asking the market to trust a specific number the company itself hasn't fully opened up for outside inspection. Cambridge Aerospace's version of that number is just the one nobody outside the company has seen at all.
 
 ## What to watch next
 

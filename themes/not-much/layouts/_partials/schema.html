@@ -37,17 +37,31 @@ it doesn't trust the value's type.
 <script type="application/ld+json">{{ $blogPosting | jsonify | safeJS }}</script>
 {{- end }}
 {{- if or .IsHome (eq .RelPermalink "/about/") }}
+{{/* sameAs starts from the visible social links, then adds schema-only
+     URLs. Do not put those extras in params.socials — the footer and
+     homepage social lists render that param. Trailing slashes are
+     stripped so the LinkedIn profile is the canonical URL. */}}
 {{- $sameAs := slice }}
 {{- range site.Params.socials }}
-  {{- $sameAs = $sameAs | append .url }}
+  {{- $u := strings.TrimSuffix "/" .url }}
+  {{- if and $u (not (in $sameAs $u)) }}
+    {{- $sameAs = $sameAs | append $u }}
+  {{- end }}
+{{- end }}
+{{- $schemaOnly := "https://satelyx.com/about" }}
+{{- if not (in $sameAs $schemaOnly) }}
+  {{- $sameAs = $sameAs | append $schemaOnly }}
 {{- end }}
 {{- $worksFor := dict "@type" "Organization" "name" "SATELYX" "url" "https://satelyx.com/" }}
+{{- $image := "images/clement-chen-headshot.jpg" | absURL }}
 {{- $person := dict
       "@context" "https://schema.org"
       "@type" "Person"
       "name" site.Title
+      "alternateName" "陳又慶"
       "url" site.BaseURL
-      "jobTitle" "Venture Builder & Investor"
+      "image" $image
+      "jobTitle" "Co-Founder and Chief Strategy Officer"
       "sameAs" $sameAs
       "worksFor" $worksFor
 }}
