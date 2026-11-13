@@ -1,4 +1,5 @@
 ---
+mentionSource: "Kepple"
 title: "IVS2026 Event Report Features SATELYX's Orbital Validation Pitch"
 seoTitle: "Kepple's IVS2026 Report Features SATELYX"
 description: "Kepple's IVS2026 recap covers SATELYX's LAUNCHPAD pitch: helping space companies cross the valley of death, first launch targeted for late 2027."

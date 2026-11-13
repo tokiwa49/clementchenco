@@ -1,11 +1,20 @@
 {{ define "main" }}
-<div class="shell pt-5">
-  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-  {{ partial "home/hero.html" . }}
-  {{ partial "home/intro.html" . }}
-  {{ partial "home/focus-areas.html" . }}
-  {{ partial "home/ventures.html" . }}
-  {{ partial "home/cta.html" . }}
-  {{ partial "home/latest-articles.html" . }}
-</div>
+{{ $posts := where site.RegularPages "Section" "blog" }}
+{{ $essays := where $posts "Params.categories" "intersect" (slice "space" "deeptech" "startups") }}
+{{ $featured := site.GetPage site.Params.editorial.featured }}
+<div class="hero inset"><p class="eyebrow">An independent publication by Clement Chen</p><div class="cover-grid"><h1 class="mixed-heading">Ideas, <span class="display-serif">under examination.</span></h1><div class="cover-intro"><p>Essays and observations on technology, capital and the systems that shape what gets built.</p><span class="eyebrow">Read closely. Return often.</span></div></div></div>
+<figure class="publication-cover"><img src="{{ "images/editorial/testing.jpg" | relURL }}" width="800" height="450" alt="Editorial illustration of an industrial testing environment" fetchpriority="high" decoding="async"><figcaption class="inset"><span>Technology, made tangible</span><span>Editorial study</span></figcaption></figure>
+<section class="home-writing inset"><div class="section-head"><h2>The working archive</h2><a class="eyebrow" href="{{ "/blog/" | relURL }}">All writing</a></div>
+{{ with $featured }}<div class="feature"><figure><img src="{{ "images/editorial/conversation.jpg" | relURL }}" width="800" height="553" alt="Editorial illustration of a working conversation" loading="lazy" decoding="async"><figcaption><span>Ideas in practice</span><span>Editorial illustration</span></figcaption></figure><div class="feature-copy"><p class="eyebrow">Featured essay</p><h3 class="mixed-heading mixed-descenders"><a href="{{ .RelPermalink }}">{{ partial "editorial/title.html" . }}</a></h3><p>{{ .Description }}</p><a class="text-link" href="{{ .RelPermalink }}">Read the essay</a></div></div>{{ end }}
+<div class="secondary-spread"><figure class="detail-study"><img src="{{ "images/editorial/lens.jpg" | relURL }}" width="600" height="600" alt="Editorial detail of an optical lens with an orange rim" loading="lazy" decoding="async"><figcaption><span>Precision, in detail</span><span>Image study</span></figcaption></figure><div class="essay-index"><p class="eyebrow">Elsewhere in the archive</p>{{ range first 2 (where $essays.ByDate.Reverse "RelPermalink" "ne" $featured.RelPermalink) }}<div class="index-row"><small class="eyebrow">{{ range first 1 (.GetTerms "categories") }}{{ .Title }}{{ end }}</small><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><small class="eyebrow">{{ .Date.Format "2 Jan 2006" }}</small></div>{{ end }}</div></div>
+</section>
+<section class="subject-section inset"><div class="section-head"><h2>Follow a thread</h2><span class="eyebrow">Browse by subject</span></div><div class="subject-grid">
+<a href="{{ "/categories/space/" | relURL }}"><span>01</span><h3>Space</h3><p>Infrastructure beyond the ground.</p></a>
+<a href="{{ "/categories/deeptech/" | relURL }}"><span>02</span><h3>Deep tech</h3><p>From technical possibility to practice.</p></a>
+<a href="{{ "/categories/startups/" | relURL }}"><span>03</span><h3>Company building</h3><p>The decisions that make an idea work.</p></a>
+<a href="{{ "/blog/" | relURL }}"><span>04</span><h3>The full archive</h3><p>Essays, notes and things worth returning to.</p></a>
+</div></section>
+<section class="place-section"><div class="place-heading inset"><p class="eyebrow">Places &amp; systems</p><h2 class="mixed-heading mixed-descenders">What a city <span class="display-serif">makes possible.</span></h2></div><figure><img class="city" src="{{ "images/editorial/nihonbashi.jpg" | relURL }}" width="800" height="450" alt="Editorial city study of Nihonbashi, Tokyo" loading="lazy" decoding="async"><figcaption class="inset"><span>Nihonbashi, Tokyo</span><span>Editorial study</span></figcaption></figure><div class="place-after inset"><span class="eyebrow">Places &amp; perspective</span><p>A city is also a system: of infrastructure, institutions and encounters. Observations on the places where ideas find the conditions to grow.</p></div></section>
+<section class="conversation-section"><div class="conversation-heading inset"><p class="eyebrow">Beyond the page</p><h2 class="mixed-heading">Ideas in <span class="display-serif">conversation.</span></h2></div><figure class="cover-portrait"><img class="portrait" src="{{ "images/editorial/ivs-stage.jpg" | relURL }}" width="1000" height="563" alt="Clement speaking on stage at IVS2026" loading="lazy" decoding="async"><figcaption class="inset"><span>In conversation, IVS2026</span><span>Personal archive</span></figcaption></figure><div class="conversation-copy inset"><p class="eyebrow">Talks &amp; interviews</p><div><h3>When an idea meets another perspective.</h3><p>Conversations that extend the writing: a question examined in public, a useful disagreement, a different way into a subject.</p><a class="text-link" href="{{ "/about/#cc-mentions" | relURL }}">Conversations &amp; mentions</a></div></div></section>
+<section class="author-note inset"><p class="eyebrow">Behind the publication</p><div><h2 class="mixed-heading mixed-descenders">Written by <span class="display-serif">Clement Chen.</span></h2><p>A venture builder and investor working across deep tech, infrastructure and digital assets.</p><a class="text-link" href="{{ "/about/" | relURL }}">Meet the author</a></div></section>
 {{ end }}

@@ -1,4 +1,5 @@
 ---
+mentionSource: "Business Next"
 title: "Bnext Profiles SATELYX's In-Orbit Verification Pitch Alongside SpaceX and Izumi Space"
 seoTitle: "Bnext Profiles SATELYX's Verification Model"
 description: "Bnext's look at Taiwanese space startups skipping rocket-building features SATELYX's in-orbit verification business, with Clement Chen comparing the model to a semiconductor foundry."

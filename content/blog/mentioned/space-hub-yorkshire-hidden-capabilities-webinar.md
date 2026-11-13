@@ -1,4 +1,5 @@
 ---
+mentionSource: "Space Hub Yorkshire"
 title: "Space Hub Yorkshire's \"Hidden Capabilities\" Webinar Featuring SATELYX"
 seoTitle: "Hidden Capabilities Webinar Featuring SATELYX"
 description: "Space Hub Yorkshire's Hidden Capabilities webinar, September 15, featuring SATELYX, on turning adjacent-sector technology into evidence space buyers will trust."

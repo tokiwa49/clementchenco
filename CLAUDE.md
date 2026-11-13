@@ -76,19 +76,14 @@ still emit RSS (the feeds that matter: `/index.xml`, `/blog/index.xml`).
 If you add a new taxonomy, it inherits this — don't remove the override
 without a reason.
 
-### Design system: the `/` slash motif
+### Active design system: contemporary editorial
 
-The site's recurring visual signature is a signal-red, JetBrains Mono
-`/`-prefixed label — used for the nav/footer "/C" mark, breadcrumb
-separators, the homepage's venture and focus-area numbers (`/01`, `/02`,
-`/03`), and category badges (`/space`, `/mentioned`, rendered by
-`_partials/terms.html` — categories only, not tags, since tags are often
-multi-word phrases where a bare slash prefix reads awkwardly and the pill
-treatment gives them useful visual separation from prose). **When adding
-any new UI element that shows a count, index, label, or short identifier,
-reach for this treatment first** (`.category-badge`-style: JetBrains Mono,
-`var(--primary)`, no decoration, underline on hover) rather than inventing
-a new visual language or falling back to a generic Bootstrap badge/pill.
+The approved redesign uses a quiet `/C`, Instrument Sans with Newsreader,
+ink/paper backgrounds and restrained orange accents. Shared header/footer
+and editorial partials replace the previous Bootstrap menu/drawer layouts.
+Do not reintroduce slash-prefixed labels or the holographic profile card.
+`docs/redesign.md` documents the active templates, assets, typography,
+validation and copy sources. The older layout notes below are historical.
 
 ### Gotcha: the nav must not be wrapped in an extra `mt-5` div
 

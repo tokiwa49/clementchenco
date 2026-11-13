@@ -1,0 +1,83 @@
+html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:#eeeae2;color:#191a18}body.home-surface{background:#191a18}button,a{-webkit-tap-highlight-color:transparent}a,button,summary{touch-action:manipulation}button,summary{cursor:pointer}img{max-width:100%;height:auto}button,input,select,textarea{font:inherit}*{box-sizing:border-box}
+#cc-site{max-width:1440px;margin:auto;--pad:clamp(24px,5.7%,72px)}
+#cc-site [hidden]{display:none!important}
+.skip-link{position:absolute;left:24px;top:-100px;z-index:10;padding:12px 18px;color:#191a18;background:#eeeae2;font:16px sans-serif}.skip-link:focus{top:12px}
+#cc-site :focus-visible{outline:2px solid #aa442a;outline-offset:5px}
+#cc-site .nav a[aria-current=page]{text-decoration:underline;text-decoration-color:#aa442a;text-underline-offset:7px}
+#cc-site .mobile-home,#cc-site .menu-toggle{display:none}
+#cc-site .mark{height:41px;width:41px}
+#cc-site .masthead .signature{min-height:44px}
+#cc-site .nav a{min-height:44px;display:flex;align-items:center}
+#cc-site .footer{flex-wrap:wrap;align-items:center}
+#cc-site .footer a{min-height:44px;display:flex;align-items:center}
+#cc-site .archive-description{font-size:20px;line-height:1.45;max-width:32ch}
+#cc-site .archive-filters a{font-size:13px;min-height:44px;display:inline-flex;align-items:center;border-bottom:2px solid transparent;color:var(--muted)}
+#cc-site .archive-filters a[aria-current=page]{border-color:#aa442a;color:var(--fg)}
+#cc-site .archive-entry .entry-type time{display:block;margin-top:10px}
+#cc-site .archive-entry .entry-read{min-height:44px;display:flex;align-items:center;justify-self:start}
+#cc-site .archive-entry a:hover,#cc-site .feature a:hover,#cc-site .index-row a:hover{text-decoration:underline;text-underline-offset:4px}
+#cc-site .article-title h1{overflow-wrap:anywhere;font-size:clamp(34px,4.3vw,58px)}
+#cc-site .article-hero{height:auto;display:block}
+#cc-site .body-copy{min-width:0;overflow-wrap:anywhere}
+#cc-site .body-copy a{color:#97402b;text-decoration:underline;text-underline-offset:3px}
+#cc-site .body-copy :is(h2,h3,h4){scroll-margin-top:24px}
+#cc-site .body-copy h3{font:400 23px/1.25 'Instrument Sans',sans-serif;margin:30px 0 15px;letter-spacing:-.025em}
+#cc-site .body-copy h4{font:500 20px/1.3 'Instrument Sans',sans-serif;margin:25px 0 12px}
+#cc-site .body-copy :is(ul,ol){margin:20px 0;padding-left:1.3em}
+#cc-site .body-copy li+li{margin-top:10px}
+#cc-site .body-copy li>p{margin-block:12px}
+#cc-site .body-copy pre{font:14px/1.6 monospace;max-width:100%;overflow:auto;background:#e2ddd3;padding:20px;white-space:pre-wrap}
+#cc-site .body-copy code{font-size:.8em;overflow-wrap:anywhere}
+#cc-site .body-copy table{display:block;overflow:auto;max-width:100%;border-collapse:collapse;font:14px/1.5 'Instrument Sans',sans-serif;margin-block:28px}
+#cc-site .body-copy :is(th,td){text-align:left;border-bottom:1px solid var(--line);padding:12px}
+#cc-site .body-copy hr{border:0;border-top:1px solid var(--line);margin:32px 0}
+#cc-site .body-copy blockquote p{font:inherit}
+#cc-site .body-copy img{height:auto}
+#cc-site .body-copy .article-tags{display:flex;flex-wrap:wrap;gap:10px 18px;font:12px/1.5 'Instrument Sans',sans-serif;margin-top:35px;padding-top:20px;border-top:1px solid var(--line)}
+#cc-site .body-copy .article-tags a{min-height:32px;display:flex;align-items:center}
+#cc-site .contents ul{padding:0;list-style:none;margin:0}
+#cc-site .contents li ul{padding-left:12px}
+#cc-site .contents>span{margin-top:24px}
+#cc-site .contents a{font-size:12px;line-height:1.5;margin-top:12px}
+#cc-site .article-return{padding-bottom:40px}
+#cc-site .taxonomy-index,#cc-site .not-found{padding-block:55px 70px;min-height:50vh}
+#cc-site .taxonomy-index h1,#cc-site .not-found h1{font-size:clamp(36px,5vw,60px);font-weight:400;line-height:1.05;letter-spacing:-.04em;margin-block:20px 35px}
+#cc-site .taxonomy-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 30px}
+#cc-site .taxonomy-grid a{display:flex;justify-content:space-between;gap:12px;padding-block:16px;border-top:1px solid #c9c5bd;overflow-wrap:anywhere}
+#cc-site .taxonomy-grid small{color:#64645d}
+#cc-site .contact-email{overflow-wrap:anywhere}
+#cc-site .about-portrait img{height:auto}
+#cc-site #cc-investments{--roll-time:65s;--logo-scale:1}
+#cc-site #cc-investments .motion-control{min-height:44px}
+/* Without scripts, every investment remains visible and usable. */
+.no-js #cc-site #cc-investments .rolling-track{transform:none;animation:none;width:100%}
+.no-js #cc-site #cc-investments .logo-group{flex-wrap:wrap;width:100%;padding-right:0;gap:24px 40px}
+.no-js #cc-site #cc-investments .motion-control{display:none}
+@media(max-width:650px){
+ #cc-site{--pad:24px}
+ #cc-site .masthead{flex-wrap:wrap;gap:0 16px;padding-block:14px}
+ #cc-site .signature{gap:10px;font-size:13px}
+ #cc-site .signature span{display:block}
+ .js #cc-site .menu-toggle{display:block;min-width:48px;min-height:44px;text-align:right;font-size:13px}
+ #cc-site .nav{display:flex;flex-direction:column;width:100%;gap:0;padding-top:12px;margin-top:14px;border-top:1px solid var(--line)}
+ .js #cc-site .nav:not(.is-open){display:none}
+ #cc-site .nav a{display:flex;min-height:48px;font-size:21px;border-bottom:1px solid var(--line)}
+ #cc-site .hero h1{font-size:clamp(36px,10vw,44px)}
+ #cc-site .about-socials a,#cc-site .about-contents a,#cc-site .contents a{min-height:44px;display:inline-flex;align-items:center}
+ #cc-site .about-socials{margin-top:8px;gap:24px}
+ #cc-site .about-contents{gap:0 22px;padding-block:14px}
+ #cc-site .about-contents>span{width:100%;margin-bottom:5px}
+ #cc-site .archive-filters{gap:0 22px}
+ #cc-site .archive-intro{grid-template-columns:1fr;gap:26px}
+ #cc-site .archive-description{font-size:18px}
+ #cc-site .text-link{min-height:44px}
+ #cc-site .section-head{flex-wrap:wrap;gap:12px}
+ #cc-site .contents{display:block}
+ #cc-site .contents nav>ul{display:flex;flex-wrap:wrap;gap:0 18px}
+ #cc-site .contents li{max-width:100%}
+ #cc-site .contents a{margin-top:0}
+ #cc-site .body-copy{font-size:20px;line-height:1.55}
+ #cc-site .body-copy>p:first-child{font-size:24px}
+ #cc-site .taxonomy-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#cc-site *{animation:none!important;transition:none!important}}

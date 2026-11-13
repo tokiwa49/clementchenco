@@ -1,77 +1,9 @@
 {{ define "main" }}
-  <div class="shell pt-5">
-    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-    <div class="post-layout">
-      <div class="post-main">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item small"><a href="{{ "/" | relURL }}">Home</a></li>
-            <li class="breadcrumb-item small"><a href="{{ "/blog/" | relURL }}">Blog</a></li>
-            {{ with .GetTerms "categories" }}
-            {{ with index . 0 }}
-            <li class="breadcrumb-item small"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-            {{ end }}
-            {{ end }}
-          </ol>
-        </nav>
-        <div class="post prose">
-          <header class="mb-4">
-            <h1 class="text-uppercase">{{ .Title }}</h1>
-            {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-            {{ $dateHuman := .Date | time.Format ":date_long" }}
-            <div aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                {{ with .Params.author }}
-                <li class="breadcrumb-item small">By <a href="/about/">{{ . }}</a></li>
-                {{ end }}
-                <li class="breadcrumb-item small">
-                  {{ if .Draft }}
-                  <span class="draft-label">DRAFT</span> &#183;
-                  {{ end }}
-                  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-                </li>
-                {{ $lastModMachine := .Lastmod | time.Format "2006-01-02T15:04:05-07:00" }}
-                {{ if and (isset .Params "lastmod") (ne $lastModMachine $dateMachine) }}
-                {{ $lastModHuman := .Lastmod | time.Format ":date_long" }}
-                <li class="breadcrumb-item small">
-                  Updated: <time datetime="{{ $lastModMachine }}">{{ $lastModHuman }}</time>
-                </li>
-                {{ end }}
-                <li class="breadcrumb-item small">
-                  {{ printf "%d minutes" .ReadingTime }}
-                </li>
-              </ol>
-            </div>
-            {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
-          </header>
-          {{ if .Params.toc }}
-          <div class="toc small">
-            <p class="toc-title fw-semibold">
-              Table of Contents:
-            </p>
-            {{ .TableOfContents }}
-          </div>
-          {{ end }}
-          <article>
-            {{ .Content }}
-          </article>
-          {{ partial "related-posts.html" . }}
-          {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-          {{ partial "post-pagination.html" . }}
-          {{ if .Params.comments }}
-            {{ partial "comments.html" . }}
-          {{ end }}
-        </div>
-      </div>
-      {{/* Rendered inline (rather than from baseof.html) so it can dock
-           as a sticky sidebar right next to .post-main at 1400px+ —
-           see the .post-layout rules in main.css. */}}
-      {{ partial "site-drawer.html" . }}
-    </div>
-  </div>
-  {{ if not .Site.Params.showFooterEverywhere }}
-    <footer>
-      {{ partial "footer.html" . }}
-    </footer>
-  {{ end }}
+{{ $cover := partial "editorial/cover.html" . }}
+<div class="article-cover inset"><div class="article-title"><p class="eyebrow"><span class="signal"></span>{{ if in .Params.categories "mentioned" }}Mention{{ else }}Essay{{ end }}{{ range first 1 (.GetTerms "categories") }} · <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</p><h1{{ with .Params.titleAccent }} class="mixed-heading mixed-descenders"{{ end }}>{{ partial "editorial/title.html" . }}</h1>{{ with .Description }}<p class="dek">{{ . }}</p>{{ end }}<div class="byline"><a href="{{ "/about/" | relURL }}">{{ .Params.author | default site.Title }}</a><span><time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 January 2006" }}</time> · {{ .ReadingTime }} min read{{ if .Draft }} · Draft{{ end }}</span>{{ if and (isset .Params "lastmod") (ne .Lastmod .Date) }}<span>Updated <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Lastmod.Format "2 January 2006" }}</time></span>{{ end }}</div></div><figure><img class="article-hero" src="{{ $cover | relURL }}" alt="{{ if in .Params.categories "mentioned" }}Clement speaking at IVS2026{{ else }}Editorial illustration accompanying the essay{{ end }}" width="800" height="600" decoding="async"><figcaption><span>{{ range first 1 (.GetTerms "categories") }}{{ .Title }}{{ end }}</span><span>{{ if in .Params.categories "mentioned" }}Personal archive{{ else }}Editorial study{{ end }}</span></figcaption></figure></div>
+<div class="reading-layout inset"><aside class="contents" aria-label="Article contents"><a href="{{ "/blog/" | relURL }}">All writing</a>{{ if .Fragments.Headings }}<span>In this essay</span>{{ .TableOfContents }}{{ end }}</aside><article class="body-copy">{{ .Content }}
+{{ with .GetTerms "tags" }}<nav class="article-tags" aria-label="Article tags">{{ range . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</nav>{{ end }}
+{{ with .Params.related_posts }}<section class="related-writing"><h2>Continue reading</h2>{{ range . }}{{ with site.GetPage . }}<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}</section>{{ end }}
+{{ if .Params.comments }}{{ partial "comments.html" . }}{{ end }}
+</article></div><div class="article-return inset"><a class="text-link" href="{{ "/blog/" | relURL }}">Back to writing</a></div>
 {{ end }}

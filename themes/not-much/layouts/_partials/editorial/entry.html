@@ -1,0 +1,5 @@
+<article class="archive-entry">
+  <div class="entry-type">{{ range first 1 (.GetTerms "categories") }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2 Jan 2006" }}</time></div>
+  <div class="entry-copy"><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description | default (.Summary | plainify | truncate 180) }}</p>{{ if .Draft }}<span class="eyebrow">Draft</span>{{ end }}</div>
+  <a class="entry-read" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read</a>
+</article>

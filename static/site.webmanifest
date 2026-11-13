@@ -1,6 +1,6 @@
 {
   "name": "Clement Chen",
-  "short_name": "Clement Chen",
+  "short_name": "/C",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ab1e19",
-  "background_color": "#f2efe6",
+  "theme_color": "#191a18",
+  "background_color": "#eeeae2",
   "display": "standalone"
 }

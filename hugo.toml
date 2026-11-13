@@ -34,7 +34,7 @@ copyright = "© {year} Clement Chen"
   url = "https://www.linkedin.com/in/clementyccchen/"
 
 [[params.socials]]
-  name = "Twitter"
+  name = "X"
   url = "https://x.com/clementality_"
 
 [[params.focusAreas]]
@@ -115,3 +115,6 @@ copyright = "© {year} Clement Chen"
   url = "/categories/deeptech/"
   parent = "blog"
   weight = 4
+
+[params.editorial]
+  featured = "/blog/space/prototypes-must-transfer-operating-models"

@@ -1,0 +1,20 @@
+{{ $posts := .RegularPagesRecursive.ByDate.Reverse }}
+{{ if eq .Kind "term" }}{{ $posts = .Pages.ByDate.Reverse }}{{ end }}
+{{ $paginator := false }}
+{{ $entries := $posts }}
+{{ if ne .Kind "term" }}{{ $paginator = .Paginate $posts 10 }}{{ $entries = $paginator.Pages }}{{ end }}
+<div class="archive-heading inset">
+  <p class="eyebrow"><span class="signal"></span>{{ if eq .Kind "term" }}Writing · {{ .Title }}{{ else }}The writing archive{{ end }}</p>
+  <div class="archive-intro"><h1{{ if eq .RelPermalink "/blog/" }} class="mixed-heading"{{ end }}>{{ if eq .RelPermalink "/blog/" }}Ideas, <span class="display-serif">on record.</span>{{ else }}{{ .Title }}{{ end }}</h1><div class="archive-description">{{ if eq .RelPermalink "/blog/" }}<p>Essays and observations on technology, capital and the systems that shape what gets built.</p>{{ else }}{{ .Content }}{{ end }}</div></div>
+</div>
+{{ if and $paginator (eq .RelPermalink "/blog/") }}{{ if eq $paginator.PageNumber 1 }}
+{{ with site.GetPage site.Params.editorial.featured }}
+<section class="archive-feature inset" aria-label="Featured essay"><figure><img src="{{ "images/editorial/conversation.jpg" | relURL }}" width="800" height="553" alt="Editorial illustration of a working conversation" decoding="async"><figcaption><span>Ideas in practice</span><span>Editorial illustration</span></figcaption></figure><div><p class="eyebrow">Start here · Featured essay</p><h2 class="mixed-heading mixed-descenders"><a href="{{ .RelPermalink }}">{{ partial "editorial/title.html" . }}</a></h2><p class="archive-dek">{{ .Description }}</p><a class="text-link" href="{{ .RelPermalink }}">Read the essay</a></div></section>
+{{ end }}{{ end }}{{ end }}
+<section class="archive-list inset" aria-label="Browse articles">
+  <div class="archive-index-head"><h2>{{ if eq .Kind "term" }}{{ .Title }}{{ else }}All writing{{ end }}</h2><span class="eyebrow">{{ len $posts }} {{ if eq (len $posts) 1 }}piece{{ else }}pieces{{ end }}</span></div>
+  <nav class="archive-filters" aria-label="Browse by subject"><a href="{{ "/blog/" | relURL }}"{{ if eq .RelPermalink "/blog/" }} aria-current="page"{{ end }}>All</a>{{ $current := .RelPermalink }}{{ range slice "space" "deeptech" "startups" }}{{ with site.GetPage (printf "/categories/%s" .) }}<a href="{{ .RelPermalink }}"{{ if eq $current .RelPermalink }} aria-current="page"{{ end }}>{{ if eq .Data.Term "startups" }}Company building{{ else if eq .Data.Term "deeptech" }}Deep tech{{ else }}{{ .Title }}{{ end }}</a>{{ end }}{{ end }}</nav>
+  <div class="archive-entries">{{ range $entries }}{{ partial "editorial/entry.html" . }}{{ end }}</div>
+  {{ with $paginator }}<nav class="archive-end" aria-label="Pagination">{{ if $paginator.HasPrev }}<a href="{{ $paginator.Prev.URL }}">Newer writing</a>{{ else }}<span></span>{{ end }}<span class="eyebrow">Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>{{ if $paginator.HasNext }}<a href="{{ $paginator.Next.URL }}">Older writing</a>{{ else }}<span></span>{{ end }}</nav>{{ end }}
+  <div class="archive-end"><a href="{{ "/categories/mentioned/" | relURL }}">Selected mentions</a><a href="{{ "/about/" | relURL }}">About the author</a></div>
+</section>

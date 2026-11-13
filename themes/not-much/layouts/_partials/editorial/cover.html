@@ -1,0 +1,6 @@
+{{- $image := "images/editorial/testing.jpg" -}}
+{{- if in .Params.categories "startups" }}{{ $image = "images/editorial/conversation.jpg" }}{{ end -}}
+{{- if in .Params.categories "deeptech" }}{{ $image = "images/editorial/lens.jpg" }}{{ end -}}
+{{- if in .Params.categories "mentioned" }}{{ $image = "images/editorial/ivs-stage.jpg" }}{{ end -}}
+{{- with .Params.cover }}{{ $image = . }}{{ end -}}
+{{- return $image -}}

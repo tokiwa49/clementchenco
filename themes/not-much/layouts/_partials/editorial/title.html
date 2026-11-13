@@ -1,0 +1,7 @@
+{{- $title := .Title -}}
+{{- $accent := .Params.titleAccent | default "" -}}
+{{- if and $accent (strings.HasSuffix $title $accent) -}}
+  {{- strings.TrimSuffix $accent $title }} <span class="display-serif">{{ $accent }}</span>
+{{- else -}}
+  {{- $title -}}
+{{- end -}}
