@@ -1,7 +1,20 @@
-{{- $external := strings.HasPrefix .Destination "http" }}
-{{- if $external }}
-  {{- if strings.HasPrefix .Destination site.BaseURL }}
-    {{- $external = false }}
+{{- $dest := .Destination }}
+{{- $external := strings.HasPrefix $dest "http" }}
+{{- if and $external (strings.HasPrefix $dest site.BaseURL) }}
+  {{- $external = false }}
+{{- end }}
+{{- if not $external }}
+  {{- $hash := "" }}
+  {{- $path := $dest }}
+  {{- if strings.Contains $dest "#" }}
+    {{- $parts := split $dest "#" }}
+    {{- $path = index $parts 0 }}
+    {{- $hash = printf "#%s" (delimit (after 1 $parts) "#") }}
   {{- end }}
+  {{- $ext := path.Ext $path }}
+  {{- if and $path (eq $ext "") (not (strings.HasSuffix $path "/")) (not (strings.HasPrefix $path "mailto:")) (not (strings.HasPrefix $path "tel:")) }}
+    {{- $path = printf "%s/" $path }}
+  {{- end }}
+  {{- $dest = printf "%s%s" $path $hash }}
 {{- end -}}
-<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>
+<a href="{{ $dest | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Text | safeHTML }}</a>

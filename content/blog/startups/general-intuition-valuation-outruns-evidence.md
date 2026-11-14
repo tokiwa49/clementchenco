@@ -8,7 +8,7 @@ author: "Clement Chen"
 categories: ["startups"]
 tags: ["physical AI", "robotics funding", "venture valuation", "embodied AI", "video game data"]
 toc: true
-related_posts: ["/blog/deeptech/boring-beats-brilliant-robotics-funding/", "/blog/deeptech/physical-ai-bottleneck-is-below-the-model/", "/blog/startups/cambridge-aerospace-unpublished-unit-economics/", "/blog/space/exploration-company-series-c-nyx-return-proof/"]
+related_posts: ["/blog/deeptech/boring-beats-brilliant-robotics-funding/", "/blog/deeptech/physical-ai-bottleneck-is-below-the-model/", "/blog/startups/cambridge-aerospace-unpublished-unit-economics/"]
 
 status: draft
 brief_date: "2026-09-09"
@@ -43,7 +43,7 @@ The specific, falsifiable thing to watch for is a public demonstration that move
 
 For founders watching from the sidelines, the lesson isn't that speed is bad or that fast re-rates are unearned. It's that the market will fund a narrow, well-chosen demo as if it were a broad proof, right up until someone runs the harder version of it. If your own physical-AI pitch rests on a similarly narrow first result, the honest move is to say so plainly rather than let a locomotion demo imply a manipulation capability you haven't shown, because the gap between the two is exactly where a diligence team, or a skeptical journalist, will eventually go looking.
 
-General Intuition isn't the only company this week asking investors to price a number the public can't fully check. [Cambridge Aerospace's $3.4 billion valuation](/blog/startups/cambridge-aerospace-unpublished-unit-economics/) rests on unit economics it has never published, and [The Exploration Company's $450 million round](/blog/space/exploration-company-series-c-nyx-return-proof/) prices a narrow, targeted fix rather than a fully proven product. The common thread isn't that any of these companies are overstating what they've built. It's that the gap between a promising early result and a fully verified one is where a lot of deeptech capital is currently being deployed, and it's worth knowing which side of that gap a given number actually sits on.
+General Intuition isn't the only company this week asking investors to price a number the public can't fully check. [Cambridge Aerospace's $3.4 billion valuation](/blog/startups/cambridge-aerospace-unpublished-unit-economics/) rests on unit economics it has never published, and The Exploration Company's $450 million round prices a narrow, targeted fix rather than a fully proven product. The common thread isn't that any of these companies are overstating what they've built. It's that the gap between a promising early result and a fully verified one is where a lot of deeptech capital is currently being deployed, and it's worth knowing which side of that gap a given number actually sits on.
 
 ## What to watch next
 
