@@ -18,6 +18,7 @@ html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:#ee
 #cc-site .archive-entry a:hover,#cc-site .feature a:hover,#cc-site .index-row a:hover{text-decoration:underline;text-underline-offset:4px}
 #cc-site .article-title h1{overflow-wrap:anywhere;font-size:clamp(34px,4.3vw,58px)}
 #cc-site .article-hero{height:auto;display:block}
+#cc-site .article-hero-natural{aspect-ratio:auto}
 #cc-site .body-copy{min-width:0;overflow-wrap:anywhere}
 #cc-site .body-copy a{color:#97402b;text-decoration:underline;text-underline-offset:3px}
 #cc-site .body-copy :is(h2,h3,h4){scroll-margin-top:24px}
